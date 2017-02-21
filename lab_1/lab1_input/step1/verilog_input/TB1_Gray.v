@@ -17,7 +17,7 @@ module TB1;
 	reg clk = 0;
 	reg rst ;
 	wire [3:0] leds;
-	integer EndOfSimulation;
+	integer EndOfSimulation = 0;
 	integer i;
 
 	parameter ONE = 1'b1;
@@ -32,9 +32,8 @@ module TB1;
 		# 1 rst = 1;
 		# 2 rst = 0;
 
-		# 1000 rst = 1;
+		# 50 rst = 1;
 		# 1 rst = 0;
-
 
 		$finish;
 	end

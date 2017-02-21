@@ -37,17 +37,17 @@ module gray_4bits (clk, clk_en, rst, gray_out);
 
 
 	always @(posedge clk or rst)
-		begin
+	begin
 	// Code to implement a 4-bit Gray code
 			if (rst || !clk_en)
 				state = 4'b0000;
 			else
 				state = 1'b1 + state;
-		end
+	end
 
-	assign gray_out[3] = state[3];
-	assign gray_out[2] = state[3] ^ state[2];
-	assign gray_out[1] = state[2] ^ state[1];
+	assign gray_out[3] = (state[3]);
+	assign gray_out[2] = (state[3] ^ state[2]);
+	assign gray_out[1] = (state[2] ^ state[1]);
 	assign gray_out[0] = (state[1] ^ state[0]);
 
 
