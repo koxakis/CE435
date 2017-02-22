@@ -36,7 +36,7 @@ module gray_4bits (clk, clk_en, rst, gray_out);
 	reg [3:0] state;
 
 
-	always @(posedge clk or rst)
+	always @(posedge clk || posedge rst)
 	begin
 	// Code to implement a 4-bit Gray code
 			if (rst || !clk_en)
