@@ -14,7 +14,7 @@ module gray_Nbits (clk, clk_en, rst, gray_out);
 	output reg [N:0] gray_out;
 
 	reg [N:0] toggle;
-	reg [N:0] state;
+	reg [SIZE:0] state;
 	integer i;
 
 
