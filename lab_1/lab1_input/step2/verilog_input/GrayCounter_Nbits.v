@@ -11,9 +11,11 @@ module gray_Nbits (clk, clk_en, rst, gray_out);
 	// Place the definition of wires and regs here
 
 	input clk, clk_en, rst;
-	output gray_out;
+	output reg [N:0] gray_out;
+
 	reg [N:0] toggle;
-	reg [N:0] tmp;
+	reg [N:0] state;
+	integer i;
 
 
  	// The state of the Gray counter
@@ -21,21 +23,25 @@ module gray_Nbits (clk, clk_en, rst, gray_out);
 	begin
 	    if (rst == 1'b0)
 		    // Initialize state with 1000..00
-			tmp = {SIZE{1'b0}};
+			state = {SIZE{1'b0}};
 	    else
 		    // Main part of code
-			tmp = tmp + 1'b1;
+			state = state + 1'b1;
 	end
 
 
  	// The combinational logic produces the toggle[N:0] signals
-	always @(tmp)
+	always @(state)
 	begin
     	toggle[0] <=  1'b1;
     	toggle[1] <= state[0];
     	for (i=2; i<N; i=i+1)
 		begin
             // Here goes your code
+			if (state[i] || state[i-1])
+			begin
+				toggle[i] <= 1'b0;
+			end
         end
 
 		assign gray_out=state[N:1];
