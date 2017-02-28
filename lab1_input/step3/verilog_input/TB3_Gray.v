@@ -12,8 +12,8 @@
 `define cycle 10   // this is equivalent to defines in C
 
 module TB3;
-  parameter N = 4;
-  parameter distance = 10;  // not big pulse distance for simulation only
+  parameter N = 3;
+  parameter distance = 6;  // not big pulse distance for simulation only
   reg clk, rst;
   wire [N-1:0] leds;
   integer EndOfSimulation;  
