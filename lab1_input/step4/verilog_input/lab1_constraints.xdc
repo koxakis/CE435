@@ -164,6 +164,7 @@ set_property PACKAGE_PIN U14 [get_ports {leds[7]}]
 
 # Bank 34, Vcco = Vadj
 set_property PACKAGE_PIN P16 [get_ports rst]
+set_property PACKAGE_PIN R18 [get_ports btw]
 #NET BTND          LOC = R16  | IOSTANDARD=LVCMOS18;  # "BTND"
 #NET BTNL          LOC = N15  | IOSTANDARD=LVCMOS18;  # "BTNL"
 #NET BTNR          LOC = R18  | IOSTANDARD=LVCMOS18;  # "BTNR"
@@ -276,3 +277,4 @@ set_property IOSTANDARD LVCMOS33 [get_ports {leds[1]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {leds[0]}]
 set_property IOSTANDARD LVCMOS33 [get_ports clk]
 set_property IOSTANDARD LVCMOS33 [get_ports rst]
+
