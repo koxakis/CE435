@@ -1,7 +1,7 @@
 #verilog
 *.vcd
 *.out
-
+vivado_project/
 
 # Object files
 *.o
