@@ -10,7 +10,7 @@ module gray_Nbits (clk, clk_en, rst, gray_out);
   parameter Zeros = {SIZE{1'b0}};
   // Place the definition of wires and regs here
   input clk, clk_en, rst;
-  output wire [N-1:0] gray_out;
+  output wire [7:0] gray_out;
   reg [SIZE-1:0] toggle;
   reg [SIZE-1:0] state;
  
@@ -20,9 +20,9 @@ module gray_Nbits (clk, clk_en, rst, gray_out);
   
   
   // The state of the Gray counter
-  always @(posedge clk, negedge rst)
+  always @(posedge clk, posedge rst)
     begin
-	     if (rst == 1'b0) begin
+	     if (rst == 1'b1) begin
 		    // Initialize state with 1000..00
 		    state[N] <= 1'b1;
             state[N-1:0] <= 0;
@@ -32,8 +32,7 @@ module gray_Nbits (clk, clk_en, rst, gray_out);
 		    // increment counter only when clk_en (pulse) is 1'b1
 		    if (clk_en == 1'b1) begin
 		      for (j=0; j<(N+1); j=j+1) begin
-                  if (toggle[j] == 1'b1)
-                    state[j] <= ~state[j];
+                 state[j] <= state[j]^toggle[j];
               end
             end
 		 end

@@ -8,9 +8,9 @@ module GrayCounter_Pulse(input clk, input rst, output reg pulse);
   //integer counter;
   reg [26:0] counter;
   
-  always @(posedge clk, negedge rst)
+  always @(posedge clk, posedge rst)
     begin
-	     if (rst == 1'b0) 
+	     if (rst == 1'b1) 
 		  begin
 			 // Your code for asynchronous reset goes here
 			 counter <= distance;  // initialized to max val in order to have a pulse in the beggining
