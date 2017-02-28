@@ -34,48 +34,62 @@ module GrayCounter_Pulse(input clk, input rst, input level, output reg pulse);
     
     // counter 1: If it remains active (button pressed) for 2 seconds it 
     // divides by 2 counter2's max value
-    always @(posedge clk, posedge rst, negedge level) begin
-        if (rst | ~level) begin
+    always @(posedge clk, posedge rst) begin
+        if (rst == 1'b1) begin
             count_1 <= MAX_1;
             cmax_2 <= MAX_1;
         end
         else 
         begin
-            if ( count_1 == MAX_1)
+            if (level == 1'b1)
             begin
-                if ( cmax_2 ^ NUM )     // if cmax_2 != NUM (lower bound) update it
+                if ( count_1 == MAX_1)
                 begin
-                    cmax_2 <= cmax_2 >> 1; 
-                end
-                count_1 <= 0;
-            end
-            else
-            begin
-                count_1 <= count_1 + 1;
-            end
+                    if ( cmax_2 ^ NUM )     // if cmax_2 != NUM (lower bound) update it
+                    begin
+                        cmax_2 <= cmax_2 >> 1; 
+                    end
+                 count_1 <= 0;
+              end
+              else
+              begin
+                  count_1 <= count_1 + 1;
+              end
+           end
+           else 
+           begin
+                count_1 <= MAX_1;
+                cmax_2 <= MAX_1;
+           end
         end
     end	
    
    
    // counter 2: Sends a pulse whenever it reaches its max value.
-    always @(posedge clk, posedge rst, negedge level) begin
-        if (rst | ~level) 
+    always @(posedge clk, posedge rst) begin
+        if (rst == 1'b1) 
         begin
             count_2 <= MAX_1;
             pulse <= 0;
         end
         else 
         begin
-            if ( count_2 == cmax_2)
-            begin
-                pulse <= 1;
-                count_2 <= 0;
-            end
-            else
-            begin
-                pulse <= 0;
-                count_2 <= count_2 + 1;
-            end
+           if (level == 1'b1) begin
+               if ( count_2 == cmax_2)
+               begin
+                  pulse <= 1;
+                  count_2 <= 0;
+               end
+               else
+               begin
+                  pulse <= 0;
+                  count_2 <= count_2 + 1;
+               end
+           end
+           else begin
+              count_2 <= MAX_1;
+              pulse <= 0;
+           end
         end
     end    
 	  
