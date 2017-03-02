@@ -18,7 +18,7 @@
 // Additional Comments: Instantiation of the GrayCounter_Nbits and GrayCounter_Pulse models
 //
 //////////////////////////////////////////////////////////////////////////////////
-module GrayCounter_System(clk, rst, btw, ubtw, speed, leds);
+module GrayCounter_System(clk, rst, btw, ubtw, speed, bin_on, hot_on, leds);
   parameter N = 8;
   //parameter distance = 100000000; // How much for 1 Hz when clk period is 10 ns?
   parameter DELAY = 1000000;
@@ -26,7 +26,13 @@ module GrayCounter_System(clk, rst, btw, ubtw, speed, leds);
   input clk, rst;
   input btw, ubtw;
   input [3:0] speed;
-  output [N-1:0] leds;
+  input bin_on;
+  input hot_on;
+  output reg [N-1:0] leds;
+  wire [N-1:0] hot_leds;
+  wire [N-1:0] cold_leds;
+  wire [N-1:0] bin_leds;
+  wire [N-1:0] gray_leds;
   wire clean, uclean;
   wire pulse1, pulse2, pulse;
     
@@ -45,11 +51,52 @@ module GrayCounter_System(clk, rst, btw, ubtw, speed, leds);
   GrayCounter_PulseUpper #(.MAX_1(MAX_1)) pulse_inst_upper (.clk(clk), .rst(rst), .level(uclean), .speed(speed), .pulse(pulse2));
   
   
+
   
   assign pulse = pulse1 | pulse2;
   
+  //assign leds = (bin_on == 1)?bin_leds:gray_leds;
+  always @ (*)
+  begin
+  	if (hot_on == 1'b0 && bin_on == 1'b0)
+  	begin
+  		leds <= gray_leds;
+  	end
+  	else
+  	begin
+  		if (hot_on == 1'b0 && bin_on == 1'b1)
+  		begin
+  			leds <= bin_leds;
+  		end
+  		else
+  		begin
+  			if (hot_on == 1'b1 && bin_on == 1'b0 )
+  			begin
+  				leds <= hot_leds;
+  			end
+  			else
+  			begin
+  				if (hot_on == 1'b1 && bin_on == 1'b1)
+  				begin
+  					leds <= cold_leds;
+  				end
+  			end
+  		end
+  	end
+  		
+  end 
+  
+  // Instantiation of oneHot_Nbits
+  OneHCounter_Nbits #(.N(N)) onehot_inst(.clock(clk), .clk_en(pulse), .rst(rst), .hot_out(hot_leds));
+  
+  // Instantiation of oneCold_Nbits
+  OneCCounter_Nbits #(.N(N)) onecold_inst(.clk(clk), .clk_en(pulse), .rst(rst), .cold_out(cold_leds));
+  
+  // Instantiation of the bin_Nbits
+  BinCounter_Nbits #(.N(N)) bincounter_inst(.clk(clk), .clk_en(pulse), .rst(rst), .bin_out(bin_leds));
+  
   // Instantiation of the gray_Nbits 
-  gray_Nbits #(.N(N)) graycounter_inst (.clk(clk), .clk_en(pulse), .rst(rst), .gray_out(leds));
+  gray_Nbits #(.N(N)) graycounter_inst (.clk(clk), .clk_en(pulse), .rst(rst), .gray_out(gray_leds));
 
 
 endmodule

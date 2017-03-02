@@ -215,6 +215,8 @@ set_property PACKAGE_PIN T18 [get_ports ubtw]
 #NET XADC_GIO3     LOC = J15;  # "XADC-GIO3"
 
 # Bank 35, Vcco = Vadj
+set_property PACKAGE_PIN H18 [get_ports hot_on]
+set_property PACKAGE_PIN H19 [get_ports bin_on]
 set_property PACKAGE_PIN F21 [get_ports {speed[3]}]
 set_property PACKAGE_PIN H22 [get_ports {speed[2]}]
 set_property PACKAGE_PIN G22 [get_ports {speed[1]}]
@@ -285,7 +287,10 @@ set_property IOSTANDARD LVCMOS33 [get_ports clk]
 set_property IOSTANDARD LVCMOS33 [get_ports rst]
 set_property IOSTANDARD LVCMOS33 [get_ports btw]
 set_property IOSTANDARD LVCMOS33 [get_ports ubtw]
+set_property IOSTANDARD LVCMOS33 [get_ports bin_on]
+set_property IOSTANDARD LVCMOS33 [get_ports hot_on]
 set_property IOSTANDARD LVCMOS33 [get_ports {speed[3]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {speed[2]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {speed[1]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {speed[0]}]
+
