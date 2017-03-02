@@ -58,27 +58,27 @@ module GrayCounter_System(clk, rst, btw, ubtw, speed, bin_on, hot_on, leds);
   //assign leds = (bin_on == 1)?bin_leds:gray_leds;
   always @ (*)
   begin
-  	if (hot_on == 1'b0 && bin_on == 1'b0)
+  	if (hot_on == 1'b0 & bin_on == 1'b0)
   	begin
-  		leds <= gray_leds;
+  		leds = gray_leds;
   	end
   	else
   	begin
-  		if (hot_on == 1'b0 && bin_on == 1'b1)
+  		if (hot_on == 1'b0 & bin_on == 1'b1)
   		begin
-  			leds <= bin_leds;
+  			leds = bin_leds;
   		end
   		else
   		begin
-  			if (hot_on == 1'b1 && bin_on == 1'b0 )
+  			if (hot_on == 1'b1 & bin_on == 1'b0 )
   			begin
-  				leds <= hot_leds;
+  				leds = hot_leds;
   			end
   			else
   			begin
-  				if (hot_on == 1'b1 && bin_on == 1'b1)
+  				if (hot_on == 1'b1 & bin_on == 1'b1)
   				begin
-  					leds <= cold_leds;
+  					leds = cold_leds;
   				end
   			end
   		end
