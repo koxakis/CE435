@@ -2,6 +2,10 @@
 *.vcd
 *.out
 vivado_project/
+lab2/vivado_proj/Lab_2_interupt/lab2_interrupt_arm/lab2_interrupt_arm.sdk/.metadata/
+*.backup.*
+*.jou
+*.log
 
 # Object files
 *.o

@@ -927,3 +927,211 @@ arm-none-eabi-size Step_3.elf  |tee "Step_3.elf.size"
   89624	   2720	  23376	 115720	  1c408	Step_3.elf
 Finished building: Step_3.elf.size
  
+00:14:29 **** Clean-only build of configuration Debug for project Step_3 ****
+make clean 
+rm -rf  ./src/core_list_join.o ./src/core_main.o ./src/core_matrix.o ./src/core_state.o ./src/core_util.o ./src/timer_util.o  ./src/core_list_join.d ./src/core_main.d ./src/core_matrix.d ./src/core_state.d ./src/core_util.d ./src/timer_util.d  Step_3.elf.size  Step_3.elf
+ 
+00:14:29 **** Incremental Build of configuration Debug for project Step_3 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/core_list_join.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -DITERATIONS=20000 -DPERFORMANCE_RUN=1 -DCOMPILER_FLAGS=\"-O3\" -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/core_list_join.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Step_3_BSP/ps7_cortexa9_0/include -MMD -MP -MF"src/core_list_join.d" -MT"src/core_list_join.o" -o "src/core_list_join.o" "../src/core_list_join.c"
+Finished building: ../src/core_list_join.c
+ 
+Building file: ../src/core_main.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -DITERATIONS=20000 -DPERFORMANCE_RUN=1 -DCOMPILER_FLAGS=\"-O3\" -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/core_main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Step_3_BSP/ps7_cortexa9_0/include -MMD -MP -MF"src/core_main.d" -MT"src/core_main.o" -o "src/core_main.o" "../src/core_main.c"
+Finished building: ../src/core_main.c
+ 
+Building file: ../src/core_matrix.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -DITERATIONS=20000 -DPERFORMANCE_RUN=1 -DCOMPILER_FLAGS=\"-O3\" -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/core_matrix.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Step_3_BSP/ps7_cortexa9_0/include -MMD -MP -MF"src/core_matrix.d" -MT"src/core_matrix.o" -o "src/core_matrix.o" "../src/core_matrix.c"
+Finished building: ../src/core_matrix.c
+ 
+Building file: ../src/core_state.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -DITERATIONS=20000 -DPERFORMANCE_RUN=1 -DCOMPILER_FLAGS=\"-O3\" -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/core_state.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Step_3_BSP/ps7_cortexa9_0/include -MMD -MP -MF"src/core_state.d" -MT"src/core_state.o" -o "src/core_state.o" "../src/core_state.c"
+Finished building: ../src/core_state.c
+ 
+Building file: ../src/core_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -DITERATIONS=20000 -DPERFORMANCE_RUN=1 -DCOMPILER_FLAGS=\"-O3\" -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/core_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Step_3_BSP/ps7_cortexa9_0/include -MMD -MP -MF"src/core_util.d" -MT"src/core_util.o" -o "src/core_util.o" "../src/core_util.c"
+Finished building: ../src/core_util.c
+ 
+Building file: ../src/timer_util.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -DITERATIONS=20000 -DPERFORMANCE_RUN=1 -DCOMPILER_FLAGS=\"-O3\" -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timer_util.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Step_3_BSP/ps7_cortexa9_0/include -MMD -MP -MF"src/timer_util.d" -MT"src/timer_util.o" -o "src/timer_util.o" "../src/timer_util.c"
+Finished building: ../src/timer_util.c
+ 
+Building target: Step_3.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Step_3_BSP/ps7_cortexa9_0/lib -o "Step_3.elf"  ./src/core_list_join.o ./src/core_main.o ./src/core_matrix.o ./src/core_state.o ./src/core_util.o ./src/timer_util.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Step_3.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Step_3.elf  |tee "Step_3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  89624	   2720	  23376	 115720	  1c408	Step_3.elf
+Finished building: Step_3.elf.size
+ 
+
+**** Build of configuration Debug for project Step_2_interupt ****
+
+Nothing to build for project Step_2_interupt
+00:16:24 **** Auto Build of configuration Debug for project Step_2_interupt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/lab2_interrupt.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2_interrupt.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Step_3_BSP/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2_interrupt.d" -MT"src/lab2_interrupt.o" -o "src/lab2_interrupt.o" "../src/lab2_interrupt.c"
+../src/lab2_interrupt.c: In function 'BTN_Intr_Handler':
+../src/lab2_interrupt.c:46:18: error: 'btn_value_old' undeclared (first use in this function)
+src/subdir.mk:21: recipe for target 'src/lab2_interrupt.o' failed
+  if (btn_value > btn_value_old) {
+                  ^
+../src/lab2_interrupt.c:46:18: note: each undeclared identifier is reported only once for each function it appears in
+../src/lab2_interrupt.c:50:3: error: expected '}' before 'else'
+   else
+   ^
+../src/lab2_interrupt.c: At top level:
+../src/lab2_interrupt.c:53:3: error: expected identifier or '(' before 'else'
+  }else{
+   ^
+../src/lab2_interrupt.c:59:2: warning: data definition has no type or storage class
+  btn_value_old = btn_value;
+  ^
+../src/lab2_interrupt.c:59:2: warning: type defaults to 'int' in declaration of 'btn_value_old' [-Wimplicit-int]
+../src/lab2_interrupt.c:59:18: error: initializer element is not constant
+  btn_value_old = btn_value;
+                  ^
+../src/lab2_interrupt.c:61:6: error: expected identifier or '(' before 'void'
+     (void)XGpio_InterruptClear(&BTNInst, BTN_INT);
+      ^
+../src/lab2_interrupt.c:64:27: error: expected declaration specifiers or '...' before '&' token
+     XGpio_InterruptEnable(&BTNInst, BTN_INT);
+                           ^
+In file included from ../../Step_3_BSP/ps7_cortexa9_0/include/xgpio.h:130:0,
+                 from ../src/lab2_interrupt.c:2:
+../../Step_3_BSP/ps7_cortexa9_0/include/xgpio_l.h:120:27: error: expected declaration specifiers or '...' before numeric constant
+ #define XGPIO_IR_CH1_MASK 0x1 /**< Mask for the 1st channel */
+                           ^
+../src/lab2_interrupt.c:12:23: note: in expansion of macro 'XGPIO_IR_CH1_MASK'
+ #define BTN_INT       XGPIO_IR_CH1_MASK
+                       ^
+../src/lab2_interrupt.c:64:37: note: in expansion of macro 'BTN_INT'
+     XGpio_InterruptEnable(&BTNInst, BTN_INT);
+                                     ^
+../src/lab2_interrupt.c:65:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/lab2_interrupt.o] Error 1
+00:30:28 **** Clean-only build of configuration Debug for project Step_2_interupt ****
+make clean 
+rm -rf  ./src/lab2_interrupt.o  ./src/lab2_interrupt.d  Step_2_interupt.elf.size  Step_2_interupt.elf
+ 
+00:30:28 **** Auto Build of configuration Debug for project Step_2_interupt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/lab2_interrupt.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2_interrupt.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Step_3_BSP/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2_interrupt.d" -MT"src/lab2_interrupt.o" -o "src/lab2_interrupt.o" "../src/lab2_interrupt.c"
+../src/lab2_interrupt.c: In function 'BTN_Intr_Handler':
+../src/lab2_interrupt.c:51:3: error: expected '}' before 'else'
+src/subdir.mk:21: recipe for target 'src/lab2_interrupt.o' failed
+   else
+   ^
+../src/lab2_interrupt.c: At top level:
+../src/lab2_interrupt.c:54:3: error: expected identifier or '(' before 'else'
+  }else{
+   ^
+../src/lab2_interrupt.c:60:2: warning: data definition has no type or storage class
+  btn_value_old = btn_value;
+  ^
+../src/lab2_interrupt.c:60:2: warning: type defaults to 'int' in declaration of 'btn_value_old' [-Wimplicit-int]
+../src/lab2_interrupt.c:60:18: error: initializer element is not constant
+  btn_value_old = btn_value;
+                  ^
+../src/lab2_interrupt.c:62:6: error: expected identifier or '(' before 'void'
+     (void)XGpio_InterruptClear(&BTNInst, BTN_INT);
+      ^
+../src/lab2_interrupt.c:65:27: error: expected declaration specifiers or '...' before '&' token
+     XGpio_InterruptEnable(&BTNInst, BTN_INT);
+                           ^
+In file included from ../../Step_3_BSP/ps7_cortexa9_0/include/xgpio.h:130:0,
+                 from ../src/lab2_interrupt.c:2:
+../../Step_3_BSP/ps7_cortexa9_0/include/xgpio_l.h:120:27: error: expected declaration specifiers or '...' before numeric constant
+ #define XGPIO_IR_CH1_MASK 0x1 /**< Mask for the 1st channel */
+                           ^
+../src/lab2_interrupt.c:12:23: note: in expansion of macro 'XGPIO_IR_CH1_MASK'
+ #define BTN_INT       XGPIO_IR_CH1_MASK
+                       ^
+../src/lab2_interrupt.c:65:37: note: in expansion of macro 'BTN_INT'
+     XGpio_InterruptEnable(&BTNInst, BTN_INT);
+                                     ^
+../src/lab2_interrupt.c:66:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+make: *** [src/lab2_interrupt.o] Error 1
+00:30:53 **** Auto Build of configuration Debug for project Step_2_interupt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/lab2_interrupt.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2_interrupt.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Step_3_BSP/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2_interrupt.d" -MT"src/lab2_interrupt.o" -o "src/lab2_interrupt.o" "../src/lab2_interrupt.c"
+../src/lab2_interrupt.c: In function 'BTN_Intr_Handler':
+../src/lab2_interrupt.c:47:5: warning: 'btn_value_old' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  if (btn_value > btn_value_old) {
+     ^
+Finished building: ../src/lab2_interrupt.c
+ 
+Building target: Step_2_interupt.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Step_3_BSP/ps7_cortexa9_0/lib -o "Step_2_interupt.elf"  ./src/lab2_interrupt.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Step_2_interupt.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Step_2_interupt.elf  |tee "Step_2_interupt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27612	   2756	  22616	  52984	   cef8	Step_2_interupt.elf
+Finished building: Step_2_interupt.elf.size
+ 
+00:31:05 **** Auto Build of configuration Debug for project Step_2_interupt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+Building file: ../src/lab2_interrupt.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lab2_interrupt.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Step_3_BSP/ps7_cortexa9_0/include -MMD -MP -MF"src/lab2_interrupt.d" -MT"src/lab2_interrupt.o" -o "src/lab2_interrupt.o" "../src/lab2_interrupt.c"
+Finished building: ../src/lab2_interrupt.c
+ 
+Building target: Step_2_interupt.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Step_3_BSP/ps7_cortexa9_0/lib -o "Step_2_interupt.elf"  ./src/lab2_interrupt.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Step_2_interupt.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size Step_2_interupt.elf  |tee "Step_2_interupt.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27612	   2756	  22616	  52984	   cef8	Step_2_interupt.elf
+Finished building: Step_2_interupt.elf.size
+ 
+00:31:07 **** Auto Build of configuration Debug for project Step_2_interupt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+00:31:31 **** Incremental Build of configuration Debug for project Step_3 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.
+00:31:32 **** Incremental Build of configuration Debug for project Step_2_interupt ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+ 
+make: Nothing to be done for 'main-build'.

@@ -658,3 +658,18 @@ con
 23:20:43 INFO  : Successfully done setting SDK workspace  
 23:20:43 INFO  : Processing command line option -hwspec /home/nikolas/vivado_proj/Lab_2_interupt/lab2_interrupt_arm/lab2_interrupt_arm.sdk/lab2_simple_arm_wrapper.hdf.
 23:20:43 INFO  : Checking for hwspec changes in the project lab2_simple_arm_wrapper_hw_platform_0.
+23:49:02 INFO  : Registering command handlers for SDK TCF services
+23:49:03 INFO  : Launching XSCT server: xsct -n -interactive /home/nikolas/Git_Repos/CE435/lab2/vivado_proj/Lab_2_interupt/lab2_interrupt_arm/lab2_interrupt_arm.sdk/temp_xsdb_launch_script.tcl
+23:49:03 ERROR : (XSDB Server)awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+
+23:49:04 INFO  : XSCT server has started successfully.
+23:49:04 INFO  : Successfully done setting XSCT server connection channel  
+23:49:04 INFO  : Successfully done setting SDK workspace  
+23:49:04 INFO  : Processing command line option -hwspec /home/nikolas/Git_Repos/CE435/lab2/vivado_proj/Lab_2_interupt/lab2_interrupt_arm/lab2_interrupt_arm.sdk/lab2_simple_arm_wrapper.hdf.
+00:29:20 INFO  : Registering command handlers for SDK TCF services
+00:29:21 INFO  : Launching XSCT server: xsct -n -interactive /home/nikolas/Git_Repos/CE435/lab2/vivado_proj/Lab_2_interupt/lab2_interrupt_arm/lab2_interrupt_arm.sdk/temp_xsdb_launch_script.tcl
+00:29:22 INFO  : XSCT server has started successfully.
+00:29:22 INFO  : Successfully done setting XSCT server connection channel  
+00:29:22 INFO  : Successfully done setting SDK workspace  
+00:29:22 INFO  : Processing command line option -hwspec /home/nikolas/Git_Repos/CE435/lab2/vivado_proj/Lab_2_interupt/lab2_interrupt_arm/lab2_interrupt_arm.sdk/lab2_simple_arm_wrapper.hdf.
+00:29:22 INFO  : Checking for hwspec changes in the project lab2_simple_arm_wrapper_hw_platform_1.

@@ -32,6 +32,7 @@ static int IntcInitFunction(u16 DeviceId, XGpio *GpioInstancePtr);
 
 void BTN_Intr_Handler(void *InstancePtr)
 {
+	int btn_value_old = 0;
 	// Disable GPIO interrupts
 	XGpio_InterruptDisable(&BTNInst, BTN_INT);
 	// Ignore additional button presses
@@ -46,16 +47,15 @@ void BTN_Intr_Handler(void *InstancePtr)
 	if (btn_value > btn_value_old) {
 		if ( ( (btn_value_old & 1) == 0 ) && ( (btn_value & 1) == 1 ) )
 			counter_value = 0;
-			xil_printf("(btn = %2x) Counter = %x\r\n", btn_value, counter_value);
 		else
 			counter_value++;
-			xil_printf("(btn = %2x) Counter = %x\r\n", btn_value, counter_value);
+
 	}else{
 		for (int i = 0; i < 1000000; i++) {
 		}
 	}
 
-
+	xil_printf("(btn = %2x) Counter = %x\r\n", btn_value, counter_value);
 	btn_value_old = btn_value;
 
     (void)XGpio_InterruptClear(&BTNInst, BTN_INT);
