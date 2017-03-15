@@ -1,0 +1,107 @@
+
+*** Running vivado
+    with args -log lab2_simple_arm_axi_gpio_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab2_simple_arm_axi_gpio_0_1.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source lab2_simple_arm_axi_gpio_0_1.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1104.004 ; gain = 177.082 ; free physical = 1185 ; free virtual = 5499
+INFO: [Synth 8-638] synthesizing module 'lab2_simple_arm_axi_gpio_0_1' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ip/lab2_simple_arm_axi_gpio_0_1/synth/lab2_simple_arm_axi_gpio_0_1.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/4f16/hdl/axi_gpio_v2_0_vh_rfs.vhd:1091]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (1#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (1#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (1#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (1#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized3' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized3' (1#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized4' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized4' (1#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized5' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized5' (1#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized6' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized6' (1#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized7' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized7' (1#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized8' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized8' (1#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized9' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized9' (1#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized10' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized10' (1#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized11' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized11' (1#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized12' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized12' (1#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized13' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized13' (1#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized14' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized14' (1#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized15' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized15' (1#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized16' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized16' (1#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized17' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized17' (1#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized18' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized18' (1#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized19' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized19' (1#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized20' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized20' (1#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (2#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (3#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (4#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'interrupt_control' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/e956/hdl/interrupt_control_v3_1_vh_rfs.vhd:259]
+INFO: [Synth 8-256] done synthesizing module 'interrupt_control' (5#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/e956/hdl/interrupt_control_v3_1_vh_rfs.vhd:259]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/4f16/hdl/axi_gpio_v2_0_vh_rfs.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (6#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (7#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/4f16/hdl/axi_gpio_v2_0_vh_rfs.vhd:173]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (8#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/4f16/hdl/axi_gpio_v2_0_vh_rfs.vhd:1091]
+INFO: [Synth 8-256] done synthesizing module 'lab2_simple_arm_axi_gpio_0_1' (9#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ip/lab2_simple_arm_axi_gpio_0_1/synth/lab2_simple_arm_axi_gpio_0_1.vhd:85]
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1145.480 ; gain = 218.559 ; free physical = 1090 ; free virtual = 5405
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1145.480 ; gain = 218.559 ; free physical = 1086 ; free virtual = 5401
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1491.348 ; gain = 0.004 ; free physical = 634 ; free virtual = 4949
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1491.348 ; gain = 564.426 ; free physical = 599 ; free virtual = 4915
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1491.348 ; gain = 564.426 ; free physical = 599 ; free virtual = 4915
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1491.348 ; gain = 564.426 ; free physical = 598 ; free virtual = 4915
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1491.348 ; gain = 564.426 ; free physical = 598 ; free virtual = 4914
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1491.352 ; gain = 564.430 ; free physical = 597 ; free virtual = 4914
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1491.352 ; gain = 564.430 ; free physical = 582 ; free virtual = 4898
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1491.352 ; gain = 564.430 ; free physical = 580 ; free virtual = 4897
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1491.352 ; gain = 564.430 ; free physical = 580 ; free virtual = 4896
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1491.352 ; gain = 564.430 ; free physical = 556 ; free virtual = 4872
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1491.352 ; gain = 564.430 ; free physical = 556 ; free virtual = 4872
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1491.352 ; gain = 564.430 ; free physical = 554 ; free virtual = 4871
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1491.352 ; gain = 564.430 ; free physical = 554 ; free virtual = 4871
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1491.352 ; gain = 564.430 ; free physical = 552 ; free virtual = 4869
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1491.352 ; gain = 564.430 ; free physical = 552 ; free virtual = 4869
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |    10|
+|3     |LUT3 |     6|
+|4     |LUT4 |    18|
+|5     |LUT5 |    19|
+|6     |LUT6 |    31|
+|7     |FDR  |    20|
+|8     |FDRE |    87|
+|9     |FDSE |     7|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1491.352 ; gain = 564.430 ; free physical = 552 ; free virtual = 4869
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1491.352 ; gain = 473.926 ; free physical = 369 ; free virtual = 4691

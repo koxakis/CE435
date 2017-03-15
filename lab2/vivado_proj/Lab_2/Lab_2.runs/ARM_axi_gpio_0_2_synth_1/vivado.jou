@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue Mar 14 11:21:50 2017
+# Process ID: 5499
+# Current directory: /home/nikolas/vivado_proj/Lab_2/Lab_2.runs/ARM_axi_gpio_0_2_synth_1
+# Command line: vivado -log ARM_axi_gpio_0_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ARM_axi_gpio_0_2.tcl
+# Log file: /home/nikolas/vivado_proj/Lab_2/Lab_2.runs/ARM_axi_gpio_0_2_synth_1/ARM_axi_gpio_0_2.vds
+# Journal file: /home/nikolas/vivado_proj/Lab_2/Lab_2.runs/ARM_axi_gpio_0_2_synth_1/vivado.jou
+#-----------------------------------------------------------
+source ARM_axi_gpio_0_2.tcl -notrace

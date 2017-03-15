@@ -1,0 +1,69 @@
+
+*** Running vivado
+    with args -log lab2_simple_arm_axi_gpio_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab2_simple_arm_axi_gpio_0_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source lab2_simple_arm_axi_gpio_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1104.008 ; gain = 177.082 ; free physical = 1675 ; free virtual = 5444
+INFO: [Synth 8-638] synthesizing module 'lab2_simple_arm_axi_gpio_0_0' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ip/lab2_simple_arm_axi_gpio_0_0/synth/lab2_simple_arm_axi_gpio_0_0.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'axi_gpio' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/4f16/hdl/axi_gpio_v2_0_vh_rfs.vhd:1091]
+INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'slave_attachment' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-638] synthesizing module 'address_decoder' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-638] synthesizing module 'pselect_f' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (1#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (1#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (1#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (1#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (2#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (3#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (4#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0ba0/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-638] synthesizing module 'GPIO_Core' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/4f16/hdl/axi_gpio_v2_0_vh_rfs.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (5#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (6#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/4f16/hdl/axi_gpio_v2_0_vh_rfs.vhd:173]
+INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (7#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/4f16/hdl/axi_gpio_v2_0_vh_rfs.vhd:1091]
+INFO: [Synth 8-256] done synthesizing module 'lab2_simple_arm_axi_gpio_0_0' (8#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ip/lab2_simple_arm_axi_gpio_0_0/synth/lab2_simple_arm_axi_gpio_0_0.vhd:84]
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1145.484 ; gain = 218.559 ; free physical = 1584 ; free virtual = 5355
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1145.484 ; gain = 218.559 ; free physical = 1584 ; free virtual = 5354
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1489.352 ; gain = 0.004 ; free physical = 1002 ; free virtual = 4878
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1489.352 ; gain = 562.426 ; free physical = 1001 ; free virtual = 4879
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1489.352 ; gain = 562.426 ; free physical = 1001 ; free virtual = 4879
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1489.352 ; gain = 562.426 ; free physical = 1001 ; free virtual = 4879
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1489.352 ; gain = 562.426 ; free physical = 1000 ; free virtual = 4878
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 1489.355 ; gain = 562.430 ; free physical = 997 ; free virtual = 4876
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 1489.355 ; gain = 562.430 ; free physical = 967 ; free virtual = 4853
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 1489.355 ; gain = 562.430 ; free physical = 964 ; free virtual = 4850
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1489.355 ; gain = 562.430 ; free physical = 961 ; free virtual = 4847
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 1489.355 ; gain = 562.430 ; free physical = 884 ; free virtual = 4770
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 1489.355 ; gain = 562.430 ; free physical = 879 ; free virtual = 4765
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 1489.355 ; gain = 562.430 ; free physical = 840 ; free virtual = 4726
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 1489.355 ; gain = 562.430 ; free physical = 836 ; free virtual = 4721
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 1489.355 ; gain = 562.430 ; free physical = 785 ; free virtual = 4671
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 1489.355 ; gain = 562.430 ; free physical = 785 ; free virtual = 4671
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |     5|
+|3     |LUT3 |     4|
+|4     |LUT4 |    11|
+|5     |LUT5 |    11|
+|6     |LUT6 |    14|
+|7     |FDR  |    32|
+|8     |FDRE |    61|
+|9     |FDSE |     8|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 1489.355 ; gain = 562.430 ; free physical = 785 ; free virtual = 4671
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 1489.355 ; gain = 471.926 ; free physical = 793 ; free virtual = 4644

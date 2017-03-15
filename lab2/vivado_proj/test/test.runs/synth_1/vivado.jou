@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Mar  3 11:31:48 2017
+# Process ID: 2773
+# Current directory: /home/nikolas/vivado_proj/test/test.runs/synth_1
+# Command line: vivado -log GrayCounter_System.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source GrayCounter_System.tcl
+# Log file: /home/nikolas/vivado_proj/test/test.runs/synth_1/GrayCounter_System.vds
+# Journal file: /home/nikolas/vivado_proj/test/test.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source GrayCounter_System.tcl -notrace

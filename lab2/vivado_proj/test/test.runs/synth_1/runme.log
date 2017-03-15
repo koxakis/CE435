@@ -1,0 +1,401 @@
+
+*** Running vivado
+    with args -log GrayCounter_System.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source GrayCounter_System.tcl
+
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source GrayCounter_System.tcl -notrace
+Command: synth_design -top GrayCounter_System -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2777 
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1055.566 ; gain = 125.086 ; free physical = 5021 ; free virtual = 10336
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'GrayCounter_System' [/home/nikolas/Git_Repos/CE435/lab1/step7/GrayCounter_System.v:21]
+	Parameter N bound to: 8 - type: integer 
+	Parameter DELAY bound to: 1000000 - type: integer 
+	Parameter MAX_1 bound to: 199999999 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'debouncer' [/home/nikolas/Git_Repos/CE435/lab1/step7/debouncer.v:4]
+	Parameter DELAY bound to: 1000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (1#1) [/home/nikolas/Git_Repos/CE435/lab1/step7/debouncer.v:4]
+INFO: [Synth 8-638] synthesizing module 'GrayCounter_Pulse' [/home/nikolas/Git_Repos/CE435/lab1/step7/GrayCounter_Nbit_Pulse.v:21]
+	Parameter MAX_1 bound to: 199999999 - type: integer 
+	Parameter MAX_2 bound to: 99999999 - type: integer 
+	Parameter NUM bound to: 6249999 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'GrayCounter_Pulse' (2#1) [/home/nikolas/Git_Repos/CE435/lab1/step7/GrayCounter_Nbit_Pulse.v:21]
+INFO: [Synth 8-638] synthesizing module 'GrayCounter_PulseUpper' [/home/nikolas/Git_Repos/CE435/lab1/step7/GrayCounter_Nbit_Pulse2.v:21]
+	Parameter MAX_1 bound to: 199999999 - type: integer 
+	Parameter MAX_2 bound to: 99999999 - type: integer 
+	Parameter NUM bound to: 6249999 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'GrayCounter_PulseUpper' (3#1) [/home/nikolas/Git_Repos/CE435/lab1/step7/GrayCounter_Nbit_Pulse2.v:21]
+INFO: [Synth 8-638] synthesizing module 'OneHCounter_Nbits' [/home/nikolas/Git_Repos/CE435/lab1/step7/OneHCounter_Nbits.v:1]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'OneHCounter_Nbits' (4#1) [/home/nikolas/Git_Repos/CE435/lab1/step7/OneHCounter_Nbits.v:1]
+INFO: [Synth 8-638] synthesizing module 'OneCCounter_Nbits' [/home/nikolas/Git_Repos/CE435/lab1/step7/OneCCounter_Nbits.v:3]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'OneCCounter_Nbits' (5#1) [/home/nikolas/Git_Repos/CE435/lab1/step7/OneCCounter_Nbits.v:3]
+INFO: [Synth 8-638] synthesizing module 'BinCounter_Nbits' [/home/nikolas/Git_Repos/CE435/lab1/step7/BinCounter_Nbits.v:1]
+	Parameter N bound to: 8 - type: integer 
+	Parameter SIZE bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'BinCounter_Nbits' (6#1) [/home/nikolas/Git_Repos/CE435/lab1/step7/BinCounter_Nbits.v:1]
+INFO: [Synth 8-638] synthesizing module 'gray_Nbits' [/home/nikolas/Git_Repos/CE435/lab1/step7/GrayCounter_Nbits.v:7]
+	Parameter N bound to: 8 - type: integer 
+	Parameter SIZE bound to: 9 - type: integer 
+	Parameter Zeros bound to: 9'b000000000 
+INFO: [Synth 8-256] done synthesizing module 'gray_Nbits' (7#1) [/home/nikolas/Git_Repos/CE435/lab1/step7/GrayCounter_Nbits.v:7]
+INFO: [Synth 8-256] done synthesizing module 'GrayCounter_System' (8#1) [/home/nikolas/Git_Repos/CE435/lab1/step7/GrayCounter_System.v:21]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1097.035 ; gain = 166.555 ; free physical = 4976 ; free virtual = 10293
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1097.035 ; gain = 166.555 ; free physical = 4976 ; free virtual = 10293
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/nikolas/Git_Repos/CE435/lab1/step7/lab1_constraints.xdc]
+Finished Parsing XDC File [/home/nikolas/Git_Repos/CE435/lab1/step7/lab1_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/nikolas/Git_Repos/CE435/lab1/step7/lab1_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/GrayCounter_System_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/GrayCounter_System_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1448.082 ; gain = 0.000 ; free physical = 4737 ; free virtual = 10102
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:56 . Memory (MB): peak = 1448.082 ; gain = 517.602 ; free physical = 4735 ; free virtual = 10101
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:56 . Memory (MB): peak = 1448.082 ; gain = 517.602 ; free physical = 4735 ; free virtual = 10101
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:56 . Memory (MB): peak = 1448.082 ; gain = 517.602 ; free physical = 4735 ; free virtual = 10101
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clean" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "toggle" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'leds_reg' [/home/nikolas/Git_Repos/CE435/lab1/step7/GrayCounter_System.v:63]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:56 . Memory (MB): peak = 1448.082 ; gain = 517.602 ; free physical = 4727 ; free virtual = 10091
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     28 Bit       Adders := 2     
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      4 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 11    
++---Registers : 
+	               32 Bit    Registers := 2     
+	               28 Bit    Registers := 3     
+	               27 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     28 Bit        Muxes := 5     
+	   5 Input     27 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module GrayCounter_System 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module debouncer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module GrayCounter_Pulse 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     28 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               28 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 2     
+Module GrayCounter_PulseUpper 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
++---Registers : 
+	               27 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   5 Input     27 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module OneHCounter_Nbits 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module BinCounter_Nbits 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module gray_Nbits 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 9     
++---Registers : 
+	                9 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "debounce_inst/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "debounce_inst/clean" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "debounce_inst_upper/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "debounce_inst_upper/clean" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "graycounter_inst/toggle" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3332] Sequential element (leds_reg[7]) is unused and will be removed from module GrayCounter_System.
+WARNING: [Synth 8-3332] Sequential element (leds_reg[6]) is unused and will be removed from module GrayCounter_System.
+WARNING: [Synth 8-3332] Sequential element (leds_reg[5]) is unused and will be removed from module GrayCounter_System.
+WARNING: [Synth 8-3332] Sequential element (leds_reg[4]) is unused and will be removed from module GrayCounter_System.
+WARNING: [Synth 8-3332] Sequential element (leds_reg[3]) is unused and will be removed from module GrayCounter_System.
+WARNING: [Synth 8-3332] Sequential element (leds_reg[2]) is unused and will be removed from module GrayCounter_System.
+WARNING: [Synth 8-3332] Sequential element (leds_reg[1]) is unused and will be removed from module GrayCounter_System.
+WARNING: [Synth 8-3332] Sequential element (leds_reg[0]) is unused and will be removed from module GrayCounter_System.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:58 . Memory (MB): peak = 1448.082 ; gain = 517.602 ; free physical = 4709 ; free virtual = 10076
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:01:06 . Memory (MB): peak = 1448.082 ; gain = 517.602 ; free physical = 4662 ; free virtual = 10036
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:01:06 . Memory (MB): peak = 1448.082 ; gain = 517.602 ; free physical = 4642 ; free virtual = 10015
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:01:07 . Memory (MB): peak = 1456.090 ; gain = 525.609 ; free physical = 4632 ; free virtual = 10006
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:01:07 . Memory (MB): peak = 1456.090 ; gain = 525.609 ; free physical = 4632 ; free virtual = 10006
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:01:07 . Memory (MB): peak = 1456.090 ; gain = 525.609 ; free physical = 4632 ; free virtual = 10006
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:01:07 . Memory (MB): peak = 1456.090 ; gain = 525.609 ; free physical = 4632 ; free virtual = 10006
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:01:07 . Memory (MB): peak = 1456.090 ; gain = 525.609 ; free physical = 4632 ; free virtual = 10006
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:01:07 . Memory (MB): peak = 1456.090 ; gain = 525.609 ; free physical = 4632 ; free virtual = 10006
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:01:07 . Memory (MB): peak = 1456.090 ; gain = 525.609 ; free physical = 4632 ; free virtual = 10006
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    43|
+|3     |LUT1   |   145|
+|4     |LUT2   |    37|
+|5     |LUT3   |    38|
+|6     |LUT4   |    34|
+|7     |LUT5   |    51|
+|8     |LUT6   |   104|
+|9     |FDCE   |   130|
+|10    |FDPE   |    82|
+|11    |FDRE   |     4|
+|12    |IBUF   |    10|
+|13    |OBUF   |     8|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------------+-----------------------+------+
+|      |Instance              |Module                 |Cells |
++------+----------------------+-----------------------+------+
+|1     |top                   |                       |   687|
+|2     |  bincounter_inst     |BinCounter_Nbits       |    17|
+|3     |  debounce_inst       |debouncer              |   125|
+|4     |  debounce_inst_upper |debouncer_0            |   114|
+|5     |  graycounter_inst    |gray_Nbits             |    19|
+|6     |  onecold_inst        |OneCCounter_Nbits      |    16|
+|7     |    hotinst           |OneHCounter_Nbits_1    |    16|
+|8     |  onehot_inst         |OneHCounter_Nbits      |     8|
+|9     |  pulse_inst          |GrayCounter_Pulse      |   255|
+|10    |  pulse_inst_upper    |GrayCounter_PulseUpper |   114|
++------+----------------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:01:07 . Memory (MB): peak = 1456.090 ; gain = 525.609 ; free physical = 4632 ; free virtual = 10006
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1456.090 ; gain = 94.473 ; free physical = 4630 ; free virtual = 10004
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:01:07 . Memory (MB): peak = 1456.098 ; gain = 525.617 ; free physical = 4630 ; free virtual = 10004
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 53 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:01:06 . Memory (MB): peak = 1456.098 ; gain = 458.113 ; free physical = 4625 ; free virtual = 10002
+INFO: [Common 17-1381] The checkpoint '/home/nikolas/vivado_proj/test/test.runs/synth_1/GrayCounter_System.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1480.102 ; gain = 0.000 ; free physical = 4617 ; free virtual = 9997
+INFO: [Common 17-206] Exiting Vivado at Fri Mar  3 11:33:04 2017...

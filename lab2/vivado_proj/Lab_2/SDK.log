@@ -1,0 +1,24 @@
+18:40:18 INFO  : Registering command handlers for SDK TCF services
+18:40:22 INFO  : Launching XSCT server: xsct -n -interactive /home/nikolas/vivado_proj/Lab_2/temp_xsdb_launch_script.tcl
+18:40:22 ERROR : (XSDB Server)awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+
+18:40:23 INFO  : XSCT server has started successfully.
+18:40:23 INFO  : Successfully done setting XSCT server connection channel  
+18:40:23 INFO  : Successfully done setting SDK workspace  
+18:40:23 INFO  : Processing command line option -hwspec /home/nikolas/vivado_proj/Lab.
+18:40:25 ERROR : Error occurred while creating hardware platform Lab_hw_platform_0 from sysdef
+java.io.FileNotFoundException: /home/nikolas/vivado_proj/Lab (Is a directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:266)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:210)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:197)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:171)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:564)
+	at com.xilinx.sdk.startup.InitSDK.access$9(InitSDK.java:546)
+	at com.xilinx.sdk.startup.InitSDK$14.run(InitSDK.java:497)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+18:40:25 ERROR : Unable to create Hardware Specification Project with specification file: /home/nikolas/vivado_proj/Lab

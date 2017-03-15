@@ -1,0 +1,79 @@
+
+*** Running vivado
+    with args -log lab2_simple_arm_xbar_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab2_simple_arm_xbar_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source lab2_simple_arm_xbar_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1112.012 ; gain = 185.086 ; free physical = 1210 ; free virtual = 5054
+INFO: [Synth 8-638] synthesizing module 'lab2_simple_arm_xbar_0' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ip/lab2_simple_arm_xbar_0/synth/lab2_simple_arm_xbar_0.v:59]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_axi_crossbar' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4882]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_crossbar_sasd' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_addr_decoder' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (1#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (2#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_addr_decoder' (3#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_decerr_slave' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_decerr_slave' (4#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_addr_arbiter_sasd' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_addr_arbiter_sasd' (5#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_splitter' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_splitter' (6#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_splitter__parameterized0' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_splitter__parameterized0' (6#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (7#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (7#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (7#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (7#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice' (8#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized3' (8#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_crossbar_sasd' (9#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_axi_crossbar' (10#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4882]
+INFO: [Synth 8-256] done synthesizing module 'lab2_simple_arm_xbar_0' (11#1) [/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.srcs/sources_1/bd/lab2_simple_arm/ip/lab2_simple_arm_xbar_0/synth/lab2_simple_arm_xbar_0.v:59]
+Finished RTL Elaboration : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1233.484 ; gain = 306.559 ; free physical = 1067 ; free virtual = 4918
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1233.484 ; gain = 306.559 ; free physical = 1063 ; free virtual = 4923
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1501.641 ; gain = 0.004 ; free physical = 1406 ; free virtual = 5251
+Finished Constraint Validation : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1501.641 ; gain = 574.715 ; free physical = 1341 ; free virtual = 5192
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1501.641 ; gain = 574.715 ; free physical = 1341 ; free virtual = 5192
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1501.641 ; gain = 574.715 ; free physical = 1340 ; free virtual = 5191
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1501.641 ; gain = 574.715 ; free physical = 1337 ; free virtual = 5189
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1501.645 ; gain = 574.719 ; free physical = 1333 ; free virtual = 5185
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:00:58 . Memory (MB): peak = 1501.645 ; gain = 574.719 ; free physical = 1129 ; free virtual = 4979
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1501.645 ; gain = 574.719 ; free physical = 1116 ; free virtual = 4961
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 1501.645 ; gain = 574.719 ; free physical = 1106 ; free virtual = 4951
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1501.645 ; gain = 574.719 ; free physical = 1095 ; free virtual = 4940
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1501.645 ; gain = 574.719 ; free physical = 1095 ; free virtual = 4940
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1501.645 ; gain = 574.719 ; free physical = 1093 ; free virtual = 4938
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1501.645 ; gain = 574.719 ; free physical = 1093 ; free virtual = 4938
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1501.645 ; gain = 574.719 ; free physical = 1093 ; free virtual = 4938
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1501.645 ; gain = 574.719 ; free physical = 1093 ; free virtual = 4938
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |    12|
+|3     |LUT3 |    11|
+|4     |LUT4 |    81|
+|5     |LUT5 |    12|
+|6     |LUT6 |    53|
+|7     |FDRE |   130|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1501.645 ; gain = 574.719 ; free physical = 1093 ; free virtual = 4938
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 1501.645 ; gain = 480.215 ; free physical = 1007 ; free virtual = 4851
