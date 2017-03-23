@@ -43,16 +43,7 @@ void BTN_Intr_Handler(void *InstancePtr)
 	// Increment counter based on button value
 	// Reset if center button pressed
         // Place your code here
-    if (btn_value > old_btn_value){
-		if ( ((old_btn_value & 1) == 0) && ((btn_value & 1) == 1)){
-			counter_value =0;
-		}else{
-			counter_value ++;
-		}
-		xil_printf("(btn_old = %2x, btn = %2x) Counter = %x\r\n")
-	}
-
-	old_btn_value = btn_value;
+        // .....
 
     (void)XGpio_InterruptClear(&BTNInst, BTN_INT);
 
@@ -118,7 +109,7 @@ int IntcInitFunction(u16 DeviceId, XGpio *GpioInstancePtr)
 	// Call to interrupt setup
 	status = InterruptSystemSetup(&INTCInst);
 	if(status != XST_SUCCESS) return XST_FAILURE;
-
+	
 	// Connect GPIO interrupt to handler
 	status = XScuGic_Connect(&INTCInst,
 					  	  	 INTC_GPIO_INTERRUPT_ID,
@@ -132,6 +123,7 @@ int IntcInitFunction(u16 DeviceId, XGpio *GpioInstancePtr)
 
 	// Enable GPIO and timer interrupts in the controller
 	XScuGic_Enable(&INTCInst, INTC_GPIO_INTERRUPT_ID);
-
+	
 	return XST_SUCCESS;
 }
+
