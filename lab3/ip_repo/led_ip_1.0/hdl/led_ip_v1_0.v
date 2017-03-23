@@ -10,8 +10,8 @@
 
 
 		// Parameters of Axi Slave Bus Interface S_AXI
-		parameter integer C_S_AXI_DATA_WIDTH	= 32,
-		parameter integer C_S_AXI_ADDR_WIDTH	= 4
+		parameter C_S_AXI_DATA_WIDTH	= 32,
+		parameter C_S_AXI_ADDR_WIDTH	= 4
 	)
 	(
 		// Users to add ports here
@@ -72,17 +72,6 @@
 	);
 
 	// Add user logic here
-	led_user_logic # (
-		.C_S_AXI_ADDR_WIDTH(C_S_AXI_ADDR_WIDTH), // parameters
-		.ADDR_LSB(ADDR_LSB)
-	) U1 (
-		.S_AXI_ACLK(S_AXI_ACLK),
-		.S_AXI_ARESETN(S_AXI_ARESETN),
-		.slv_reg_wren(slv_reg_wren),
-		.axi_awaddr(axi_awaddr[C_S_AXI_ADDR_WIDTH-1 : ADDR_LSB]),
-		.S_AXI_WDATA(S_AXI_WDATA),
-		.LED(LED)
-	);
 	// User logic ends
 
 	endmodule
