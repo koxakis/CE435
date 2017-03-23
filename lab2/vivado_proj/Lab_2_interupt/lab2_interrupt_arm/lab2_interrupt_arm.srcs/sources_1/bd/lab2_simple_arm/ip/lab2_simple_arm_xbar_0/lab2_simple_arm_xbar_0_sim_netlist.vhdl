@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
--- Date        : Mon Mar 13 16:44:39 2017
--- Host        : linux-qk7p running 64-bit openSUSE Leap 42.1 (x86_64)
--- Command     : write_vhdl -force -mode funcsim -rename_top lab2_simple_arm_xbar_0 -prefix
---               lab2_simple_arm_xbar_0_ lab2_simple_arm_xbar_0_sim_netlist.vhdl
+-- Date        : Fri Mar 17 20:51:13 2017
+-- Host        : Elsa running 64-bit Ubuntu 16.04.2 LTS
+-- Command     : write_vhdl -force -mode funcsim
+--               /home/nikolas/Git_Repos/CE435/lab2/vivado_proj/Lab_2_interupt/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ip/lab2_simple_arm_xbar_0/lab2_simple_arm_xbar_0_sim_netlist.vhdl
 -- Design      : lab2_simple_arm_xbar_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -68,6 +68,8 @@ entity lab2_simple_arm_xbar_0_axi_crossbar_v2_1_12_addr_arbiter_sasd is
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
     s_axi_awvalid : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of lab2_simple_arm_xbar_0_axi_crossbar_v2_1_12_addr_arbiter_sasd : entity is "axi_crossbar_v2_1_12_addr_arbiter_sasd";
 end lab2_simple_arm_xbar_0_axi_crossbar_v2_1_12_addr_arbiter_sasd;
 
 architecture STRUCTURE of lab2_simple_arm_xbar_0_axi_crossbar_v2_1_12_addr_arbiter_sasd is
@@ -1272,6 +1274,8 @@ entity lab2_simple_arm_xbar_0_axi_crossbar_v2_1_12_decerr_slave is
     aa_rready : in STD_LOGIC;
     aresetn_d : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of lab2_simple_arm_xbar_0_axi_crossbar_v2_1_12_decerr_slave : entity is "axi_crossbar_v2_1_12_decerr_slave";
 end lab2_simple_arm_xbar_0_axi_crossbar_v2_1_12_decerr_slave;
 
 architecture STRUCTURE of lab2_simple_arm_xbar_0_axi_crossbar_v2_1_12_decerr_slave is
@@ -1488,6 +1492,8 @@ entity lab2_simple_arm_xbar_0_axi_crossbar_v2_1_12_splitter is
     \m_ready_d_reg[0]_0\ : in STD_LOGIC;
     aclk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of lab2_simple_arm_xbar_0_axi_crossbar_v2_1_12_splitter : entity is "axi_crossbar_v2_1_12_splitter";
 end lab2_simple_arm_xbar_0_axi_crossbar_v2_1_12_splitter;
 
 architecture STRUCTURE of lab2_simple_arm_xbar_0_axi_crossbar_v2_1_12_splitter is
@@ -1712,6 +1718,8 @@ entity lab2_simple_arm_xbar_0_axi_register_slice_v2_1_11_axic_register_slice is
     \m_atarget_hot_reg[1]\ : in STD_LOGIC_VECTOR ( 1 downto 0 );
     SR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of lab2_simple_arm_xbar_0_axi_register_slice_v2_1_11_axic_register_slice : entity is "axi_register_slice_v2_1_11_axic_register_slice";
 end lab2_simple_arm_xbar_0_axi_register_slice_v2_1_11_axic_register_slice;
 
 architecture STRUCTURE of lab2_simple_arm_xbar_0_axi_register_slice_v2_1_11_axic_register_slice is
@@ -3342,6 +3350,8 @@ entity lab2_simple_arm_xbar_0_axi_crossbar_v2_1_12_crossbar_sasd is
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 31 downto 0 );
     s_axi_awvalid : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of lab2_simple_arm_xbar_0_axi_crossbar_v2_1_12_crossbar_sasd : entity is "axi_crossbar_v2_1_12_crossbar_sasd";
 end lab2_simple_arm_xbar_0_axi_crossbar_v2_1_12_crossbar_sasd;
 
 architecture STRUCTURE of lab2_simple_arm_xbar_0_axi_crossbar_v2_1_12_crossbar_sasd is
@@ -3783,6 +3793,8 @@ entity lab2_simple_arm_xbar_0_axi_crossbar_v2_1_12_axi_crossbar is
   attribute C_S_AXI_WRITE_ACCEPTANCE of lab2_simple_arm_xbar_0_axi_crossbar_v2_1_12_axi_crossbar : entity is 1;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of lab2_simple_arm_xbar_0_axi_crossbar_v2_1_12_axi_crossbar : entity is "yes";
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of lab2_simple_arm_xbar_0_axi_crossbar_v2_1_12_axi_crossbar : entity is "axi_crossbar_v2_1_12_axi_crossbar";
   attribute P_ADDR_DECODE : integer;
   attribute P_ADDR_DECODE of lab2_simple_arm_xbar_0_axi_crossbar_v2_1_12_axi_crossbar : entity is 1;
   attribute P_AXI3 : integer;

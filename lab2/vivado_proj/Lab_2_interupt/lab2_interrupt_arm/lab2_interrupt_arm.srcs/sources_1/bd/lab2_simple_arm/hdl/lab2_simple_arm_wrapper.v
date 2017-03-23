@@ -1,8 +1,8 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-//Date        : Tue Mar 14 15:51:18 2017
-//Host        : linux-qk7p running 64-bit openSUSE Leap 42.1 (x86_64)
+//Date        : Fri Mar 17 20:49:56 2017
+//Host        : Elsa running 64-bit Ubuntu 16.04.2 LTS
 //Command     : generate_target lab2_simple_arm_wrapper.bd
 //Design      : lab2_simple_arm_wrapper
 //Purpose     : IP block netlist

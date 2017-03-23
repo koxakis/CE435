@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.runs/lab2_simple_arm_xbar_0_synth_1'
+HD_PWD='/home/nikolas/Git_Repos/CE435/lab2/vivado_proj/Lab_2_interupt/lab2_interrupt_arm/lab2_interrupt_arm.runs/lab2_simple_arm_xbar_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

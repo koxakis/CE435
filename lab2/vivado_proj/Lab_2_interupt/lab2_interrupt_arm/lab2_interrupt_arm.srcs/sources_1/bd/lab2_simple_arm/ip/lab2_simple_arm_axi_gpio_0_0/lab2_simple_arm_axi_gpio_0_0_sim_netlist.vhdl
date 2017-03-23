@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
--- Date        : Mon Mar 13 16:42:17 2017
--- Host        : linux-qk7p running 64-bit openSUSE Leap 42.1 (x86_64)
--- Command     : write_vhdl -force -mode funcsim -rename_top lab2_simple_arm_axi_gpio_0_0 -prefix
---               lab2_simple_arm_axi_gpio_0_0_ lab2_simple_arm_axi_gpio_0_0_sim_netlist.vhdl
+-- Date        : Fri Mar 17 20:51:08 2017
+-- Host        : Elsa running 64-bit Ubuntu 16.04.2 LTS
+-- Command     : write_vhdl -force -mode funcsim
+--               /home/nikolas/Git_Repos/CE435/lab2/vivado_proj/Lab_2_interupt/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ip/lab2_simple_arm_axi_gpio_0_0/lab2_simple_arm_axi_gpio_0_0_sim_netlist.vhdl
 -- Design      : lab2_simple_arm_axi_gpio_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -48,6 +48,8 @@ entity lab2_simple_arm_axi_gpio_0_0_address_decoder is
     gpio_xferAck_Reg : in STD_LOGIC;
     GPIO_xferAck_i : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of lab2_simple_arm_axi_gpio_0_0_address_decoder : entity is "address_decoder";
 end lab2_simple_arm_axi_gpio_0_0_address_decoder;
 
 architecture STRUCTURE of lab2_simple_arm_axi_gpio_0_0_address_decoder is
@@ -345,6 +347,8 @@ entity lab2_simple_arm_axi_gpio_0_0_cdc_sync is
     gpio_io_i : in STD_LOGIC_VECTOR ( 7 downto 0 );
     s_axi_aclk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of lab2_simple_arm_axi_gpio_0_0_cdc_sync : entity is "cdc_sync";
 end lab2_simple_arm_axi_gpio_0_0_cdc_sync;
 
 architecture STRUCTURE of lab2_simple_arm_axi_gpio_0_0_cdc_sync is
@@ -857,6 +861,8 @@ entity lab2_simple_arm_axi_gpio_0_0_GPIO_Core is
     \MEM_DECODE_GEN[0].cs_out_i_reg[0]\ : in STD_LOGIC_VECTOR ( 7 downto 0 );
     rst_reg : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of lab2_simple_arm_axi_gpio_0_0_GPIO_Core : entity is "GPIO_Core";
 end lab2_simple_arm_axi_gpio_0_0_GPIO_Core;
 
 architecture STRUCTURE of lab2_simple_arm_axi_gpio_0_0_GPIO_Core is
@@ -1276,6 +1282,8 @@ entity lab2_simple_arm_axi_gpio_0_0_slave_attachment is
     GPIO_xferAck_i : in STD_LOGIC;
     \ip2bus_data_i_D1_reg[24]\ : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of lab2_simple_arm_axi_gpio_0_0_slave_attachment : entity is "slave_attachment";
 end lab2_simple_arm_axi_gpio_0_0_slave_attachment;
 
 architecture STRUCTURE of lab2_simple_arm_axi_gpio_0_0_slave_attachment is
@@ -1869,6 +1877,8 @@ entity lab2_simple_arm_axi_gpio_0_0_axi_lite_ipif is
     GPIO_xferAck_i : in STD_LOGIC;
     \ip2bus_data_i_D1_reg[24]\ : in STD_LOGIC_VECTOR ( 7 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of lab2_simple_arm_axi_gpio_0_0_axi_lite_ipif : entity is "axi_lite_ipif";
 end lab2_simple_arm_axi_gpio_0_0_axi_lite_ipif;
 
 architecture STRUCTURE of lab2_simple_arm_axi_gpio_0_0_axi_lite_ipif is
@@ -1977,6 +1987,8 @@ entity lab2_simple_arm_axi_gpio_0_0_axi_gpio is
   attribute C_TRI_DEFAULT of lab2_simple_arm_axi_gpio_0_0_axi_gpio : entity is -1;
   attribute C_TRI_DEFAULT_2 : integer;
   attribute C_TRI_DEFAULT_2 of lab2_simple_arm_axi_gpio_0_0_axi_gpio : entity is -1;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of lab2_simple_arm_axi_gpio_0_0_axi_gpio : entity is "axi_gpio";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of lab2_simple_arm_axi_gpio_0_0_axi_gpio : entity is "yes";
   attribute ip_group : string;

@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
--- Date        : Mon Mar 13 16:43:27 2017
--- Host        : linux-qk7p running 64-bit openSUSE Leap 42.1 (x86_64)
--- Command     : write_vhdl -force -mode funcsim -rename_top lab2_simple_arm_rst_ps7_0_100M_0 -prefix
---               lab2_simple_arm_rst_ps7_0_100M_0_ lab2_simple_arm_rst_ps7_0_100M_0_sim_netlist.vhdl
+-- Date        : Fri Mar 17 20:51:09 2017
+-- Host        : Elsa running 64-bit Ubuntu 16.04.2 LTS
+-- Command     : write_vhdl -force -mode funcsim
+--               /home/nikolas/Git_Repos/CE435/lab2/vivado_proj/Lab_2_interupt/lab2_interrupt_arm/lab2_interrupt_arm.srcs/sources_1/bd/lab2_simple_arm/ip/lab2_simple_arm_rst_ps7_0_100M_0/lab2_simple_arm_rst_ps7_0_100M_0_sim_netlist.vhdl
 -- Design      : lab2_simple_arm_rst_ps7_0_100M_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -25,6 +25,8 @@ entity lab2_simple_arm_rst_ps7_0_100M_0_cdc_sync is
     p_2_in : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of lab2_simple_arm_rst_ps7_0_100M_0_cdc_sync : entity is "cdc_sync";
 end lab2_simple_arm_rst_ps7_0_100M_0_cdc_sync;
 
 architecture STRUCTURE of lab2_simple_arm_rst_ps7_0_100M_0_cdc_sync is
@@ -233,6 +235,8 @@ entity lab2_simple_arm_rst_ps7_0_100M_0_upcnt_n is
     seq_cnt_en : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of lab2_simple_arm_rst_ps7_0_100M_0_upcnt_n : entity is "upcnt_n";
 end lab2_simple_arm_rst_ps7_0_100M_0_upcnt_n;
 
 architecture STRUCTURE of lab2_simple_arm_rst_ps7_0_100M_0_upcnt_n is
@@ -397,6 +401,8 @@ entity lab2_simple_arm_rst_ps7_0_100M_0_lpf is
     mb_debug_sys_rst : in STD_LOGIC;
     ext_reset_in : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of lab2_simple_arm_rst_ps7_0_100M_0_lpf : entity is "lpf";
 end lab2_simple_arm_rst_ps7_0_100M_0_lpf;
 
 architecture STRUCTURE of lab2_simple_arm_rst_ps7_0_100M_0_lpf is
@@ -578,6 +584,8 @@ entity lab2_simple_arm_rst_ps7_0_100M_0_sequence_psr is
     lpf_int : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of lab2_simple_arm_rst_ps7_0_100M_0_sequence_psr : entity is "sequence_psr";
 end lab2_simple_arm_rst_ps7_0_100M_0_sequence_psr;
 
 architecture STRUCTURE of lab2_simple_arm_rst_ps7_0_100M_0_sequence_psr is
@@ -916,6 +924,8 @@ entity lab2_simple_arm_rst_ps7_0_100M_0_proc_sys_reset is
   attribute C_NUM_PERP_ARESETN of lab2_simple_arm_rst_ps7_0_100M_0_proc_sys_reset : entity is 1;
   attribute C_NUM_PERP_RST : integer;
   attribute C_NUM_PERP_RST of lab2_simple_arm_rst_ps7_0_100M_0_proc_sys_reset : entity is 1;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of lab2_simple_arm_rst_ps7_0_100M_0_proc_sys_reset : entity is "proc_sys_reset";
 end lab2_simple_arm_rst_ps7_0_100M_0_proc_sys_reset;
 
 architecture STRUCTURE of lab2_simple_arm_rst_ps7_0_100M_0_proc_sys_reset is
