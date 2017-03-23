@@ -20,6 +20,8 @@
     <Option Name="BoardPart" Val="em.avnet.com:zed:part0:1.3"/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo/led_ip_1.0"/>
+    <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>
