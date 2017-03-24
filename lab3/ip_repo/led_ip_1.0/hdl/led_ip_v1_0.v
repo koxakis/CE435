@@ -68,7 +68,8 @@
 		.S_AXI_RDATA(s_axi_rdata),
 		.S_AXI_RRESP(s_axi_rresp),
 		.S_AXI_RVALID(s_axi_rvalid),
-		.S_AXI_RREADY(s_axi_rready)
+		.S_AXI_RREADY(s_axi_rready),
+		.LED(LED)
 	);
 
 	// Add user logic here
