@@ -1,8 +1,8 @@
 //Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-//Date        : Mon Mar 13 16:40:42 2017
-//Host        : linux-qk7p running 64-bit openSUSE Leap 42.1 (x86_64)
+//Date        : Wed Mar 29 18:40:37 2017
+//Host        : Elsa running 64-bit Ubuntu 16.04.2 LTS
 //Command     : generate_target lab2_simple_arm_wrapper.bd
 //Design      : lab2_simple_arm_wrapper
 //Purpose     : IP block netlist
@@ -31,6 +31,7 @@ module lab2_simple_arm_wrapper
     FIXED_IO_ps_clk,
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
+    LED,
     btns_5bits_tri_i,
     sw_8bits_tri_i);
   inout [14:0]DDR_addr;
@@ -54,6 +55,7 @@ module lab2_simple_arm_wrapper
   inout FIXED_IO_ps_clk;
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
+  output [7:0]LED;
   input [4:0]btns_5bits_tri_i;
   input [7:0]sw_8bits_tri_i;
 
@@ -78,6 +80,7 @@ module lab2_simple_arm_wrapper
   wire FIXED_IO_ps_clk;
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
+  wire [7:0]LED;
   wire [4:0]btns_5bits_tri_i;
   wire [7:0]sw_8bits_tri_i;
 
@@ -103,6 +106,7 @@ module lab2_simple_arm_wrapper
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
+        .LED(LED),
         .btns_5bits_tri_i(btns_5bits_tri_i),
         .sw_8bits_tri_i(sw_8bits_tri_i));
 endmodule

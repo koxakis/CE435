@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-| Date             : Tue Mar 14 11:14:42 2017
-| Host             : linux-qk7p running 64-bit openSUSE Leap 42.1 (x86_64)
+| Date             : Wed Mar 29 18:44:26 2017
+| Host             : Elsa running 64-bit Ubuntu 16.04.2 LTS
 | Command          : report_power -file lab2_simple_arm_wrapper_power_routed.rpt -pb lab2_simple_arm_wrapper_power_summary_routed.pb -rpx lab2_simple_arm_wrapper_power_routed.rpx
 | Design           : lab2_simple_arm_wrapper
 | Device           : xc7z020clg484-1
@@ -49,15 +49,15 @@ Table of Contents
 +-------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
-| Clocks                  |     0.004 |        3 |       --- |             --- |
-| Slice Logic             |     0.001 |     1770 |       --- |             --- |
-|   LUT as Logic          |     0.001 |      500 |     53200 |            0.94 |
-|   Register              |    <0.001 |      825 |    106400 |            0.78 |
+| Clocks                  |     0.005 |        3 |       --- |             --- |
+| Slice Logic             |     0.001 |     2111 |       --- |             --- |
+|   LUT as Logic          |    <0.001 |      594 |     53200 |            1.12 |
+|   Register              |    <0.001 |     1051 |    106400 |            0.99 |
 |   CARRY4                |    <0.001 |       18 |     13300 |            0.14 |
 |   LUT as Shift Register |    <0.001 |       62 |     17400 |            0.36 |
-|   Others                |     0.000 |      210 |       --- |             --- |
-| Signals                 |     0.002 |     1292 |       --- |             --- |
-| I/O                     |    <0.001 |       13 |       200 |            6.50 |
+|   Others                |     0.000 |      211 |       --- |             --- |
+| Signals                 |     0.002 |     1594 |       --- |             --- |
+| I/O                     |    <0.001 |       21 |       200 |           10.50 |
 | PS7                     |     1.527 |        1 |       --- |             --- |
 | Static Power            |     0.157 |          |           |                 |
 | Total                   |     1.691 |          |           |                 |
@@ -70,7 +70,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.022 |       0.007 |      0.015 |
+| Vccint    |       1.000 |     0.023 |       0.008 |      0.015 |
 | Vccaux    |       1.800 |     0.021 |       0.000 |      0.021 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.001 |       0.000 |      0.001 |
@@ -155,13 +155,17 @@ Table of Contents
 |             I_DECODER                            |    <0.001 |
 |         gpio_core_1                              |    <0.001 |
 |           Not_Dual.INPUT_DOUBLE_REGS3            |    <0.001 |
+|     led_ip_0                                     |    <0.001 |
+|       inst                                       |    <0.001 |
+|         led_ip_v1_0_S_AXI_inst                   |    <0.001 |
+|           U1                                     |    <0.001 |
 |     processing_system7_0                         |     1.527 |
 |       inst                                       |     1.527 |
-|     ps7_0_axi_periph                             |     0.006 |
-|       s00_couplers                               |     0.005 |
-|         auto_pc                                  |     0.005 |
-|           inst                                   |     0.005 |
-|             gen_axilite.gen_b2s_conv.axilite_b2s |     0.005 |
+|     ps7_0_axi_periph                             |     0.005 |
+|       s00_couplers                               |     0.004 |
+|         auto_pc                                  |     0.004 |
+|           inst                                   |     0.004 |
+|             gen_axilite.gen_b2s_conv.axilite_b2s |     0.004 |
 |               RD.ar_channel_0                    |    <0.001 |
 |                 ar_cmd_fsm_0                     |    <0.001 |
 |                 cmd_translator_0                 |    <0.001 |

@@ -38,13 +38,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="0"/>
-    <Option Name="WTModelSimExportSim" Val="0"/>
-    <Option Name="WTQuestaExportSim" Val="0"/>
-    <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="0"/>
-    <Option Name="WTRivieraExportSim" Val="0"/>
-    <Option Name="WTActivehdlExportSim" Val="0"/>
+    <Option Name="WTXSimExportSim" Val="3"/>
+    <Option Name="WTModelSimExportSim" Val="3"/>
+    <Option Name="WTQuestaExportSim" Val="3"/>
+    <Option Name="WTIesExportSim" Val="3"/>
+    <Option Name="WTVcsExportSim" Val="3"/>
+    <Option Name="WTRivieraExportSim" Val="3"/>
+    <Option Name="WTActivehdlExportSim" Val="3"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -62,28 +62,31 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="lab2_simple_arm.bd" FileRelPathName="hdl/lab2_simple_arm.v"/>
-        <CompFileExtendedInfo CompFileName="lab2_simple_arm.bd" FileRelPathName="hdl/lab2_simple_arm.hwdef"/>
-        <CompFileExtendedInfo CompFileName="lab2_simple_arm.bd" FileRelPathName="ip/lab2_simple_arm_xbar_0/lab2_simple_arm_xbar_0.xci">
-          <Proxy FileSetName="lab2_simple_arm_xbar_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="lab2_simple_arm.bd" FileRelPathName="ip/lab2_simple_arm_ps7_0_axi_periph_0/lab2_simple_arm_ps7_0_axi_periph_0.xci"/>
+        <CompFileExtendedInfo CompFileName="lab2_simple_arm.bd" FileRelPathName="ip/lab2_simple_arm_auto_pc_0/lab2_simple_arm_auto_pc_0.xci"/>
         <CompFileExtendedInfo CompFileName="lab2_simple_arm.bd" FileRelPathName="ip/lab2_simple_arm_rst_ps7_0_100M_0/lab2_simple_arm_rst_ps7_0_100M_0.xci">
           <Proxy FileSetName="lab2_simple_arm_rst_ps7_0_100M_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="lab2_simple_arm.bd" FileRelPathName="hw_handoff/lab2_simple_arm_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="lab2_simple_arm.bd" FileRelPathName="ip/lab2_simple_arm_ps7_0_axi_periph_0/lab2_simple_arm_ps7_0_axi_periph_0.xci"/>
         <CompFileExtendedInfo CompFileName="lab2_simple_arm.bd" FileRelPathName="ip/lab2_simple_arm_axi_gpio_0_1/lab2_simple_arm_axi_gpio_0_1.xci">
           <Proxy FileSetName="lab2_simple_arm_axi_gpio_0_1"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="lab2_simple_arm.bd" FileRelPathName="hw_handoff/lab2_simple_arm.hwh"/>
-        <CompFileExtendedInfo CompFileName="lab2_simple_arm.bd" FileRelPathName="lab2_simple_arm_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="lab2_simple_arm.bd" FileRelPathName="ip/lab2_simple_arm_processing_system7_0_0/lab2_simple_arm_processing_system7_0_0.xci">
-          <Proxy FileSetName="lab2_simple_arm_processing_system7_0_0"/>
-        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="lab2_simple_arm.bd" FileRelPathName="hdl/lab2_simple_arm.v"/>
         <CompFileExtendedInfo CompFileName="lab2_simple_arm.bd" FileRelPathName="ip/lab2_simple_arm_axi_gpio_0_0/lab2_simple_arm_axi_gpio_0_0.xci">
           <Proxy FileSetName="lab2_simple_arm_axi_gpio_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="lab2_simple_arm.bd" FileRelPathName="ip/lab2_simple_arm_led_ip_0_0/lab2_simple_arm_led_ip_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="lab2_simple_arm.bd" FileRelPathName="ip/lab2_simple_arm_processing_system7_0_0/lab2_simple_arm_processing_system7_0_0.xci">
+          <Proxy FileSetName="lab2_simple_arm_processing_system7_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="lab2_simple_arm.bd" FileRelPathName="ip/lab2_simple_arm_xbar_0/lab2_simple_arm_xbar_0.xci">
+          <Proxy FileSetName="lab2_simple_arm_xbar_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="lab2_simple_arm.bd" FileRelPathName="ip/lab2_simple_arm_led_ip_0_1/lab2_simple_arm_led_ip_0_1.xci">
+          <Proxy FileSetName="lab2_simple_arm_led_ip_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="lab2_simple_arm.bd" FileRelPathName="lab2_simple_arm_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="lab2_simple_arm.bd" FileRelPathName="hw_handoff/lab2_simple_arm.hwh"/>
+        <CompFileExtendedInfo CompFileName="lab2_simple_arm.bd" FileRelPathName="hdl/lab2_simple_arm.hwdef"/>
+        <CompFileExtendedInfo CompFileName="lab2_simple_arm.bd" FileRelPathName="hw_handoff/lab2_simple_arm_bd.tcl"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/lab2_simple_arm/hdl/lab2_simple_arm_wrapper.v">
         <FileInfo>
@@ -102,6 +105,12 @@
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
       <Filter Type="Constrs"/>
+      <File Path="$PSRCDIR/constrs_1/new/lab3_constraints.xdc">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="ConstrsType" Val="XDC"/>
       </Config>
@@ -145,6 +154,12 @@
     <FileSet Name="lab2_simple_arm_axi_gpio_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/lab2_simple_arm_axi_gpio_0_1">
       <Config>
         <Option Name="TopModule" Val="lab2_simple_arm_axi_gpio_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="lab2_simple_arm_led_ip_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/lab2_simple_arm_led_ip_0_1">
+      <Config>
+        <Option Name="TopModule" Val="lab2_simple_arm_led_ip_0_1"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -214,6 +229,16 @@
     <Run Id="lab2_simple_arm_axi_gpio_0_1_synth_1" Type="Ft3:Synth" SrcSet="lab2_simple_arm_axi_gpio_0_1" Part="xc7z020clg484-1" ConstrsSet="lab2_simple_arm_axi_gpio_0_1" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/lab2_simple_arm_axi_gpio_0_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="lab2_simple_arm_led_ip_0_1_synth_1" Type="Ft3:Synth" SrcSet="lab2_simple_arm_led_ip_0_1" Part="xc7z020clg484-1" ConstrsSet="lab2_simple_arm_led_ip_0_1" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/lab2_simple_arm_led_ip_0_1_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -298,6 +323,23 @@
     <Run Id="lab2_simple_arm_axi_gpio_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="lab2_simple_arm_axi_gpio_0_1" Description="Default settings for Implementation." SynthRun="lab2_simple_arm_axi_gpio_0_1_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="lab2_simple_arm_led_ip_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="lab2_simple_arm_led_ip_0_1" Description="Default settings for Implementation." SynthRun="lab2_simple_arm_led_ip_0_1_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

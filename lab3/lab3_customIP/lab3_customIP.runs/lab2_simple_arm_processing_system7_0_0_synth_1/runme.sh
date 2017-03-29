@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/inf2013/nxiromeritis/embedded/ce435_2/lab2_simple_arm/lab2_simple_arm.runs/lab2_simple_arm_processing_system7_0_0_synth_1'
+HD_PWD='/home/nikolas/Git_Repos/CE435/lab3/lab3_customIP/lab3_customIP.runs/lab2_simple_arm_processing_system7_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

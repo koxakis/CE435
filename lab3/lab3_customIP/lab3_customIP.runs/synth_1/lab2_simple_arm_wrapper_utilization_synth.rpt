@@ -1,8 +1,8 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
-| Date         : Tue Mar 14 11:13:01 2017
-| Host         : linux-qk7p running 64-bit openSUSE Leap 42.1 (x86_64)
+| Date         : Wed Mar 29 18:43:26 2017
+| Host         : Elsa running 64-bit Ubuntu 16.04.2 LTS
 | Command      : report_utilization -file lab2_simple_arm_wrapper_utilization_synth.rpt -pb lab2_simple_arm_wrapper_utilization_synth.pb
 | Design       : lab2_simple_arm_wrapper
 | Device       : 7z020clg484-1
@@ -109,7 +109,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   13 |     0 |       200 |  6.50 |
+| Bonded IOB                  |   21 |     0 |       200 | 10.50 |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | Bonded IOPADs               |    0 |     0 |       130 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         4 |  0.00 |
@@ -166,6 +166,7 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | IBUF     |   13 |                  IO |
+| OBUF     |    8 |                  IO |
 +----------+------+---------------------+
 
 
@@ -178,6 +179,7 @@ Table of Contents
 | lab2_simple_arm_xbar_0                 |    1 |
 | lab2_simple_arm_rst_ps7_0_100M_0       |    1 |
 | lab2_simple_arm_processing_system7_0_0 |    1 |
+| lab2_simple_arm_led_ip_0_1             |    1 |
 | lab2_simple_arm_axi_gpio_0_1           |    1 |
 | lab2_simple_arm_axi_gpio_0_0           |    1 |
 | lab2_simple_arm_auto_pc_0              |    1 |
