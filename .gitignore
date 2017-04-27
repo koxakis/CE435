@@ -2,7 +2,13 @@
 *.vcd
 *.out
 vivado_project/
+lab3/lab3_customIP/lab3_customIP.tmp/
+lab3/lab3_customIP/lab3_customIP.runs/
 lab2/vivado_proj/Lab_2_interupt/lab2_interrupt_arm/lab2_interrupt_arm.sdk/.metadata/
+lab4/lab4.runs/
+lab4/lab4.cache/
+lab3/lab3_HwDebug/lab3_HwDebug.runs/
+lab3/lab3_HwDebug/lab3_HwDebug.cache/
 *.backup.*
 *.eclipse.*
 *.jou
