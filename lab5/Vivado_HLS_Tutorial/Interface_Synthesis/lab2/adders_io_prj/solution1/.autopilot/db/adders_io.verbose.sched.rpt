@@ -1,0 +1,155 @@
+
+
+================================================================
+== Vivado HLS Report for 'adders_io'
+================================================================
+* Date:           Mon May 15 19:40:57 2017
+
+* Version:        2016.4 (Build 1756540 on Mon Jan 23 19:31:01 MST 2017)
+* Project:        adders_io_prj
+* Solution:       solution1
+* Product family: kintex7
+* Target device:  xc7k160tfbg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   2.00|      1.70|        0.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    1|    1|    2|    2|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 2
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+* FSM state operations: 
+
+ <State 1>: 1.70ns
+ST_1: in2_read (8)  [1/1] 0.00ns
+:4  %in2_read = call i32 @_ssdm_op_Read.ap_ack.i32(i32 %in2) nounwind
+
+ST_1: in1_read (9)  [1/1] 0.00ns
+:5  %in1_read = call i32 @_ssdm_op_Read.ap_vld.i32(i32 %in1) nounwind
+
+ST_1: in_out1_read (13)  [1/1] 0.00ns  loc: adders_io.c:50
+:9  %in_out1_read = call i32 @_ssdm_op_Read.ap_hs.i32P(i32* %in_out1) nounwind
+
+ST_1: tmp1 (14)  [1/1] 1.70ns  loc: adders_io.c:50
+:10  %tmp1 = add i32 %in2_read, %in1_read
+
+
+ <State 2>: 1.70ns
+ST_2: StgValue_7 (4)  [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecBitsMap(i32 %in1) nounwind, !map !7
+
+ST_2: StgValue_8 (5)  [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecBitsMap(i32 %in2) nounwind, !map !13
+
+ST_2: StgValue_9 (6)  [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecBitsMap(i32* %in_out1) nounwind, !map !17
+
+ST_2: StgValue_10 (7)  [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecTopModule([10 x i8]* @adders_io_str) nounwind
+
+ST_2: StgValue_11 (10)  [1/1] 0.00ns  loc: adders_io.c:49
+:6  call void (...)* @_ssdm_op_SpecInterface(i32* %in_out1, [6 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_2: StgValue_12 (11)  [1/1] 0.00ns  loc: adders_io.c:49
+:7  call void (...)* @_ssdm_op_SpecInterface(i32 %in2, [7 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_2: StgValue_13 (12)  [1/1] 0.00ns  loc: adders_io.c:49
+:8  call void (...)* @_ssdm_op_SpecInterface(i32 %in1, [7 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_2: tmp_1 (15)  [1/1] 1.70ns  loc: adders_io.c:50
+:11  %tmp_1 = add i32 %tmp1, %in_out1_read
+
+ST_2: StgValue_15 (16)  [1/1] 0.00ns  loc: adders_io.c:50
+:12  call void @_ssdm_op_Write.ap_hs.i32P(i32* %in_out1, i32 %tmp_1) nounwind
+
+ST_2: StgValue_16 (17)  [1/1] 0.00ns  loc: adders_io.c:53
+:13  ret void
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 2ns, clock uncertainty: 0.25ns.
+
+ <State 1>: 1.7ns
+The critical path consists of the following:
+	wire read on port 'in2' [8]  (0 ns)
+	'add' operation ('tmp1', adders_io.c:50) [14]  (1.7 ns)
+
+ <State 2>: 1.7ns
+The critical path consists of the following:
+	'add' operation ('tmp_1', adders_io.c:50) [15]  (1.7 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

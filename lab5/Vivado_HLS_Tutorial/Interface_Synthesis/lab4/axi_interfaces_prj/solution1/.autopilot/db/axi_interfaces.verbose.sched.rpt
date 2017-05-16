@@ -1,0 +1,532 @@
+
+
+================================================================
+== Vivado HLS Report for 'axi_interfaces'
+================================================================
+* Date:           Tue May 16 14:41:50 2017
+
+* Version:        2016.4 (Build 1756540 on Mon Jan 23 19:31:01 MST 2017)
+* Project:        axi_interfaces_prj
+* Solution:       solution1
+* Product family: kintex7
+* Target device:  xc7k160tfbg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   4.00|      2.65|        0.50|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+-------------+
+    |  Latency  |  Interval |   Pipeline  |
+    | min | max | min | max |     Type    |
+    +-----+-----+-----+-----+-------------+
+    |    5|    6|    4|    4| loop rewind |
+    +-----+-----+-----+-----+-------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +------------+-----+-----+----------+-----------+-----------+------+----------+
+        |            |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- For_Loop  |    5|    5|         3|          1|          1|     4|    yes   |
+        +------------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 4
+* Pipeline: 1
+  Pipeline-0: II = 1, D = 3, States = { 2 4 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	4  / true
+3 --> 
+	2  / true
+4 --> 
+	3  / true
+* FSM state operations: 
+
+ <State 1>: 1.08ns
+ST_1: StgValue_5 (25)  [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecInterface(i16* %d_i_0, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)
+
+ST_1: StgValue_6 (26)  [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecInterface(i16* %d_i_1, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)
+
+ST_1: StgValue_7 (27)  [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecInterface(i16* %d_i_2, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)
+
+ST_1: StgValue_8 (28)  [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecInterface(i16* %d_i_3, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)
+
+ST_1: StgValue_9 (29)  [1/1] 0.00ns
+:4  call void (...)* @_ssdm_op_SpecInterface(i16* %d_i_4, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)
+
+ST_1: StgValue_10 (30)  [1/1] 0.00ns
+:5  call void (...)* @_ssdm_op_SpecInterface(i16* %d_i_5, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)
+
+ST_1: StgValue_11 (31)  [1/1] 0.00ns
+:6  call void (...)* @_ssdm_op_SpecInterface(i16* %d_i_6, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)
+
+ST_1: StgValue_12 (32)  [1/1] 0.00ns
+:7  call void (...)* @_ssdm_op_SpecInterface(i16* %d_i_7, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)
+
+ST_1: StgValue_13 (33)  [1/1] 0.00ns
+:8  call void (...)* @_ssdm_op_SpecInterface(i16* %d_o_0, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)
+
+ST_1: StgValue_14 (34)  [1/1] 0.00ns
+:9  call void (...)* @_ssdm_op_SpecInterface(i16* %d_o_1, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)
+
+ST_1: StgValue_15 (35)  [1/1] 0.00ns
+:10  call void (...)* @_ssdm_op_SpecInterface(i16* %d_o_2, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)
+
+ST_1: StgValue_16 (36)  [1/1] 0.00ns
+:11  call void (...)* @_ssdm_op_SpecInterface(i16* %d_o_3, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)
+
+ST_1: StgValue_17 (37)  [1/1] 0.00ns
+:12  call void (...)* @_ssdm_op_SpecInterface(i16* %d_o_4, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)
+
+ST_1: StgValue_18 (38)  [1/1] 0.00ns
+:13  call void (...)* @_ssdm_op_SpecInterface(i16* %d_o_5, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)
+
+ST_1: StgValue_19 (39)  [1/1] 0.00ns
+:14  call void (...)* @_ssdm_op_SpecInterface(i16* %d_o_6, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)
+
+ST_1: StgValue_20 (40)  [1/1] 0.00ns
+:15  call void (...)* @_ssdm_op_SpecInterface(i16* %d_o_7, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)
+
+ST_1: StgValue_21 (41)  [1/1] 1.08ns  loc: axi_interfaces.c:64
+:16  br label %rewind_header
+
+
+ <State 2>: 2.65ns
+ST_2: do_init (43)  [1/1] 0.00ns
+rewind_header:0  %do_init = phi i1 [ true, %0 ], [ false, %1 ], [ true, %2 ]
+
+ST_2: i1 (44)  [1/1] 0.00ns  loc: axi_interfaces.c:64
+rewind_header:1  %i1 = phi i5 [ 0, %0 ], [ %tmp_12, %1 ], [ 0, %2 ]
+
+ST_2: StgValue_24 (45)  [1/1] 0.00ns
+rewind_header:2  br i1 %do_init, label %rewind_init, label %1
+
+ST_2: i1_cast (66)  [1/1] 0.00ns  loc: axi_interfaces.c:64
+:0  %i1_cast = zext i5 %i1 to i6
+
+ST_2: d_i_0_read (72)  [2/2] 0.00ns  loc: axi_interfaces.c:66
+:6  %d_i_0_read = call i16 @_ssdm_op_Read.axis.volatile.i16P(i16* %d_i_0)
+
+ST_2: d_i_1_read (81)  [2/2] 0.00ns  loc: axi_interfaces.c:66
+:15  %d_i_1_read = call i16 @_ssdm_op_Read.axis.volatile.i16P(i16* %d_i_1)
+
+ST_2: d_i_2_read (89)  [2/2] 0.00ns  loc: axi_interfaces.c:66
+:23  %d_i_2_read = call i16 @_ssdm_op_Read.axis.volatile.i16P(i16* %d_i_2)
+
+ST_2: d_i_3_read (97)  [2/2] 0.00ns  loc: axi_interfaces.c:66
+:31  %d_i_3_read = call i16 @_ssdm_op_Read.axis.volatile.i16P(i16* %d_i_3)
+
+ST_2: d_i_4_read (105)  [2/2] 0.00ns  loc: axi_interfaces.c:66
+:39  %d_i_4_read = call i16 @_ssdm_op_Read.axis.volatile.i16P(i16* %d_i_4)
+
+ST_2: d_i_5_read (113)  [2/2] 0.00ns  loc: axi_interfaces.c:66
+:47  %d_i_5_read = call i16 @_ssdm_op_Read.axis.volatile.i16P(i16* %d_i_5)
+
+ST_2: d_i_6_read (121)  [2/2] 0.00ns  loc: axi_interfaces.c:66
+:55  %d_i_6_read = call i16 @_ssdm_op_Read.axis.volatile.i16P(i16* %d_i_6)
+
+ST_2: d_i_7_read (129)  [2/2] 0.00ns  loc: axi_interfaces.c:66
+:63  %d_i_7_read = call i16 @_ssdm_op_Read.axis.volatile.i16P(i16* %d_i_7)
+
+ST_2: i_1_7 (136)  [1/1] 1.34ns  loc: axi_interfaces.c:64
+:70  %i_1_7 = add i6 8, %i1_cast
+
+ST_2: tmp_12 (137)  [1/1] 0.00ns  loc: axi_interfaces.c:64
+:71  %tmp_12 = trunc i6 %i_1_7 to i5
+
+ST_2: exitcond (138)  [1/1] 1.31ns  loc: axi_interfaces.c:64
+:72  %exitcond = icmp eq i6 %i_1_7, -32
+
+ST_2: StgValue_37 (139)  [1/1] 0.00ns  loc: axi_interfaces.c:64
+:73  br i1 %exitcond, label %2, label %rewind_header
+
+ST_2: StgValue_38 (142)  [1/1] 0.00ns  loc: axi_interfaces.c:69
+:1  br label %rewind_header
+
+
+ <State 3>: 0.00ns
+ST_3: StgValue_39 (47)  [1/1] 0.00ns
+rewind_init:0  call void (...)* @_ssdm_op_SpecBitsMap(i16* %d_o_7), !map !7
+
+ST_3: StgValue_40 (48)  [1/1] 0.00ns
+rewind_init:1  call void (...)* @_ssdm_op_SpecBitsMap(i16* %d_o_6), !map !13
+
+ST_3: StgValue_41 (49)  [1/1] 0.00ns
+rewind_init:2  call void (...)* @_ssdm_op_SpecBitsMap(i16* %d_o_5), !map !19
+
+ST_3: StgValue_42 (50)  [1/1] 0.00ns
+rewind_init:3  call void (...)* @_ssdm_op_SpecBitsMap(i16* %d_o_4), !map !25
+
+ST_3: StgValue_43 (51)  [1/1] 0.00ns
+rewind_init:4  call void (...)* @_ssdm_op_SpecBitsMap(i16* %d_o_3), !map !31
+
+ST_3: StgValue_44 (52)  [1/1] 0.00ns
+rewind_init:5  call void (...)* @_ssdm_op_SpecBitsMap(i16* %d_o_2), !map !37
+
+ST_3: StgValue_45 (53)  [1/1] 0.00ns
+rewind_init:6  call void (...)* @_ssdm_op_SpecBitsMap(i16* %d_o_1), !map !43
+
+ST_3: StgValue_46 (54)  [1/1] 0.00ns
+rewind_init:7  call void (...)* @_ssdm_op_SpecBitsMap(i16* %d_o_0), !map !49
+
+ST_3: StgValue_47 (55)  [1/1] 0.00ns
+rewind_init:8  call void (...)* @_ssdm_op_SpecBitsMap(i16* %d_i_7), !map !55
+
+ST_3: StgValue_48 (56)  [1/1] 0.00ns
+rewind_init:9  call void (...)* @_ssdm_op_SpecBitsMap(i16* %d_i_6), !map !59
+
+ST_3: StgValue_49 (57)  [1/1] 0.00ns
+rewind_init:10  call void (...)* @_ssdm_op_SpecBitsMap(i16* %d_i_5), !map !63
+
+ST_3: StgValue_50 (58)  [1/1] 0.00ns
+rewind_init:11  call void (...)* @_ssdm_op_SpecBitsMap(i16* %d_i_4), !map !67
+
+ST_3: StgValue_51 (59)  [1/1] 0.00ns
+rewind_init:12  call void (...)* @_ssdm_op_SpecBitsMap(i16* %d_i_3), !map !71
+
+ST_3: StgValue_52 (60)  [1/1] 0.00ns
+rewind_init:13  call void (...)* @_ssdm_op_SpecBitsMap(i16* %d_i_2), !map !75
+
+ST_3: StgValue_53 (61)  [1/1] 0.00ns
+rewind_init:14  call void (...)* @_ssdm_op_SpecBitsMap(i16* %d_i_1), !map !79
+
+ST_3: StgValue_54 (62)  [1/1] 0.00ns
+rewind_init:15  call void (...)* @_ssdm_op_SpecBitsMap(i16* %d_i_0), !map !83
+
+ST_3: StgValue_55 (63)  [1/1] 0.00ns
+rewind_init:16  call void (...)* @_ssdm_op_SpecTopModule([15 x i8]* @axi_interfaces_str) nounwind
+
+ST_3: StgValue_56 (64)  [1/1] 0.00ns  loc: axi_interfaces.c:64
+rewind_init:17  br label %1
+
+ST_3: empty (67)  [1/1] 0.00ns
+:1  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 4, i64 4, i64 4) nounwind
+
+ST_3: StgValue_58 (68)  [1/1] 0.00ns  loc: axi_interfaces.c:64
+:2  call void (...)* @_ssdm_op_SpecLoopName([9 x i8]* @p_str4) nounwind
+
+ST_3: tmp (69)  [1/1] 0.00ns  loc: axi_interfaces.c:64
+:3  %tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([9 x i8]* @p_str4) nounwind
+
+ST_3: StgValue_60 (70)  [1/1] 0.00ns  loc: axi_interfaces.c:65
+:4  call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str2) nounwind
+
+ST_3: StgValue_61 (78)  [1/2] 0.00ns  loc: axi_interfaces.c:67
+:12  call void @_ssdm_op_Write.axis.volatile.i16P(i16* %d_o_0, i16 %tmp_4)
+
+ST_3: empty_2 (79)  [1/1] 0.00ns  loc: axi_interfaces.c:68
+:13  %empty_2 = call i32 (...)* @_ssdm_op_SpecRegionEnd([9 x i8]* @p_str4, i32 %tmp) nounwind
+
+ST_3: StgValue_63 (87)  [1/2] 0.00ns  loc: axi_interfaces.c:67
+:21  call void @_ssdm_op_Write.axis.volatile.i16P(i16* %d_o_1, i16 %tmp_4_1)
+
+ST_3: StgValue_64 (95)  [1/2] 0.00ns  loc: axi_interfaces.c:67
+:29  call void @_ssdm_op_Write.axis.volatile.i16P(i16* %d_o_2, i16 %tmp_4_2)
+
+ST_3: StgValue_65 (103)  [1/2] 0.00ns  loc: axi_interfaces.c:67
+:37  call void @_ssdm_op_Write.axis.volatile.i16P(i16* %d_o_3, i16 %tmp_4_3)
+
+ST_3: StgValue_66 (111)  [1/2] 0.00ns  loc: axi_interfaces.c:67
+:45  call void @_ssdm_op_Write.axis.volatile.i16P(i16* %d_o_4, i16 %tmp_4_4)
+
+ST_3: StgValue_67 (119)  [1/2] 0.00ns  loc: axi_interfaces.c:67
+:53  call void @_ssdm_op_Write.axis.volatile.i16P(i16* %d_o_5, i16 %tmp_4_5)
+
+ST_3: StgValue_68 (127)  [1/2] 0.00ns  loc: axi_interfaces.c:67
+:61  call void @_ssdm_op_Write.axis.volatile.i16P(i16* %d_o_6, i16 %tmp_4_6)
+
+ST_3: StgValue_69 (135)  [1/2] 0.00ns  loc: axi_interfaces.c:67
+:69  call void @_ssdm_op_Write.axis.volatile.i16P(i16* %d_o_7, i16 %tmp_4_7)
+
+ST_3: StgValue_70 (141)  [1/1] 0.00ns  loc: axi_interfaces.c:69
+:0  call void (...)* @_ssdm_op_Return()
+
+
+ <State 4>: 1.70ns
+ST_4: acc_0_load (71)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:5  %acc_0_load = load i32* @acc_0, align 16
+
+ST_4: d_i_0_read (72)  [1/2] 0.00ns  loc: axi_interfaces.c:66
+:6  %d_i_0_read = call i16 @_ssdm_op_Read.axis.volatile.i16P(i16* %d_i_0)
+
+ST_4: tmp_2 (73)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:7  %tmp_2 = sext i16 %d_i_0_read to i32
+
+ST_4: tmp_1 (74)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:8  %tmp_1 = trunc i32 %acc_0_load to i16
+
+ST_4: tmp_3 (75)  [1/1] 1.70ns  loc: axi_interfaces.c:66
+:9  %tmp_3 = add nsw i32 %tmp_2, %acc_0_load
+
+ST_4: StgValue_76 (76)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:10  store i32 %tmp_3, i32* @acc_0, align 16
+
+ST_4: tmp_4 (77)  [1/1] 1.46ns  loc: axi_interfaces.c:67
+:11  %tmp_4 = add i16 %tmp_1, %d_i_0_read
+
+ST_4: StgValue_78 (78)  [2/2] 0.00ns  loc: axi_interfaces.c:67
+:12  call void @_ssdm_op_Write.axis.volatile.i16P(i16* %d_o_0, i16 %tmp_4)
+
+ST_4: acc_1_load (80)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:14  %acc_1_load = load i32* @acc_1, align 4
+
+ST_4: d_i_1_read (81)  [1/2] 0.00ns  loc: axi_interfaces.c:66
+:15  %d_i_1_read = call i16 @_ssdm_op_Read.axis.volatile.i16P(i16* %d_i_1)
+
+ST_4: tmp_2_1 (82)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:16  %tmp_2_1 = sext i16 %d_i_1_read to i32
+
+ST_4: tmp_5 (83)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:17  %tmp_5 = trunc i32 %acc_1_load to i16
+
+ST_4: tmp_3_1 (84)  [1/1] 1.70ns  loc: axi_interfaces.c:66
+:18  %tmp_3_1 = add nsw i32 %tmp_2_1, %acc_1_load
+
+ST_4: StgValue_84 (85)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:19  store i32 %tmp_3_1, i32* @acc_1, align 4
+
+ST_4: tmp_4_1 (86)  [1/1] 1.46ns  loc: axi_interfaces.c:67
+:20  %tmp_4_1 = add i16 %tmp_5, %d_i_1_read
+
+ST_4: StgValue_86 (87)  [2/2] 0.00ns  loc: axi_interfaces.c:67
+:21  call void @_ssdm_op_Write.axis.volatile.i16P(i16* %d_o_1, i16 %tmp_4_1)
+
+ST_4: acc_2_load (88)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:22  %acc_2_load = load i32* @acc_2, align 8
+
+ST_4: d_i_2_read (89)  [1/2] 0.00ns  loc: axi_interfaces.c:66
+:23  %d_i_2_read = call i16 @_ssdm_op_Read.axis.volatile.i16P(i16* %d_i_2)
+
+ST_4: tmp_2_2 (90)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:24  %tmp_2_2 = sext i16 %d_i_2_read to i32
+
+ST_4: tmp_6 (91)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:25  %tmp_6 = trunc i32 %acc_2_load to i16
+
+ST_4: tmp_3_2 (92)  [1/1] 1.70ns  loc: axi_interfaces.c:66
+:26  %tmp_3_2 = add nsw i32 %tmp_2_2, %acc_2_load
+
+ST_4: StgValue_92 (93)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:27  store i32 %tmp_3_2, i32* @acc_2, align 8
+
+ST_4: tmp_4_2 (94)  [1/1] 1.46ns  loc: axi_interfaces.c:67
+:28  %tmp_4_2 = add i16 %tmp_6, %d_i_2_read
+
+ST_4: StgValue_94 (95)  [2/2] 0.00ns  loc: axi_interfaces.c:67
+:29  call void @_ssdm_op_Write.axis.volatile.i16P(i16* %d_o_2, i16 %tmp_4_2)
+
+ST_4: acc_3_load (96)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:30  %acc_3_load = load i32* @acc_3, align 4
+
+ST_4: d_i_3_read (97)  [1/2] 0.00ns  loc: axi_interfaces.c:66
+:31  %d_i_3_read = call i16 @_ssdm_op_Read.axis.volatile.i16P(i16* %d_i_3)
+
+ST_4: tmp_2_3 (98)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:32  %tmp_2_3 = sext i16 %d_i_3_read to i32
+
+ST_4: tmp_7 (99)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:33  %tmp_7 = trunc i32 %acc_3_load to i16
+
+ST_4: tmp_3_3 (100)  [1/1] 1.70ns  loc: axi_interfaces.c:66
+:34  %tmp_3_3 = add nsw i32 %tmp_2_3, %acc_3_load
+
+ST_4: StgValue_100 (101)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:35  store i32 %tmp_3_3, i32* @acc_3, align 4
+
+ST_4: tmp_4_3 (102)  [1/1] 1.46ns  loc: axi_interfaces.c:67
+:36  %tmp_4_3 = add i16 %tmp_7, %d_i_3_read
+
+ST_4: StgValue_102 (103)  [2/2] 0.00ns  loc: axi_interfaces.c:67
+:37  call void @_ssdm_op_Write.axis.volatile.i16P(i16* %d_o_3, i16 %tmp_4_3)
+
+ST_4: acc_4_load (104)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:38  %acc_4_load = load i32* @acc_4, align 16
+
+ST_4: d_i_4_read (105)  [1/2] 0.00ns  loc: axi_interfaces.c:66
+:39  %d_i_4_read = call i16 @_ssdm_op_Read.axis.volatile.i16P(i16* %d_i_4)
+
+ST_4: tmp_2_4 (106)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:40  %tmp_2_4 = sext i16 %d_i_4_read to i32
+
+ST_4: tmp_8 (107)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:41  %tmp_8 = trunc i32 %acc_4_load to i16
+
+ST_4: tmp_3_4 (108)  [1/1] 1.70ns  loc: axi_interfaces.c:66
+:42  %tmp_3_4 = add nsw i32 %tmp_2_4, %acc_4_load
+
+ST_4: StgValue_108 (109)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:43  store i32 %tmp_3_4, i32* @acc_4, align 16
+
+ST_4: tmp_4_4 (110)  [1/1] 1.46ns  loc: axi_interfaces.c:67
+:44  %tmp_4_4 = add i16 %tmp_8, %d_i_4_read
+
+ST_4: StgValue_110 (111)  [2/2] 0.00ns  loc: axi_interfaces.c:67
+:45  call void @_ssdm_op_Write.axis.volatile.i16P(i16* %d_o_4, i16 %tmp_4_4)
+
+ST_4: acc_5_load (112)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:46  %acc_5_load = load i32* @acc_5, align 4
+
+ST_4: d_i_5_read (113)  [1/2] 0.00ns  loc: axi_interfaces.c:66
+:47  %d_i_5_read = call i16 @_ssdm_op_Read.axis.volatile.i16P(i16* %d_i_5)
+
+ST_4: tmp_2_5 (114)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:48  %tmp_2_5 = sext i16 %d_i_5_read to i32
+
+ST_4: tmp_9 (115)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:49  %tmp_9 = trunc i32 %acc_5_load to i16
+
+ST_4: tmp_3_5 (116)  [1/1] 1.70ns  loc: axi_interfaces.c:66
+:50  %tmp_3_5 = add nsw i32 %tmp_2_5, %acc_5_load
+
+ST_4: StgValue_116 (117)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:51  store i32 %tmp_3_5, i32* @acc_5, align 4
+
+ST_4: tmp_4_5 (118)  [1/1] 1.46ns  loc: axi_interfaces.c:67
+:52  %tmp_4_5 = add i16 %tmp_9, %d_i_5_read
+
+ST_4: StgValue_118 (119)  [2/2] 0.00ns  loc: axi_interfaces.c:67
+:53  call void @_ssdm_op_Write.axis.volatile.i16P(i16* %d_o_5, i16 %tmp_4_5)
+
+ST_4: acc_6_load (120)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:54  %acc_6_load = load i32* @acc_6, align 8
+
+ST_4: d_i_6_read (121)  [1/2] 0.00ns  loc: axi_interfaces.c:66
+:55  %d_i_6_read = call i16 @_ssdm_op_Read.axis.volatile.i16P(i16* %d_i_6)
+
+ST_4: tmp_2_6 (122)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:56  %tmp_2_6 = sext i16 %d_i_6_read to i32
+
+ST_4: tmp_10 (123)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:57  %tmp_10 = trunc i32 %acc_6_load to i16
+
+ST_4: tmp_3_6 (124)  [1/1] 1.70ns  loc: axi_interfaces.c:66
+:58  %tmp_3_6 = add nsw i32 %tmp_2_6, %acc_6_load
+
+ST_4: StgValue_124 (125)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:59  store i32 %tmp_3_6, i32* @acc_6, align 8
+
+ST_4: tmp_4_6 (126)  [1/1] 1.46ns  loc: axi_interfaces.c:67
+:60  %tmp_4_6 = add i16 %tmp_10, %d_i_6_read
+
+ST_4: StgValue_126 (127)  [2/2] 0.00ns  loc: axi_interfaces.c:67
+:61  call void @_ssdm_op_Write.axis.volatile.i16P(i16* %d_o_6, i16 %tmp_4_6)
+
+ST_4: acc_7_load (128)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:62  %acc_7_load = load i32* @acc_7, align 4
+
+ST_4: d_i_7_read (129)  [1/2] 0.00ns  loc: axi_interfaces.c:66
+:63  %d_i_7_read = call i16 @_ssdm_op_Read.axis.volatile.i16P(i16* %d_i_7)
+
+ST_4: tmp_2_7 (130)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:64  %tmp_2_7 = sext i16 %d_i_7_read to i32
+
+ST_4: tmp_11 (131)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:65  %tmp_11 = trunc i32 %acc_7_load to i16
+
+ST_4: tmp_3_7 (132)  [1/1] 1.70ns  loc: axi_interfaces.c:66
+:66  %tmp_3_7 = add nsw i32 %tmp_2_7, %acc_7_load
+
+ST_4: StgValue_132 (133)  [1/1] 0.00ns  loc: axi_interfaces.c:66
+:67  store i32 %tmp_3_7, i32* @acc_7, align 4
+
+ST_4: tmp_4_7 (134)  [1/1] 1.46ns  loc: axi_interfaces.c:67
+:68  %tmp_4_7 = add i16 %tmp_11, %d_i_7_read
+
+ST_4: StgValue_134 (135)  [2/2] 0.00ns  loc: axi_interfaces.c:67
+:69  call void @_ssdm_op_Write.axis.volatile.i16P(i16* %d_o_7, i16 %tmp_4_7)
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 4ns, clock uncertainty: 0.5ns.
+
+ <State 1>: 1.08ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('do_init') [43]  (1.08 ns)
+
+ <State 2>: 2.65ns
+The critical path consists of the following:
+	'phi' operation ('i1', axi_interfaces.c:64) with incoming values : ('tmp_12', axi_interfaces.c:64) [44]  (0 ns)
+	'add' operation ('i_1_7', axi_interfaces.c:64) [136]  (1.34 ns)
+	'icmp' operation ('exitcond', axi_interfaces.c:64) [138]  (1.31 ns)
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 1.7ns
+The critical path consists of the following:
+	'load' operation ('acc_0_load', axi_interfaces.c:66) on static variable 'acc_0' [71]  (0 ns)
+	'add' operation ('tmp_3', axi_interfaces.c:66) [75]  (1.7 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

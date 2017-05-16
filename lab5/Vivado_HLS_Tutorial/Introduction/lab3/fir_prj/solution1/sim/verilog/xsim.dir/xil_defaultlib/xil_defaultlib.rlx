@@ -1,0 +1,9 @@
+0.6
+2016.4
+Jan 23 2017
+19:19:20
+/home/nikolas/Git_Repos/CE435/lab5/Vivado_HLS_Tutorial/Introduction/lab3/fir_prj/solution1/sim/verilog/AESL_automem_c.v,1494588583,systemVerilog,,,,AESL_automem_c,/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini,ieee_proposed=./ieee_proposed,,,,,,
+/home/nikolas/Git_Repos/CE435/lab5/Vivado_HLS_Tutorial/Introduction/lab3/fir_prj/solution1/sim/verilog/fir.autotb.v,1494588583,systemVerilog,,,,apatb_fir_top,/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini,ieee_proposed=./ieee_proposed,,,,,,
+/home/nikolas/Git_Repos/CE435/lab5/Vivado_HLS_Tutorial/Introduction/lab3/fir_prj/solution1/sim/verilog/fir.v,1494588578,systemVerilog,,,,fir,/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini,ieee_proposed=./ieee_proposed,,,,,,
+/home/nikolas/Git_Repos/CE435/lab5/Vivado_HLS_Tutorial/Introduction/lab3/fir_prj/solution1/sim/verilog/fir_mul_32s_32s_3bkb.v,1494588579,systemVerilog,,,,fir_mul_32s_32s_3bkb;fir_mul_32s_32s_3bkb_Mul3S_0,/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini,ieee_proposed=./ieee_proposed,,,,,,
+/home/nikolas/Git_Repos/CE435/lab5/Vivado_HLS_Tutorial/Introduction/lab3/fir_prj/solution1/sim/verilog/fir_shift_reg.v,1494588579,systemVerilog,,,,fir_shift_reg;fir_shift_reg_ram,/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini,ieee_proposed=./ieee_proposed,,,,,,

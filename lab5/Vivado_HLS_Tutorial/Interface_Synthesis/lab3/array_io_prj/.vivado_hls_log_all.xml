@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_7' is power-on initialization." projectName="array_io_prj" solutionName="solution4" date="2017-05-16T14:11:51.813+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_6' is power-on initialization." projectName="array_io_prj" solutionName="solution4" date="2017-05-16T14:11:51.803+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_5' is power-on initialization." projectName="array_io_prj" solutionName="solution4" date="2017-05-16T14:11:51.798+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_4' is power-on initialization." projectName="array_io_prj" solutionName="solution4" date="2017-05-16T14:11:51.792+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_3' is power-on initialization." projectName="array_io_prj" solutionName="solution4" date="2017-05-16T14:11:51.782+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_2' is power-on initialization." projectName="array_io_prj" solutionName="solution4" date="2017-05-16T14:11:51.777+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_1' is power-on initialization." projectName="array_io_prj" solutionName="solution4" date="2017-05-16T14:11:51.760+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_0' is power-on initialization." projectName="array_io_prj" solutionName="solution4" date="2017-05-16T14:11:51.742+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_7' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2017-05-15T21:09:32.713+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_6' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2017-05-15T21:09:32.700+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_5' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2017-05-15T21:09:32.693+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_4' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2017-05-15T21:09:32.682+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_3' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2017-05-15T21:09:32.662+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_2' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2017-05-15T21:09:32.650+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_1' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2017-05-15T21:09:32.641+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_0' is power-on initialization." projectName="array_io_prj" solutionName="solution3" date="2017-05-15T21:09:32.627+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_7' is power-on initialization." projectName="array_io_prj" solutionName="solution2" date="2017-05-15T21:04:35.458+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_6' is power-on initialization." projectName="array_io_prj" solutionName="solution2" date="2017-05-15T21:04:35.417+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_5' is power-on initialization." projectName="array_io_prj" solutionName="solution2" date="2017-05-15T21:04:35.412+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_4' is power-on initialization." projectName="array_io_prj" solutionName="solution2" date="2017-05-15T21:04:35.406+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_3' is power-on initialization." projectName="array_io_prj" solutionName="solution2" date="2017-05-15T21:04:35.401+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_2' is power-on initialization." projectName="array_io_prj" solutionName="solution2" date="2017-05-15T21:04:35.396+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_1' is power-on initialization." projectName="array_io_prj" solutionName="solution2" date="2017-05-15T21:04:35.391+0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'acc_0' is power-on initialization." projectName="array_io_prj" solutionName="solution2" date="2017-05-15T21:04:35.380+0300" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

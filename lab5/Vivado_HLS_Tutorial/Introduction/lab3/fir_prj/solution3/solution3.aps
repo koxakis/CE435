@@ -1,0 +1,32 @@
+<AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
+    <config>
+        <schedule model="fir"/>
+    </config>
+    <Simulation argv="">
+        <SimFlow compiledLibrary="" dumpTrace="none" ldflags="" mflags="" name="cosim" optimizeCompile="false" reduce_diskspace="false" setup="false" toolName="auto">
+            <Rtl active="false" name="systemc"/>
+            <Rtl active="true" name="verilog"/>
+            <Rtl active="false" name="vhdl"/>
+        </SimFlow>
+    </Simulation>
+    <ExportDesign askAgain="true" evaluate="false" formatName="ipcatalog" rtl="verilog">
+        <Format formatName="ipcatalog"/>
+    </ExportDesign>
+    <name>
+        <value string="solution3"/>
+    </name>
+    <project>
+        <value string="fir_prj"/>
+    </project>
+    <targetInfo>
+        <TargetInfo value="xc7k160t:fbg484:-2"/>
+    </targetInfo>
+    <libraryList>
+        <library name="DefaultPlatform" value="xilinx/kintex7/kintex7"/>
+        <library name="DefaultPlatform" value="xilinx/kintex7/kintex7_fpv6"/>
+    </libraryList>
+    <clockList>
+        <clock name="default" default="false" period="10"/>
+    </clockList>
+</AutoPilot:solution>
+
