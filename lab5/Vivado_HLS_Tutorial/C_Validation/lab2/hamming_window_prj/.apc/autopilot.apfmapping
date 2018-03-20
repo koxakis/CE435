@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
-  <source>
-    <originFiles name="hamming_window.c" path="/home/nikolas/Git_Repos/CE435/lab5/Vivado_HLS_Tutorial/C_Validation/lab2/hamming_window.c"/>
-  </source>
-  <testbench>
-    <originFiles name="hamming_window_test.c" path="/home/nikolas/Git_Repos/CE435/lab5/Vivado_HLS_Tutorial/C_Validation/lab2/hamming_window_test.c"/>
-  </testbench>
-</autopilotfilemapping:AutoPilotFileMapping>

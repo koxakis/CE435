@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SCHED 204-21] The critical path consists of the following:&#xA;&#x9;'mul' operation ('mul') (3.89 ns)" projectName="sobel_hls_proj" solutionName="solution1" date="2017-07-28T18:20:25.804+0300" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-21] Estimated clock period (3.89ns) exceeds the target (target clock period: 4ns, clock uncertainty: 0.5ns, effective delay budget: 3.5ns)." projectName="sobel_hls_proj" solutionName="solution1" date="2017-07-28T18:20:25.766+0300" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('input_buffer_10_loa_34', sobel/sobel_opt.c:33->sobel/sobel_opt.c:109) on array 'input_buffer[10]', sobel/sobel_opt.c:88 due to limited memory ports." projectName="sobel_hls_proj" solutionName="solution1" date="2017-07-28T18:20:18.924+0300" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'sobel/output' to 'sobel/output_r' to avoid the conflict with HDL keywords or other object names." projectName="sobel_hls_proj" solutionName="solution1" date="2017-07-28T18:20:13.972+0300" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'sobel/input' to 'sobel/input_r' to avoid the conflict with HDL keywords or other object names." projectName="sobel_hls_proj" solutionName="solution1" date="2017-07-28T18:20:13.947+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-542] more than one sub loop." projectName="sobel_hls_proj" solutionName="solution1" date="2017-07-28T18:20:00.954+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Row' (sobel/sobel_opt.c:96:35) in function 'sobel' : " projectName="sobel_hls_proj" solutionName="solution1" date="2017-07-28T18:19:51.624+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Skipped source file 'golden.grey'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx." projectName="sobel_hls_proj" solutionName="solution1" date="2017-07-28T18:19:42.501+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Skipped source file 'input.grey'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx." projectName="sobel_hls_proj" solutionName="solution1" date="2017-07-28T18:19:42.491+0300" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
