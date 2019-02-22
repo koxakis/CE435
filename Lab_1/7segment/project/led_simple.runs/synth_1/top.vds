@@ -1,0 +1,363 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.2 (64-bit)
+# SW Build 2348494 on Mon Oct  1 18:25:39 MDT 2018
+# IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
+# Start of session at: Fri Feb 22 15:20:00 2019
+# Process ID: 9063
+# Current directory: /run/media/nikolas/Linux_Data/Git_Repos/CE435/Lab_1/7segment/project/led_simple.runs/synth_1
+# Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: /run/media/nikolas/Linux_Data/Git_Repos/CE435/Lab_1/7segment/project/led_simple.runs/synth_1/top.vds
+# Journal file: /run/media/nikolas/Linux_Data/Git_Repos/CE435/Lab_1/7segment/project/led_simple.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9067 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1231.035 ; gain = 79.812 ; free physical = 882 ; free virtual = 6647
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [/run/media/nikolas/Linux_Data/Git_Repos/CE435/Lab_1/7segment/RTL/top.v:2]
+	Parameter N bound to: 8 - type: integer 
+	Parameter DELAY bound to: 1000000 - type: integer 
+	Parameter MAX_1 bound to: 199999999 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'counter' [/run/media/nikolas/Linux_Data/Git_Repos/CE435/Lab_1/7segment/RTL/counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (1#1) [/run/media/nikolas/Linux_Data/Git_Repos/CE435/Lab_1/7segment/RTL/counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'GrayCounter_System' [/run/media/nikolas/Linux_Data/Git_Repos/CE435/Lab_1/7segment/RTL/GrayCounter_System.v:21]
+	Parameter N bound to: 8 - type: integer 
+	Parameter DELAY bound to: 1000000 - type: integer 
+	Parameter MAX_1 bound to: 199999999 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [/run/media/nikolas/Linux_Data/Git_Repos/CE435/Lab_1/7segment/RTL/debouncer.v:4]
+	Parameter DELAY bound to: 1000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (2#1) [/run/media/nikolas/Linux_Data/Git_Repos/CE435/Lab_1/7segment/RTL/debouncer.v:4]
+INFO: [Synth 8-6157] synthesizing module 'GrayCounter_Pulse' [/run/media/nikolas/Linux_Data/Git_Repos/CE435/Lab_1/7segment/RTL/GrayCounter_Nbit_Pulse.v:21]
+	Parameter MAX_1 bound to: 199999999 - type: integer 
+	Parameter MAX_2 bound to: 99999999 - type: integer 
+	Parameter NUM bound to: 6249999 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'GrayCounter_Pulse' (3#1) [/run/media/nikolas/Linux_Data/Git_Repos/CE435/Lab_1/7segment/RTL/GrayCounter_Nbit_Pulse.v:21]
+INFO: [Synth 8-6157] synthesizing module 'gray_Nbits' [/run/media/nikolas/Linux_Data/Git_Repos/CE435/Lab_1/7segment/RTL/GrayCounter_Nbits.v:7]
+	Parameter N bound to: 8 - type: integer 
+	Parameter SIZE bound to: 9 - type: integer 
+	Parameter Zeros bound to: 9'b000000000 
+INFO: [Synth 8-6155] done synthesizing module 'gray_Nbits' (4#1) [/run/media/nikolas/Linux_Data/Git_Repos/CE435/Lab_1/7segment/RTL/GrayCounter_Nbits.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'GrayCounter_System' (5#1) [/run/media/nikolas/Linux_Data/Git_Repos/CE435/Lab_1/7segment/RTL/GrayCounter_System.v:21]
+INFO: [Synth 8-6157] synthesizing module 'fsm_7segment' [/run/media/nikolas/Linux_Data/Git_Repos/CE435/Lab_1/7segment/RTL/fsm_7segment.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fsm_7segment' (6#1) [/run/media/nikolas/Linux_Data/Git_Repos/CE435/Lab_1/7segment/RTL/fsm_7segment.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top' (7#1) [/run/media/nikolas/Linux_Data/Git_Repos/CE435/Lab_1/7segment/RTL/top.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1275.660 ; gain = 124.438 ; free physical = 895 ; free virtual = 6657
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1275.660 ; gain = 124.438 ; free physical = 894 ; free virtual = 6657
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1275.660 ; gain = 124.438 ; free physical = 894 ; free virtual = 6657
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/run/media/nikolas/Linux_Data/Git_Repos/CE435/Lab_1/7segment/RTL/lab1_constraints.xdc]
+Finished Parsing XDC File [/run/media/nikolas/Linux_Data/Git_Repos/CE435/Lab_1/7segment/RTL/lab1_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/run/media/nikolas/Linux_Data/Git_Repos/CE435/Lab_1/7segment/RTL/lab1_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1620.645 ; gain = 0.000 ; free physical = 606 ; free virtual = 6365
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1620.645 ; gain = 469.422 ; free physical = 694 ; free virtual = 6454
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1620.645 ; gain = 469.422 ; free physical = 694 ; free virtual = 6454
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1620.645 ; gain = 469.422 ; free physical = 696 ; free virtual = 6456
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clean" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "toggle" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:30 . Memory (MB): peak = 1620.645 ; gain = 469.422 ; free physical = 685 ; free virtual = 6445
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     28 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 10    
++---Registers : 
+	               32 Bit    Registers := 1     
+	               28 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     28 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+Module debouncer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module GrayCounter_Pulse 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     28 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               28 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 2     
+Module gray_Nbits 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 9     
++---Registers : 
+	                9 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "DUT/debounce_inst/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "DUT/debounce_inst/clean" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "DUT/graycounter_inst/toggle" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 1620.645 ; gain = 469.422 ; free physical = 670 ; free virtual = 6432
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:41 . Memory (MB): peak = 1620.645 ; gain = 469.422 ; free physical = 539 ; free virtual = 6301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:42 . Memory (MB): peak = 1628.652 ; gain = 477.430 ; free physical = 527 ; free virtual = 6290
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:42 . Memory (MB): peak = 1636.660 ; gain = 485.438 ; free physical = 526 ; free virtual = 6288
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:43 . Memory (MB): peak = 1636.660 ; gain = 485.438 ; free physical = 526 ; free virtual = 6289
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:43 . Memory (MB): peak = 1636.660 ; gain = 485.438 ; free physical = 526 ; free virtual = 6289
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:43 . Memory (MB): peak = 1636.660 ; gain = 485.438 ; free physical = 526 ; free virtual = 6289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:43 . Memory (MB): peak = 1636.660 ; gain = 485.438 ; free physical = 526 ; free virtual = 6289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:43 . Memory (MB): peak = 1636.660 ; gain = 485.438 ; free physical = 526 ; free virtual = 6289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:43 . Memory (MB): peak = 1636.660 ; gain = 485.438 ; free physical = 526 ; free virtual = 6289
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    25|
+|3     |LUT1   |     3|
+|4     |LUT2   |    33|
+|5     |LUT3   |    35|
+|6     |LUT4   |    16|
+|7     |LUT5   |    37|
+|8     |LUT6   |    55|
+|9     |FDCE   |    66|
+|10    |FDPE   |    61|
+|11    |FDRE   |     5|
+|12    |IBUF   |     3|
+|13    |OBUF   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------+-------------------+------+
+|      |Instance             |Module             |Cells |
++------+---------------------+-------------------+------+
+|1     |top                  |                   |   356|
+|2     |  DUT                |GrayCounter_System |   326|
+|3     |    debounce_inst    |debouncer          |    93|
+|4     |    graycounter_inst |gray_Nbits         |    31|
+|5     |    pulse_inst       |GrayCounter_Pulse  |   202|
+|6     |  uut1               |counter            |    10|
++------+---------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:43 . Memory (MB): peak = 1636.660 ; gain = 485.438 ; free physical = 526 ; free virtual = 6289
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1636.660 ; gain = 140.453 ; free physical = 584 ; free virtual = 6347
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:43 . Memory (MB): peak = 1636.668 ; gain = 485.438 ; free physical = 584 ; free virtual = 6347
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:44 . Memory (MB): peak = 1636.668 ; gain = 485.633 ; free physical = 582 ; free virtual = 6345
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/run/media/nikolas/Linux_Data/Git_Repos/CE435/Lab_1/7segment/project/led_simple.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1660.672 ; gain = 0.000 ; free physical = 582 ; free virtual = 6345
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 22 15:20:52 2019...

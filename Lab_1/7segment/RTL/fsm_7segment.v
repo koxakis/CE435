@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module fsm_7segment( input clk,input [3:0] led_half, output reg [6:0] ssd_output );
+module fsm_7segment( input [3:0] led_half, output reg [6:0] ssd_output );
     
     
      always @(*)

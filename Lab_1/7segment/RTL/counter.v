@@ -27,11 +27,11 @@ module counter(input clk, input rst, output reg [4:0] counter);
     begin
 	     if (rst) 
 		  begin	
-			counter<={5{1'b0}};
+				counter<={5{1'b0}};
 		  end
 		  else 
           begin 
-           counter<=counter+1'b1; 
+          	counter<=counter+1'b1; 
           end
 		  
 	end 
