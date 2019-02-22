@@ -1,0 +1,341 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.2 (64-bit)
+# SW Build 2348494 on Mon Oct  1 18:25:39 MDT 2018
+# IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
+# Start of session at: Tue Feb 19 16:26:47 2019
+# Process ID: 7625
+# Current directory: /run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_1/step_5/project/step_5.runs/synth_1
+# Command line: vivado -log GrayCounter_System.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source GrayCounter_System.tcl
+# Log file: /run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_1/step_5/project/step_5.runs/synth_1/GrayCounter_System.vds
+# Journal file: /run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_1/step_5/project/step_5.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source GrayCounter_System.tcl -notrace
+Command: synth_design -top GrayCounter_System -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7632 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1231.035 ; gain = 79.812 ; free physical = 2663 ; free virtual = 8857
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'GrayCounter_System' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_1/step_5/RTL/GrayCounter_System.v:21]
+	Parameter N bound to: 8 - type: integer 
+	Parameter DELAY bound to: 1000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_1/step_5/RTL/debouncer.v:4]
+	Parameter DELAY bound to: 1000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (1#1) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_1/step_5/RTL/debouncer.v:4]
+INFO: [Synth 8-6157] synthesizing module 'GrayCounter_Pulse' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_1/step_5/RTL/GrayCounter_Nbit_Pulse.v:21]
+	Parameter S0 bound to: 2'b00 
+	Parameter S1 bound to: 2'b01 
+	Parameter S2 bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'GrayCounter_Pulse' (2#1) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_1/step_5/RTL/GrayCounter_Nbit_Pulse.v:21]
+INFO: [Synth 8-6157] synthesizing module 'gray_Nbits' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_1/step_5/RTL/GrayCounter_Nbits.v:7]
+	Parameter N bound to: 8 - type: integer 
+	Parameter SIZE bound to: 9 - type: integer 
+	Parameter Zeros bound to: 9'b000000000 
+INFO: [Synth 8-6155] done synthesizing module 'gray_Nbits' (3#1) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_1/step_5/RTL/GrayCounter_Nbits.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'GrayCounter_System' (4#1) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_1/step_5/RTL/GrayCounter_System.v:21]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1275.660 ; gain = 124.438 ; free physical = 2675 ; free virtual = 8869
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1275.660 ; gain = 124.438 ; free physical = 2674 ; free virtual = 8868
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1275.660 ; gain = 124.438 ; free physical = 2674 ; free virtual = 8868
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_1/step_5/RTL/lab1_constraints.xdc]
+Finished Parsing XDC File [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_1/step_5/RTL/lab1_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_1/step_5/RTL/lab1_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/GrayCounter_System_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/GrayCounter_System_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1607.645 ; gain = 0.000 ; free physical = 2502 ; free virtual = 8694
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:31 . Memory (MB): peak = 1607.645 ; gain = 456.422 ; free physical = 2552 ; free virtual = 8770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:31 . Memory (MB): peak = 1607.645 ; gain = 456.422 ; free physical = 2552 ; free virtual = 8770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:31 . Memory (MB): peak = 1607.645 ; gain = 456.422 ; free physical = 2554 ; free virtual = 8771
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clean" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'GrayCounter_Pulse'
+INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "toggle" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      S0 |                               00 |                               00
+                      S1 |                               01 |                               01
+                      S2 |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'GrayCounter_Pulse'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:31 . Memory (MB): peak = 1607.645 ; gain = 456.422 ; free physical = 2545 ; free virtual = 8763
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 10    
++---Registers : 
+	               32 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module debouncer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module GrayCounter_Pulse 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module gray_Nbits 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 9     
++---Registers : 
+	                9 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "debounce_inst/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "debounce_inst/clean" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "graycounter_inst/toggle" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:32 . Memory (MB): peak = 1607.645 ; gain = 456.422 ; free physical = 2531 ; free virtual = 8751
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:41 . Memory (MB): peak = 1607.645 ; gain = 456.422 ; free physical = 2401 ; free virtual = 8620
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:42 . Memory (MB): peak = 1620.668 ; gain = 469.445 ; free physical = 2397 ; free virtual = 8617
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:42 . Memory (MB): peak = 1620.668 ; gain = 469.445 ; free physical = 2397 ; free virtual = 8616
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:42 . Memory (MB): peak = 1620.668 ; gain = 469.445 ; free physical = 2390 ; free virtual = 8617
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:42 . Memory (MB): peak = 1620.668 ; gain = 469.445 ; free physical = 2390 ; free virtual = 8616
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:42 . Memory (MB): peak = 1620.668 ; gain = 469.445 ; free physical = 2390 ; free virtual = 8616
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:42 . Memory (MB): peak = 1620.668 ; gain = 469.445 ; free physical = 2390 ; free virtual = 8616
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:42 . Memory (MB): peak = 1620.668 ; gain = 469.445 ; free physical = 2390 ; free virtual = 8616
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:42 . Memory (MB): peak = 1620.668 ; gain = 469.445 ; free physical = 2390 ; free virtual = 8616
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT1   |     1|
+|4     |LUT2   |     3|
+|5     |LUT3   |     3|
+|6     |LUT4   |     8|
+|7     |LUT5   |     5|
+|8     |LUT6   |    35|
+|9     |FDCE   |    43|
+|10    |FDPE   |     1|
+|11    |IBUF   |     3|
+|12    |OBUF   |     8|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------+------------------+------+
+|      |Instance           |Module            |Cells |
++------+-------------------+------------------+------+
+|1     |top                |                  |   119|
+|2     |  debounce_inst    |debouncer         |    83|
+|3     |  graycounter_inst |gray_Nbits        |    19|
+|4     |  pulse_inst       |GrayCounter_Pulse |     5|
++------+-------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:42 . Memory (MB): peak = 1620.668 ; gain = 469.445 ; free physical = 2390 ; free virtual = 8616
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1620.668 ; gain = 137.461 ; free physical = 2447 ; free virtual = 8673
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:43 . Memory (MB): peak = 1620.676 ; gain = 469.445 ; free physical = 2447 ; free virtual = 8673
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:44 . Memory (MB): peak = 1620.676 ; gain = 469.641 ; free physical = 2443 ; free virtual = 8669
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_1/step_5/project/step_5.runs/synth_1/GrayCounter_System.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file GrayCounter_System_utilization_synth.rpt -pb GrayCounter_System_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1644.680 ; gain = 0.000 ; free physical = 2444 ; free virtual = 8670
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 19 16:27:39 2019...

@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../RTL/GrayCounter_Nbit_Pulse.v" \
+"../../../../../RTL/GrayCounter_Nbits.v" \
+"../../../../../RTL/GrayCounter_System.v" \
+"../../../../../RTL/TB3_Gray.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

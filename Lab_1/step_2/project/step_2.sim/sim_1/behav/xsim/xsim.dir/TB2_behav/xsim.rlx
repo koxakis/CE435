@@ -1,0 +1,12 @@
+
+{ 
+    crc :  8507855667776562687  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 5b38c41f74a2413b95664930d582a0ad --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TB2_behav xil_defaultlib.TB2 xil_defaultlib.glbl" , 
+    buildDate : "Oct  1 2018" , 
+    buildTime : "18:29:25" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/TB2_behav/xsimk\"   \"xsim.dir/TB2_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/TB2_behav/obj/xsim_1.lnx64.o\" \"/run/media/nikolas/Linux_Data/Programs/xilinx/Vivado/Vivado/2018.2/lib/lnx64.o/librdi_simulator_kernel.so\"  \"/run/media/nikolas/Linux_Data/Programs/xilinx/Vivado/Vivado/2018.2/lib/lnx64.o/librdi_simbridge_kernel.so\"" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

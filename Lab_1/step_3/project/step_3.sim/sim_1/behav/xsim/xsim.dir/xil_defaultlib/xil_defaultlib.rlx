@@ -1,0 +1,9 @@
+0.6
+2018.2
+Oct  1 2018
+18:29:25
+/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_1/step_3/RTL/GrayCounter_Nbit_Pulse.v,1487838786,verilog,,/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_1/step_3/RTL/GrayCounter_Nbits.v,,GrayCounter_Pulse,,,,,,,,
+/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_1/step_3/RTL/GrayCounter_Nbits.v,1487839930,verilog,,/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_1/step_3/RTL/GrayCounter_System.v,,gray_Nbits,,,,,,,,
+/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_1/step_3/RTL/GrayCounter_System.v,1487840048,verilog,,/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_1/step_3/RTL/TB3_Gray.v,,GrayCounter_System,,,,,,,,
+/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_1/step_3/RTL/TB3_Gray.v,1550585146,verilog,,,,TB3,,,,,,,,
+/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_1/step_3/project/step_3.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,

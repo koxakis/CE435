@@ -1,0 +1,15 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.2 (lin64) Build 2348494 Mon Oct  1 18:25:39 MDT 2018
+| Date         : Tue Feb 19 16:59:50 2019
+| Host         : elsa running 64-bit Antergos Linux
+| Command      : report_bus_skew -warn_on_violation -file GrayCounter_System_bus_skew_routed.rpt -pb GrayCounter_System_bus_skew_routed.pb -rpx GrayCounter_System_bus_skew_routed.rpx
+| Design       : GrayCounter_System
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+
