@@ -1,6 +1,9 @@
 #verilog
 *.vcd
 *.out
+
+Lab_1/7segment/project/led_simple.cache
+
 vivado_project/
 lab3/lab3_customIP/lab3_customIP.tmp/
 lab3/lab3_customIP/lab3_customIP.runs/
@@ -17,6 +20,7 @@ lab3/lab3_HwDebug/lab3_HwDebug.cache/
 *.perfs
 *.xmi
 *.resources
+*.cache/
 
 # Object files
 *.o
