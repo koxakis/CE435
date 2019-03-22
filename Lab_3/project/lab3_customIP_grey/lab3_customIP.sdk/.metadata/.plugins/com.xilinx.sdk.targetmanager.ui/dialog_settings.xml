@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="false" key="lab2_simple_arm_wrapper_hw_platform_2-partial_bit"/>
+	<item value="" key="lab2_simple_arm_wrapper_hw_platform_0-bmmFile"/>
+	<item value="false" key="lab2_simple_arm_wrapper_hw_platform_0-partial_bit"/>
+	<item value="Auto Detect" key="lab2_simple_arm_wrapper_hw_platform_2-device"/>
+	<item value="lab2_simple_arm_wrapper_hw_platform_2" key="programfpga.hwplatform"/>
+	<item value="Local" key="lab2_simple_arm_wrapper_hw_platform_0-target"/>
+	<item value="Local" key="lab2_simple_arm_wrapper_hw_platform_2-target"/>
+	<item value="Auto Detect" key="lab2_simple_arm_wrapper_hw_platform_0-device"/>
+	<item value="" key="lab2_simple_arm_wrapper_hw_platform_2-bmmFile"/>
+	<item value="lab2_simple_arm_wrapper.bit" key="lab2_simple_arm_wrapper_hw_platform_0-bitFile"/>
+	<item value="lab2_simple_arm_wrapper.bit" key="lab2_simple_arm_wrapper_hw_platform_2-bitFile"/>
+</section>

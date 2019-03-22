@@ -1,0 +1,42 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 550 -defaultsOSRD
+preplace port btns_5bits -pg 1 -y 250 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 570 -defaultsOSRD
+preplace port sw_8bits -pg 1 -y 390 -defaultsOSRD
+preplace portBus LED -pg 1 -y 710 -defaultsOSRD
+preplace inst vio_0 -pg 1 -lvl 3 -y 110 -defaultsOSRD
+preplace inst led_ip_0 -pg 1 -lvl 3 -y 710 -defaultsOSRD
+preplace inst btns_5bit -pg 1 -lvl 3 -y 250 -defaultsOSRD
+preplace inst sw_8bit -pg 1 -lvl 3 -y 390 -defaultsOSRD
+preplace inst system_ila -pg 1 -lvl 3 -y 850 -defaultsOSRD
+preplace inst c_addsub_0 -pg 1 -lvl 2 -y 120 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 4 -y 640 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -y 390 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -y 790 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y 590 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 1 4 NJ 550 NJ 550 NJ 550 NJ
+preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 780
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 430
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 460 730 800
+preplace netloc sw_8bit_GPIO 1 3 2 NJ 390 NJ
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 30 690 440
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 780
+preplace netloc vio_0_probe_out0 1 1 3 460 210 780J 30 1100
+preplace netloc btns_5bit_GPIO 1 3 2 NJ 250 NJ
+preplace netloc vio_0_probe_out1 1 1 3 440 10 NJ 10 1120
+preplace netloc processing_system7_0_FIXED_IO 1 1 4 NJ 570 NJ 570 NJ 570 NJ
+preplace netloc vio_0_probe_out2 1 1 3 460 20 NJ 20 1110
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 20 490 440 610 790 630 N
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 N
+preplace netloc led_ip_0_LED 1 3 2 1110 710 NJ
+preplace netloc c_addsub_0_S 1 2 1 N
+preplace netloc rst_ps7_0_100M_interconnect_aresetn 1 1 1 450
+levelinfo -pg 1 0 230 610 950 1220 1340 -top 0 -bot 930
+",
+}
+{
+   da_axi4_cnt: "1",
+}

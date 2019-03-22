@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="lab2_simple_arm_processing_system7_0_0_synth_1" LaunchDir="/home/nikolas/Git_Repos/CE435/lab3/lab3_customIP/lab3_customIP.runs/lab2_simple_arm_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/nikolas/Git_Repos/CE435/lab3/lab3_customIP/lab3_customIP.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="lab2_simple_arm_processing_system7_0_0_synth_1"/>
+	</Run>
+</Runs>
+
