@@ -42,13 +42,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="4"/>
-    <Option Name="WTModelSimExportSim" Val="4"/>
-    <Option Name="WTQuestaExportSim" Val="4"/>
-    <Option Name="WTIesExportSim" Val="4"/>
-    <Option Name="WTVcsExportSim" Val="4"/>
-    <Option Name="WTRivieraExportSim" Val="4"/>
-    <Option Name="WTActivehdlExportSim" Val="4"/>
+    <Option Name="WTXSimExportSim" Val="6"/>
+    <Option Name="WTModelSimExportSim" Val="6"/>
+    <Option Name="WTQuestaExportSim" Val="6"/>
+    <Option Name="WTIesExportSim" Val="6"/>
+    <Option Name="WTVcsExportSim" Val="6"/>
+    <Option Name="WTRivieraExportSim" Val="6"/>
+    <Option Name="WTActivehdlExportSim" Val="6"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -67,6 +67,15 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="lab2_simple_arm.bd" FileRelPathName="ip/lab2_simple_arm_gray_ip_0_0/lab2_simple_arm_gray_ip_0_0.xci">
+          <Proxy FileSetName="lab2_simple_arm_gray_ip_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="lab2_simple_arm.bd" FileRelPathName="ip/lab2_simple_arm_processing_system7_0_0/lab2_simple_arm_processing_system7_0_0.xci">
+          <Proxy FileSetName="lab2_simple_arm_processing_system7_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="lab2_simple_arm.bd" FileRelPathName="ip/lab2_simple_arm_axi_gpio_0_0/lab2_simple_arm_axi_gpio_0_0.xci">
+          <Proxy FileSetName="lab2_simple_arm_axi_gpio_0_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="lab2_simple_arm.bd" FileRelPathName="ip/lab2_simple_arm_rst_ps7_0_100M_0/lab2_simple_arm_rst_ps7_0_100M_0.xci">
           <Proxy FileSetName="lab2_simple_arm_rst_ps7_0_100M_0"/>
         </CompFileExtendedInfo>
@@ -75,15 +84,6 @@
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="lab2_simple_arm.bd" FileRelPathName="ip/lab2_simple_arm_xbar_0/lab2_simple_arm_xbar_0.xci">
           <Proxy FileSetName="lab2_simple_arm_xbar_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="lab2_simple_arm.bd" FileRelPathName="ip/lab2_simple_arm_axi_gpio_0_0/lab2_simple_arm_axi_gpio_0_0.xci">
-          <Proxy FileSetName="lab2_simple_arm_axi_gpio_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="lab2_simple_arm.bd" FileRelPathName="ip/lab2_simple_arm_processing_system7_0_0/lab2_simple_arm_processing_system7_0_0.xci">
-          <Proxy FileSetName="lab2_simple_arm_processing_system7_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="lab2_simple_arm.bd" FileRelPathName="ip/lab2_simple_arm_gray_ip_0_0/lab2_simple_arm_gray_ip_0_0.xci">
-          <Proxy FileSetName="lab2_simple_arm_gray_ip_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/lab2_simple_arm/hdl/lab2_simple_arm_wrapper.v">
@@ -190,9 +190,7 @@
   <Runs Version="1" Minor="10">
     <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z020clg484-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -257,9 +255,7 @@
     </Run>
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="false">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:gray_ip:1.0
-// IP Revision: 8
+// IP Revision: 10
 
 (* X_CORE_INFO = "gray_ip_v1_0,Vivado 2018.2.2" *)
 (* CHECK_LICENSE_TYPE = "lab2_simple_arm_gray_ip_0_0,gray_ip_v1_0,{}" *)

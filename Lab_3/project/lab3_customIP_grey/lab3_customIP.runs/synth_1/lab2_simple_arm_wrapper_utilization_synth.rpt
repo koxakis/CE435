@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.2 (lin64) Build 2348494 Mon Oct  1 18:25:39 MDT 2018
-| Date         : Fri Mar 22 13:27:21 2019
+| Date         : Fri Apr  5 16:28:16 2019
 | Host         : elsa running 64-bit Antergos Linux
 | Command      : report_utilization -file lab2_simple_arm_wrapper_utilization_synth.rpt -pb lab2_simple_arm_wrapper_utilization_synth.pb
 | Design       : lab2_simple_arm_wrapper

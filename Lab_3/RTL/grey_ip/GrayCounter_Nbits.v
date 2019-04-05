@@ -24,9 +24,9 @@ module gray_Nbits (clk, clk_en, rst, gray_out);
     begin
 	     if (rst == 1'b1) begin
 		    // Initialize state with 1000..00
-		    //state[N] <= 1'b1;
-            //state[N-1:0] <= 0;
-            state <= 0;
+		        state[N] <= 1'b1;
+            state[N-1:0] <= 0;
+            //state <= 0;
          end
 	     else begin
 		    // Main part of code

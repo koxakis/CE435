@@ -1,7 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.2.2 (lin64) Build 2348494 Mon Oct  1 18:25:39 MDT 2018
-// Date        : Fri Mar 22 13:08:51 2019
+// Date        : Fri Apr  5 16:26:31 2019
 // Host        : elsa running 64-bit Antergos Linux
 // Command     : write_verilog -force -mode synth_stub
 //               /run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_3/project/lab3_customIP_grey/lab3_customIP.srcs/sources_1/bd/lab2_simple_arm/ip/lab2_simple_arm_gray_ip_0_0/lab2_simple_arm_gray_ip_0_0_stub.v
