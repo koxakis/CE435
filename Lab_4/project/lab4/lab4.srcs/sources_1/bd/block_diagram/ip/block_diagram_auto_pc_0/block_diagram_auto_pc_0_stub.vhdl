@@ -1,10 +1,10 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2.2 (lin64) Build 2348494 Mon Oct  1 18:25:39 MDT 2018
--- Date        : Mon Apr  8 18:22:26 2019
+-- Date        : Mon Apr  8 18:22:25 2019
 -- Host        : elsa running 64-bit Antergos Linux
--- Command     : write_vhdl -force -mode synth_stub
---               /run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/ip/block_diagram_auto_pc_0/block_diagram_auto_pc_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top block_diagram_auto_pc_0 -prefix
+--               block_diagram_auto_pc_0_ block_diagram_auto_pc_0_stub.vhdl
 -- Design      : block_diagram_auto_pc_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg484-1

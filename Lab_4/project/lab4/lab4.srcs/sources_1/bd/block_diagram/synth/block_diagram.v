@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.2.2 (lin64) Build 2348494 Mon Oct  1 18:25:39 MDT 2018
-//Date        : Mon Apr  8 18:18:27 2019
+//Date        : Tue Apr  9 14:13:14 2019
 //Host        : elsa running 64-bit Antergos Linux
 //Command     : generate_target block_diagram.bd
 //Design      : block_diagram

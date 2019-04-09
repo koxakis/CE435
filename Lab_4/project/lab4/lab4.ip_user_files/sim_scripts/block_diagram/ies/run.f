@@ -18,16 +18,16 @@
   "/run/media/nikolas/Linux_Data/Programs/xilinx/Vivado/Vivado/2018.2/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/ip/block_diagram_processing_system7_0_0/block_diagram_processing_system7_0_0_sim_netlist.v" \
-  "/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/ip/block_diagram_axi_gpio_0_0/block_diagram_axi_gpio_0_0_sim_netlist.v" \
-  "/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/ip/block_diagram_rst_ps7_0_100M_0/block_diagram_rst_ps7_0_100M_0_sim_netlist.v" \
-  "/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/ip/block_diagram_axi_gpio_0_1/block_diagram_axi_gpio_0_1_sim_netlist.v" \
-  "../../../bd/block_diagram/ipshared/a9b2/hdl/xmult_ip_v1_0_S_AXI.v" \
-  "../../../bd/block_diagram/ipshared/a9b2/hdl/xmult_ip_v1_0.v" \
+  "../../../bd/block_diagram/ip/block_diagram_processing_system7_0_0/block_diagram_processing_system7_0_0_sim_netlist.v" \
+  "../../../bd/block_diagram/ip/block_diagram_axi_gpio_0_0/block_diagram_axi_gpio_0_0_sim_netlist.v" \
+  "../../../bd/block_diagram/ip/block_diagram_rst_ps7_0_100M_0/block_diagram_rst_ps7_0_100M_0_sim_netlist.v" \
+  "../../../bd/block_diagram/ip/block_diagram_axi_gpio_0_1/block_diagram_axi_gpio_0_1_sim_netlist.v" \
+  "../../../bd/block_diagram/ipshared/f78f/hdl/xmult_ip_v1_0_S_AXI.v" \
+  "../../../bd/block_diagram/ipshared/f78f/hdl/xmult_ip_v1_0.v" \
   "../../../bd/block_diagram/ip/block_diagram_xmult_ip_0_0/sim/block_diagram_xmult_ip_0_0.v" \
-  "/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/ip/block_diagram_xbar_0/block_diagram_xbar_0_sim_netlist.v" \
-  "/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/ip/block_diagram_auto_pc_0/block_diagram_auto_pc_0_sim_netlist.v" \
+  "../../../bd/block_diagram/ip/block_diagram_xbar_0/block_diagram_xbar_0_sim_netlist.v" \
   "../../../bd/block_diagram/sim/block_diagram.v" \
+  "../../../bd/block_diagram/ip/block_diagram_auto_pc_0/block_diagram_auto_pc_0_sim_netlist.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   glbl.v

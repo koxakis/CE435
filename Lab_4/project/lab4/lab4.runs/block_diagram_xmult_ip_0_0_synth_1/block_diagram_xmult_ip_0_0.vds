@@ -2,8 +2,8 @@
 # Vivado v2018.2.2 (64-bit)
 # SW Build 2348494 on Mon Oct  1 18:25:39 MDT 2018
 # IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
-# Start of session at: Mon Apr  8 18:20:21 2019
-# Process ID: 17461
+# Start of session at: Tue Apr  9 14:13:23 2019
+# Process ID: 17423
 # Current directory: /run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/block_diagram_xmult_ip_0_0_synth_1
 # Command line: vivado -log block_diagram_xmult_ip_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source block_diagram_xmult_ip_0_0.tcl
 # Log file: /run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/block_diagram_xmult_ip_0_0_synth_1/block_diagram_xmult_ip_0_0.vds
@@ -15,15 +15,15 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 17919 
+INFO: Helper process launched with PID 17761 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1256.492 ; gain = 81.809 ; free physical = 1794 ; free virtual = 8617
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1257.496 ; gain = 81.809 ; free physical = 3269 ; free virtual = 7480
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'block_diagram_xmult_ip_0_0' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/ip/block_diagram_xmult_ip_0_0/synth/block_diagram_xmult_ip_0_0.v:56]
-INFO: [Synth 8-6157] synthesizing module 'xmult_ip_v1_0' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/ipshared/a9b2/hdl/xmult_ip_v1_0.v:4]
+INFO: [Synth 8-6157] synthesizing module 'xmult_ip_v1_0' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/ipshared/f78f/hdl/xmult_ip_v1_0.v:4]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'xmult_ip_v1_0_S_AXI' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/ipshared/a9b2/hdl/xmult_ip_v1_0_S_AXI.v:4]
+INFO: [Synth 8-6157] synthesizing module 'xmult_ip_v1_0_S_AXI' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/ipshared/f78f/hdl/xmult_ip_v1_0_S_AXI.v:4]
 	Parameter S0_IDLE bound to: 0 - type: integer 
 	Parameter S1_GETX bound to: 1 - type: integer 
 	Parameter S2_COMP bound to: 2 - type: integer 
@@ -34,10 +34,10 @@ INFO: [Synth 8-6157] synthesizing module 'xmult_ip_v1_0_S_AXI' [/run/media/nikol
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
 	Parameter ADDR_LSB bound to: 2 - type: integer 
 	Parameter OPT_MEM_ADDR_BITS bound to: 2 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/ipshared/a9b2/hdl/xmult_ip_v1_0_S_AXI.v:480]
-INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/ipshared/a9b2/hdl/xmult_ip_v1_0_S_AXI.v:481]
-INFO: [Synth 8-6155] done synthesizing module 'xmult_ip_v1_0_S_AXI' (1#1) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/ipshared/a9b2/hdl/xmult_ip_v1_0_S_AXI.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'xmult_ip_v1_0' (2#1) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/ipshared/a9b2/hdl/xmult_ip_v1_0.v:4]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/ipshared/f78f/hdl/xmult_ip_v1_0_S_AXI.v:480]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/ipshared/f78f/hdl/xmult_ip_v1_0_S_AXI.v:481]
+INFO: [Synth 8-6155] done synthesizing module 'xmult_ip_v1_0_S_AXI' (1#1) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/ipshared/f78f/hdl/xmult_ip_v1_0_S_AXI.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'xmult_ip_v1_0' (2#1) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/ipshared/f78f/hdl/xmult_ip_v1_0.v:4]
 INFO: [Synth 8-6155] done synthesizing module 'block_diagram_xmult_ip_0_0' (3#1) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/ip/block_diagram_xmult_ip_0_0/synth/block_diagram_xmult_ip_0_0.v:56]
 WARNING: [Synth 8-3331] design xmult_ip_v1_0_S_AXI has unconnected port S_AXI_AWPROT[2]
 WARNING: [Synth 8-3331] design xmult_ip_v1_0_S_AXI has unconnected port S_AXI_AWPROT[1]
@@ -50,7 +50,7 @@ WARNING: [Synth 8-3331] design xmult_ip_v1_0_S_AXI has unconnected port S_AXI_AR
 WARNING: [Synth 8-3331] design xmult_ip_v1_0_S_AXI has unconnected port S_AXI_ARPROT[1]
 WARNING: [Synth 8-3331] design xmult_ip_v1_0_S_AXI has unconnected port S_AXI_ARPROT[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1301.117 ; gain = 126.434 ; free physical = 1780 ; free virtual = 8604
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1302.121 ; gain = 126.434 ; free physical = 3295 ; free virtual = 7494
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -63,10 +63,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1301.117 ; gain = 126.434 ; free physical = 1780 ; free virtual = 8603
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1302.121 ; gain = 126.434 ; free physical = 3294 ; free virtual = 7494
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1301.117 ; gain = 126.434 ; free physical = 1780 ; free virtual = 8603
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1302.121 ; gain = 126.434 ; free physical = 3294 ; free virtual = 7494
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -79,22 +79,22 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 WARNING: [Constraints 18-5210] No constraint will be written out.
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1638.133 ; gain = 1.000 ; free physical = 1281 ; free virtual = 8104
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.29 . Memory (MB): peak = 1639.137 ; gain = 2.000 ; free physical = 3207 ; free virtual = 7224
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:37 . Memory (MB): peak = 1638.133 ; gain = 463.449 ; free physical = 1474 ; free virtual = 8297
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:34 . Memory (MB): peak = 1639.137 ; gain = 463.449 ; free physical = 3288 ; free virtual = 7305
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:37 . Memory (MB): peak = 1638.133 ; gain = 463.449 ; free physical = 1474 ; free virtual = 8297
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:34 . Memory (MB): peak = 1639.137 ; gain = 463.449 ; free physical = 3291 ; free virtual = 7311
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:37 . Memory (MB): peak = 1638.133 ; gain = 463.449 ; free physical = 1475 ; free virtual = 8299
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:34 . Memory (MB): peak = 1639.137 ; gain = 463.449 ; free physical = 3313 ; free virtual = 7333
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "slv_reg0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "slv_reg1" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
@@ -103,11 +103,11 @@ INFO: [Synth 8-5545] ROM "GETX_DONE" won't be mapped to RAM because address size
 INFO: [Synth 8-5545] ROM "slv_reg4" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "SNDY_DONE" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "slv_reg5" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-327] inferring latch for variable 'counter_y_en_reg' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/ipshared/a9b2/hdl/xmult_ip_v1_0_S_AXI.v:496]
-WARNING: [Synth 8-327] inferring latch for variable 'counter_comp_en_reg' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/ipshared/a9b2/hdl/xmult_ip_v1_0_S_AXI.v:495]
-WARNING: [Synth 8-327] inferring latch for variable 'counter_x_en_reg' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/ipshared/a9b2/hdl/xmult_ip_v1_0_S_AXI.v:494]
+WARNING: [Synth 8-327] inferring latch for variable 'counter_y_en_reg' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/ipshared/f78f/hdl/xmult_ip_v1_0_S_AXI.v:496]
+WARNING: [Synth 8-327] inferring latch for variable 'counter_comp_en_reg' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/ipshared/f78f/hdl/xmult_ip_v1_0_S_AXI.v:495]
+WARNING: [Synth 8-327] inferring latch for variable 'counter_x_en_reg' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/ipshared/f78f/hdl/xmult_ip_v1_0_S_AXI.v:494]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:37 . Memory (MB): peak = 1638.133 ; gain = 463.449 ; free physical = 1453 ; free virtual = 8277
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:34 . Memory (MB): peak = 1639.137 ; gain = 463.449 ; free physical = 3357 ; free virtual = 7388
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -188,7 +188,7 @@ Start Cross Boundary and Area Optimization
 Warning: Parallel synthesis criteria is not met 
 INFO: [Synth 8-5545] ROM "inst/xmult_ip_v1_0_S_AXI_inst/slv_reg5" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "inst/xmult_ip_v1_0_S_AXI_inst/slv_reg4" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/ipshared/a9b2/hdl/xmult_ip_v1_0_S_AXI.v:605]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/ipshared/f78f/hdl/xmult_ip_v1_0_S_AXI.v:605]
 DSP Report: Generating DSP inst/xmult_ip_v1_0_S_AXI_inst/p_1_in, operation Mode is: A*B.
 DSP Report: operator inst/xmult_ip_v1_0_S_AXI_inst/p_1_in is absorbed into DSP inst/xmult_ip_v1_0_S_AXI_inst/p_1_in.
 DSP Report: operator inst/xmult_ip_v1_0_S_AXI_inst/p_1_in is absorbed into DSP inst/xmult_ip_v1_0_S_AXI_inst/p_1_in.
@@ -224,7 +224,7 @@ INFO: [Synth 8-3332] Sequential element (inst/xmult_ip_v1_0_S_AXI_inst/axi_aradd
 INFO: [Synth 8-3332] Sequential element (inst/xmult_ip_v1_0_S_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module block_diagram_xmult_ip_0_0.
 INFO: [Synth 8-3332] Sequential element (inst/xmult_ip_v1_0_S_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module block_diagram_xmult_ip_0_0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:40 . Memory (MB): peak = 1638.133 ; gain = 463.449 ; free physical = 1346 ; free virtual = 8172
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:38 . Memory (MB): peak = 1639.137 ; gain = 463.449 ; free physical = 3336 ; free virtual = 7375
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -272,13 +272,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:52 . Memory (MB): peak = 1659.133 ; gain = 484.449 ; free physical = 1154 ; free virtual = 7980
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:50 . Memory (MB): peak = 1660.137 ; gain = 484.449 ; free physical = 3201 ; free virtual = 7222
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:52 . Memory (MB): peak = 1659.133 ; gain = 484.449 ; free physical = 1154 ; free virtual = 7980
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:50 . Memory (MB): peak = 1660.137 ; gain = 484.449 ; free physical = 3201 ; free virtual = 7221
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -332,7 +332,7 @@ INFO: [Synth 8-3886] merging instance 'inst/xmult_ip_v1_0_S_AXI_inst/counter_y_r
 INFO: [Synth 8-3886] merging instance 'inst/xmult_ip_v1_0_S_AXI_inst/counter_y_reg_rep[8]' (FDRE) to 'inst/xmult_ip_v1_0_S_AXI_inst/counter_y_reg[8]'
 INFO: [Synth 8-3886] merging instance 'inst/xmult_ip_v1_0_S_AXI_inst/counter_y_reg_rep[9]' (FDRE) to 'inst/xmult_ip_v1_0_S_AXI_inst/counter_y_reg[9]'
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:52 . Memory (MB): peak = 1674.336 ; gain = 499.652 ; free physical = 1151 ; free virtual = 7977
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:50 . Memory (MB): peak = 1676.340 ; gain = 500.652 ; free physical = 3204 ; free virtual = 7219
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -356,7 +356,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:53 . Memory (MB): peak = 1674.336 ; gain = 499.652 ; free physical = 1149 ; free virtual = 7975
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 1676.340 ; gain = 500.652 ; free physical = 3191 ; free virtual = 7211
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -369,7 +369,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:53 . Memory (MB): peak = 1674.336 ; gain = 499.652 ; free physical = 1149 ; free virtual = 7975
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 1676.340 ; gain = 500.652 ; free physical = 3191 ; free virtual = 7211
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -381,25 +381,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:53 . Memory (MB): peak = 1674.336 ; gain = 499.652 ; free physical = 1149 ; free virtual = 7975
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 1676.340 ; gain = 500.652 ; free physical = 3191 ; free virtual = 7211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:53 . Memory (MB): peak = 1674.336 ; gain = 499.652 ; free physical = 1149 ; free virtual = 7975
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 1676.340 ; gain = 500.652 ; free physical = 3191 ; free virtual = 7211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:53 . Memory (MB): peak = 1674.336 ; gain = 499.652 ; free physical = 1149 ; free virtual = 7975
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 1676.340 ; gain = 500.652 ; free physical = 3191 ; free virtual = 7211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:53 . Memory (MB): peak = 1674.336 ; gain = 499.652 ; free physical = 1149 ; free virtual = 7975
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 1676.340 ; gain = 500.652 ; free physical = 3191 ; free virtual = 7211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -442,11 +442,11 @@ Report Instance Areas:
 |3     |    xmult_ip_v1_0_S_AXI_inst |xmult_ip_v1_0_S_AXI |   960|
 +------+-----------------------------+--------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:53 . Memory (MB): peak = 1674.336 ; gain = 499.652 ; free physical = 1149 ; free virtual = 7975
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 1676.340 ; gain = 500.652 ; free physical = 3192 ; free virtual = 7211
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1674.336 ; gain = 162.637 ; free physical = 1227 ; free virtual = 8053
-Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:53 . Memory (MB): peak = 1674.344 ; gain = 499.652 ; free physical = 1227 ; free virtual = 8053
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1676.340 ; gain = 163.637 ; free physical = 3272 ; free virtual = 7291
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 1676.348 ; gain = 500.652 ; free physical = 3272 ; free virtual = 7291
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 302 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -461,7 +461,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 59 Infos, 26 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:55 . Memory (MB): peak = 1674.344 ; gain = 511.305 ; free physical = 1226 ; free virtual = 8050
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:54 . Memory (MB): peak = 1676.348 ; gain = 512.305 ; free physical = 3268 ; free virtual = 7292
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint '/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/block_diagram_xmult_ip_0_0_synth_1/block_diagram_xmult_ip_0_0.dcp' has been generated.
 INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/ip/block_diagram_xmult_ip_0_0/block_diagram_xmult_ip_0_0.xci
@@ -469,5 +469,5 @@ INFO: [Coretcl 2-1174] Renamed 2 cell refs.
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint '/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/block_diagram_xmult_ip_0_0_synth_1/block_diagram_xmult_ip_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file block_diagram_xmult_ip_0_0_utilization_synth.rpt -pb block_diagram_xmult_ip_0_0_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1698.348 ; gain = 0.000 ; free physical = 1225 ; free virtual = 8050
-INFO: [Common 17-206] Exiting Vivado at Mon Apr  8 18:21:37 2019...
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1700.352 ; gain = 0.000 ; free physical = 3260 ; free virtual = 7289
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  9 14:14:53 2019...

@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:xmult_ip:1.0
-// IP Revision: 5
+// IP Revision: 6
 
 (* X_CORE_INFO = "xmult_ip_v1_0,Vivado 2018.2.2" *)
 (* CHECK_LICENSE_TYPE = "block_diagram_xmult_ip_0_0,xmult_ip_v1_0,{}" *)

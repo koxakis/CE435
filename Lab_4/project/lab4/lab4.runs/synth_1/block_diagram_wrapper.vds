@@ -2,8 +2,8 @@
 # Vivado v2018.2.2 (64-bit)
 # SW Build 2348494 on Mon Oct  1 18:25:39 MDT 2018
 # IP Build 2318053 on Mon Oct  1 21:44:26 MDT 2018
-# Start of session at: Mon Apr  8 18:27:03 2019
-# Process ID: 18731
+# Start of session at: Tue Apr  9 14:15:49 2019
+# Process ID: 18127
 # Current directory: /run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1
 # Command line: vivado -log block_diagram_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source block_diagram_wrapper.tcl
 # Log file: /run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1/block_diagram_wrapper.vds
@@ -18,16 +18,16 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 18735 
+INFO: Helper process launched with PID 18135 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1273.562 ; gain = 80.809 ; free physical = 2329 ; free virtual = 9150
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1274.109 ; gain = 80.809 ; free physical = 3344 ; free virtual = 7565
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'block_diagram_wrapper' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/hdl/block_diagram_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'block_diagram' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/synth/block_diagram.v:13]
-INFO: [Synth 8-6157] synthesizing module 'block_diagram_axi_gpio_0_1' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1/.Xil/Vivado-18731-elsa/realtime/block_diagram_axi_gpio_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'block_diagram_axi_gpio_0_1' (1#1) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1/.Xil/Vivado-18731-elsa/realtime/block_diagram_axi_gpio_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'block_diagram_processing_system7_0_0' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1/.Xil/Vivado-18731-elsa/realtime/block_diagram_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'block_diagram_processing_system7_0_0' (2#1) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1/.Xil/Vivado-18731-elsa/realtime/block_diagram_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'block_diagram_axi_gpio_0_1' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1/.Xil/Vivado-18127-elsa/realtime/block_diagram_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'block_diagram_axi_gpio_0_1' (1#1) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1/.Xil/Vivado-18127-elsa/realtime/block_diagram_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'block_diagram_processing_system7_0_0' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1/.Xil/Vivado-18127-elsa/realtime/block_diagram_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'block_diagram_processing_system7_0_0' (2#1) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1/.Xil/Vivado-18127-elsa/realtime/block_diagram_processing_system7_0_0_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'block_diagram_ps7_0_axi_periph_0' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/synth/block_diagram.v:421]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1CICLIZ' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/synth/block_diagram.v:1128]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1CICLIZ' (3#1) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/synth/block_diagram.v:1128]
@@ -36,19 +36,19 @@ INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_EVWWFJ' (4#1) [/
 INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_INW3RM' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/synth/block_diagram.v:1392]
 INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_INW3RM' (5#1) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/synth/block_diagram.v:1392]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1D4QKCK' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/synth/block_diagram.v:1538]
-INFO: [Synth 8-6157] synthesizing module 'block_diagram_auto_pc_0' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1/.Xil/Vivado-18731-elsa/realtime/block_diagram_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'block_diagram_auto_pc_0' (6#1) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1/.Xil/Vivado-18731-elsa/realtime/block_diagram_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'block_diagram_auto_pc_0' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1/.Xil/Vivado-18127-elsa/realtime/block_diagram_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'block_diagram_auto_pc_0' (6#1) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1/.Xil/Vivado-18127-elsa/realtime/block_diagram_auto_pc_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1D4QKCK' (7#1) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/synth/block_diagram.v:1538]
-INFO: [Synth 8-6157] synthesizing module 'block_diagram_xbar_0' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1/.Xil/Vivado-18731-elsa/realtime/block_diagram_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'block_diagram_xbar_0' (8#1) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1/.Xil/Vivado-18731-elsa/realtime/block_diagram_xbar_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'block_diagram_xbar_0' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1/.Xil/Vivado-18127-elsa/realtime/block_diagram_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'block_diagram_xbar_0' (8#1) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1/.Xil/Vivado-18127-elsa/realtime/block_diagram_xbar_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'block_diagram_ps7_0_axi_periph_0' (9#1) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/synth/block_diagram.v:421]
-INFO: [Synth 8-6157] synthesizing module 'block_diagram_rst_ps7_0_100M_0' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1/.Xil/Vivado-18731-elsa/realtime/block_diagram_rst_ps7_0_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'block_diagram_rst_ps7_0_100M_0' (10#1) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1/.Xil/Vivado-18731-elsa/realtime/block_diagram_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'block_diagram_rst_ps7_0_100M_0' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1/.Xil/Vivado-18127-elsa/realtime/block_diagram_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'block_diagram_rst_ps7_0_100M_0' (10#1) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1/.Xil/Vivado-18127-elsa/realtime/block_diagram_rst_ps7_0_100M_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'rst_ps7_0_100M' of module 'block_diagram_rst_ps7_0_100M_0' requires 10 connections, but only 7 given [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/synth/block_diagram.v:368]
-INFO: [Synth 8-6157] synthesizing module 'block_diagram_axi_gpio_0_0' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1/.Xil/Vivado-18731-elsa/realtime/block_diagram_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'block_diagram_axi_gpio_0_0' (11#1) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1/.Xil/Vivado-18731-elsa/realtime/block_diagram_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'block_diagram_xmult_ip_0_0' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1/.Xil/Vivado-18731-elsa/realtime/block_diagram_xmult_ip_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'block_diagram_xmult_ip_0_0' (12#1) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1/.Xil/Vivado-18731-elsa/realtime/block_diagram_xmult_ip_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'block_diagram_axi_gpio_0_0' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1/.Xil/Vivado-18127-elsa/realtime/block_diagram_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'block_diagram_axi_gpio_0_0' (11#1) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1/.Xil/Vivado-18127-elsa/realtime/block_diagram_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'block_diagram_xmult_ip_0_0' [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1/.Xil/Vivado-18127-elsa/realtime/block_diagram_xmult_ip_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'block_diagram_xmult_ip_0_0' (12#1) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1/.Xil/Vivado-18127-elsa/realtime/block_diagram_xmult_ip_0_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'block_diagram' (13#1) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/synth/block_diagram.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'block_diagram_wrapper' (14#1) [/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.srcs/sources_1/bd/block_diagram/hdl/block_diagram_wrapper.v:12]
 WARNING: [Synth 8-3331] design s00_couplers_imp_1D4QKCK has unconnected port M_ACLK
@@ -66,7 +66,7 @@ WARNING: [Synth 8-3331] design m00_couplers_imp_1CICLIZ has unconnected port M_A
 WARNING: [Synth 8-3331] design m00_couplers_imp_1CICLIZ has unconnected port S_ACLK
 WARNING: [Synth 8-3331] design m00_couplers_imp_1CICLIZ has unconnected port S_ARESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1318.188 ; gain = 125.434 ; free physical = 2341 ; free virtual = 9163
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1318.734 ; gain = 125.434 ; free physical = 3354 ; free virtual = 7576
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -79,10 +79,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1318.188 ; gain = 125.434 ; free physical = 2341 ; free virtual = 9163
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1318.734 ; gain = 125.434 ; free physical = 3354 ; free virtual = 7577
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1318.188 ; gain = 125.434 ; free physical = 2341 ; free virtual = 9163
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1318.734 ; gain = 125.434 ; free physical = 3354 ; free virtual = 7577
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -110,16 +110,16 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1606.188 ; gain = 0.000 ; free physical = 2063 ; free virtual = 8895
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1606.742 ; gain = 0.000 ; free physical = 3129 ; free virtual = 7303
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1606.188 ; gain = 413.434 ; free physical = 2144 ; free virtual = 8976
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:30 . Memory (MB): peak = 1606.742 ; gain = 413.441 ; free physical = 3209 ; free virtual = 7384
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1606.188 ; gain = 413.434 ; free physical = 2144 ; free virtual = 8976
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:30 . Memory (MB): peak = 1606.742 ; gain = 413.441 ; free physical = 3209 ; free virtual = 7384
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -394,10 +394,10 @@ Applied set_property DONT_TOUCH = true for block_diagram_i/xmult_ip_0. (constrai
 Applied set_property DONT_TOUCH = true for block_diagram_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for block_diagram_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 1606.188 ; gain = 413.434 ; free physical = 2146 ; free virtual = 8978
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:30 . Memory (MB): peak = 1606.742 ; gain = 413.441 ; free physical = 3211 ; free virtual = 7385
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 1606.188 ; gain = 413.434 ; free physical = 2144 ; free virtual = 8977
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:30 . Memory (MB): peak = 1606.742 ; gain = 413.441 ; free physical = 3209 ; free virtual = 7384
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -439,7 +439,7 @@ WARNING: [Synth 8-3331] design block_diagram_ps7_0_axi_periph_0 has unconnected 
 WARNING: [Synth 8-3331] design block_diagram_ps7_0_axi_periph_0 has unconnected port M02_ACLK
 WARNING: [Synth 8-3331] design block_diagram_ps7_0_axi_periph_0 has unconnected port M02_ARESETN
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:30 . Memory (MB): peak = 1606.188 ; gain = 413.434 ; free physical = 2133 ; free virtual = 8968
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:31 . Memory (MB): peak = 1606.742 ; gain = 413.441 ; free physical = 3198 ; free virtual = 7375
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -453,13 +453,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'block_diagram_i/processing_system7_0/FCLK_CLK0' to pin 'block_diagram_i/processing_system7_0/bbstub_FCLK_CLK0/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:40 . Memory (MB): peak = 1625.188 ; gain = 432.434 ; free physical = 2004 ; free virtual = 8839
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:41 . Memory (MB): peak = 1625.742 ; gain = 432.441 ; free physical = 3065 ; free virtual = 7247
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:40 . Memory (MB): peak = 1625.188 ; gain = 432.434 ; free physical = 2004 ; free virtual = 8839
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:41 . Memory (MB): peak = 1625.742 ; gain = 432.441 ; free physical = 3065 ; free virtual = 7247
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -471,7 +471,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:40 . Memory (MB): peak = 1626.188 ; gain = 433.434 ; free physical = 2004 ; free virtual = 8839
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:41 . Memory (MB): peak = 1626.742 ; gain = 433.441 ; free physical = 3065 ; free virtual = 7246
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -495,7 +495,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:40 . Memory (MB): peak = 1626.188 ; gain = 433.434 ; free physical = 2004 ; free virtual = 8839
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:42 . Memory (MB): peak = 1626.742 ; gain = 433.441 ; free physical = 3062 ; free virtual = 7246
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -508,7 +508,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:40 . Memory (MB): peak = 1626.188 ; gain = 433.434 ; free physical = 2004 ; free virtual = 8839
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:42 . Memory (MB): peak = 1626.742 ; gain = 433.441 ; free physical = 3062 ; free virtual = 7246
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -520,25 +520,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:40 . Memory (MB): peak = 1626.188 ; gain = 433.434 ; free physical = 2004 ; free virtual = 8839
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:42 . Memory (MB): peak = 1626.742 ; gain = 433.441 ; free physical = 3062 ; free virtual = 7246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:40 . Memory (MB): peak = 1626.188 ; gain = 433.434 ; free physical = 2004 ; free virtual = 8839
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:42 . Memory (MB): peak = 1626.742 ; gain = 433.441 ; free physical = 3062 ; free virtual = 7246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:40 . Memory (MB): peak = 1626.188 ; gain = 433.434 ; free physical = 2004 ; free virtual = 8839
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:42 . Memory (MB): peak = 1626.742 ; gain = 433.441 ; free physical = 3062 ; free virtual = 7246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:40 . Memory (MB): peak = 1626.188 ; gain = 433.434 ; free physical = 2004 ; free virtual = 8839
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:42 . Memory (MB): peak = 1626.742 ; gain = 433.441 ; free physical = 3062 ; free virtual = 7246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -581,11 +581,11 @@ Report Instance Areas:
 |4     |      s00_couplers   |s00_couplers_imp_1D4QKCK         |   177|
 +------+---------------------+---------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:40 . Memory (MB): peak = 1626.188 ; gain = 433.434 ; free physical = 2004 ; free virtual = 8839
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:42 . Memory (MB): peak = 1626.742 ; gain = 433.441 ; free physical = 3062 ; free virtual = 7246
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1626.188 ; gain = 145.434 ; free physical = 2063 ; free virtual = 8897
-Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:40 . Memory (MB): peak = 1626.195 ; gain = 433.434 ; free physical = 2071 ; free virtual = 8905
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1626.742 ; gain = 145.434 ; free physical = 3121 ; free virtual = 7304
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:42 . Memory (MB): peak = 1626.750 ; gain = 433.441 ; free physical = 3120 ; free virtual = 7304
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -597,9 +597,9 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 44 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 1640.188 ; gain = 459.078 ; free physical = 2046 ; free virtual = 8880
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:43 . Memory (MB): peak = 1640.742 ; gain = 459.086 ; free physical = 3085 ; free virtual = 7290
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint '/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/synth_1/block_diagram_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file block_diagram_wrapper_utilization_synth.rpt -pb block_diagram_wrapper_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1640.188 ; gain = 0.000 ; free physical = 2047 ; free virtual = 8881
-INFO: [Common 17-206] Exiting Vivado at Mon Apr  8 18:27:56 2019...
+report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 1640.742 ; gain = 0.000 ; free physical = 3074 ; free virtual = 7284
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  9 14:16:56 2019...

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="block_diagram_xmult_ip_0_0_synth_1" LaunchDir="/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.runs/block_diagram_xmult_ip_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+
