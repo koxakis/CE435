@@ -1,0 +1,125 @@
+/*
+
+Xilinx Vivado v2018.2.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2348494 on Mon Oct  1 18:25:39 MDT 2018
+IP Build: 2318053 on Mon Oct  1 21:44:26 MDT 2018
+
+Process ID: 2358
+License: Customer
+
+Current time: 	Tue Apr 09 10:25:07 EEST 2019
+Time zone: 	Eastern European Time (Europe/Athens)
+
+OS: LSB_VERSION=1.4
+OS Version: 5.0.6-arch1-1-ARCH
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: :0
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 66 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	/run/media/nikolas/Linux_Data/Programs/xilinx/Vivado/Vivado/2018.2/tps/lnx64/jre
+Java executable location: 	/run/media/nikolas/Linux_Data/Programs/xilinx/Vivado/Vivado/2018.2/tps/lnx64/jre/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	nikolas
+User home directory: /home/nikolas
+User working directory: /run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4
+User country: 	GB
+User language: 	en
+User locale: 	en_GB
+
+RDI_BASEROOT: /run/media/nikolas/Linux_Data/Programs/xilinx/Vivado/Vivado
+HDI_APPROOT: /run/media/nikolas/Linux_Data/Programs/xilinx/Vivado/Vivado/2018.2
+RDI_DATADIR: /run/media/nikolas/Linux_Data/Programs/xilinx/Vivado/Vivado/2018.2/data
+RDI_BINDIR: /run/media/nikolas/Linux_Data/Programs/xilinx/Vivado/Vivado/2018.2/bin
+
+Vivado preferences file location: /home/nikolas/.Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: /home/nikolas/.Xilinx/Vivado/2018.2/
+Vivado layouts directory: /home/nikolas/.Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	/run/media/nikolas/Linux_Data/Programs/xilinx/Vivado/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/vivado.log
+Vivado journal file location: 	/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-2358-elsa
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /run/media/nikolas/Linux_Data/Programs/xilinx/Vivado/Vivado/2018.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: /home/nikolas/Xilinx.lic
+XILINX_DSP: /run/media/nikolas/Linux_Data/Programs/xilinx/Vivado/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: /run/media/nikolas/Linux_Data/Programs/xilinx/Vivado/Vivado/2018.2
+XILINX_SDK: /run/media/nikolas/Linux_Data/Programs/xilinx/Vivado/SDK/2018.2
+XILINX_VIVADO: /run/media/nikolas/Linux_Data/Programs/xilinx/Vivado/Vivado/2018.2
+XILINX_VIVADO_HLS: /run/media/nikolas/Linux_Data/Programs/xilinx/Vivado/Vivado/2018.2
+
+
+GUI allocated memory:	134 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 785 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 60 MB (+60822kb) [00:00:16]
+// [Engine Memory]: 782 MB (+668768kb) [00:00:16]
+// Tcl Message: start_gui 
+// HMemoryUtils.trashcanNow. Engine heap size: 785 MB. GUI used memory: 33 MB. Current time: 4/9/19 10:25:09 AM EEST
+// [GUI Memory]: 69 MB (+5894kb) [00:00:36]
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.xpr", 1); // q (O, ck)
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: /run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.xpr. Version: Vivado v2018.2.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// HMemoryUtils.trashcanNow. Engine heap size: 818 MB. GUI used memory: 35 MB. Current time: 4/9/19 10:26:35 AM EEST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 829 MB (+7687kb) [00:01:50]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 937 MB (+70013kb) [00:01:53]
+// Tcl Message: open_project /run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/ip_repo/xmult_ip_1.0'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/run/media/nikolas/Linux_Data/Programs/xilinx/Vivado/Vivado/2018.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 6112.395 ; gain = 148.801 ; free physical = 4993 ; free virtual = 10428 
+// Project name: lab4; location: /run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4; part: xc7z020clg484-1
+// Elapsed time: 23 seconds
+dismissDialog("Open Project"); // bx (ck)
+// [GUI Memory]: 80 MB (+7711kb) [00:02:00]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 993 MB. GUI used memory: 51 MB. Current time: 4/9/19 10:26:55 AM EEST
+// [Engine Memory]: 993 MB (+10050kb) [00:02:05]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 84 MB (+413kb) [00:04:01]
+// Elapsed time: 149 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // aa (ck)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ad (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa (ck): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aa)
+dismissDialog("Launch SDK"); // aa (ck)
+// Tcl Message: launch_sdk -workspace /run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.sdk -hwspec /run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.sdk/block_diagram_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace /run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.sdk -hwspec /run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_4/project/lab4/lab4.sdk/block_diagram_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// [GUI Memory]: 89 MB (+715kb) [00:05:35]
+// [GUI Memory]: 94 MB (+340kb) [00:10:45]
+// [GUI Memory]: 100 MB (+1004kb) [00:22:40]
+// HMemoryUtils.trashcanNow. Engine heap size: 999 MB. GUI used memory: 51 MB. Current time: 4/9/19 10:56:55 AM EEST
