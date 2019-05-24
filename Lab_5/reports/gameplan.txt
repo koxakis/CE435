@@ -1,0 +1,32 @@
+Aquire Software Baseline (without optimisations)
+    - Decide which benchmarking tool to use
+    - Gather numbers and start foming report
+
+
+Aquire Software Baseline (with optimisations)
+    - Check to see if we can use dual core pthreads or other parallel stuff
+    - Apply optimisations
+    - Gather numbers and continue with the report
+
+
+Implement Hardware Design in HLS (without optimisations)
+    - Draw requirements in paper
+
+
+Implement Hardware Design in HLS (with optimisations)
+
+
+NOTES:
+
+How to add exta images:
+    - convert to .pgm
+    - remove possible info text line at the beggining of the file
+    - convert back to .jpg
+
+
+JPG To GREY
+convert -depth 8 -size <width>x<height> JPG:<pic> input.grey
+
+GREY To JPG
+convert -depth 8 -size <width>x<height> GRAY:OUTPUT.GRE <pic>
+

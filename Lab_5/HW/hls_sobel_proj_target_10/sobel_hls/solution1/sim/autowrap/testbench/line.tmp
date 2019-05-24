@@ -1,0 +1,170 @@
+#pragma line 1 "/home/inf2013/nxiromeritis/embedded/ce435_5/hls_sobel_proj/sobel_opt.c" ::: -10
+#pragma line 1 "<built-in>" ::: -9
+#pragma line 1 "<command-line>" ::: -8
+#pragma line 1 "/home/inf2013/nxiromeritis/embedded/ce435_5/hls_sobel_proj/sobel_opt.c" ::: -7
+#pragma line 1 "/usr/include/stdio.h" 1 3 4 ::: -6
+#pragma line 27 "/usr/include/stdio.h" 3 4 ::: -5
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.4/lnx64/tools/gcc/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.6.3/include-fixed/features.h" 1 3 4 ::: -4
+#pragma line 339 "/opt/Xilinx/Vivado_HLS/2016.4/lnx64/tools/gcc/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.6.3/include-fixed/features.h" 3 4 ::: -3
+#pragma line 1 "/usr/include/sys/cdefs.h" 1 3 4 ::: -2
+#pragma line 385 "/usr/include/sys/cdefs.h" 3 4 ::: -1
+#pragma line 1 "/usr/include/bits/wordsize.h" 1 3 4 ::: 0
+#pragma line 386 "/usr/include/sys/cdefs.h" 2 3 4 ::: 1
+#pragma line 340 "/opt/Xilinx/Vivado_HLS/2016.4/lnx64/tools/gcc/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.6.3/include-fixed/features.h" 2 3 4 ::: 2
+#pragma line 362 "/opt/Xilinx/Vivado_HLS/2016.4/lnx64/tools/gcc/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.6.3/include-fixed/features.h" 3 4 ::: 3
+#pragma line 1 "/usr/include/gnu/stubs.h" 1 3 4 ::: 4
+#pragma line 10 "/usr/include/gnu/stubs.h" 3 4 ::: 5
+#pragma line 1 "/usr/include/gnu/stubs-64.h" 1 3 4 ::: 6
+#pragma line 11 "/usr/include/gnu/stubs.h" 2 3 4 ::: 7
+#pragma line 363 "/opt/Xilinx/Vivado_HLS/2016.4/lnx64/tools/gcc/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.6.3/include-fixed/features.h" 2 3 4 ::: 8
+#pragma line 28 "/usr/include/stdio.h" 2 3 4 ::: 9
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.4/lnx64/tools/gcc/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.6.3/include/stddef.h" 1 3 4 ::: 15
+#pragma line 212 "/opt/Xilinx/Vivado_HLS/2016.4/lnx64/tools/gcc/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.6.3/include/stddef.h" 3 4 ::: 16
+#pragma line 34 "/usr/include/stdio.h" 2 3 4 ::: 18
+#pragma line 1 "/usr/include/bits/types.h" 1 3 4 ::: 20
+#pragma line 27 "/usr/include/bits/types.h" 3 4 ::: 21
+#pragma line 1 "/usr/include/bits/wordsize.h" 1 3 4 ::: 22
+#pragma line 28 "/usr/include/bits/types.h" 2 3 4 ::: 23
+#pragma line 121 "/usr/include/bits/types.h" 3 4 ::: 50
+#pragma line 1 "/usr/include/bits/typesizes.h" 1 3 4 ::: 51
+#pragma line 122 "/usr/include/bits/types.h" 2 3 4 ::: 52
+#pragma line 36 "/usr/include/stdio.h" 2 3 4 ::: 121
+#pragma line 44 "/usr/include/stdio.h" 3 4 ::: 122
+#pragma line 64 "/usr/include/stdio.h" 3 4 ::: 133
+#pragma line 74 "/usr/include/stdio.h" 3 4 ::: 135
+#pragma line 1 "/usr/include/libio.h" 1 3 4 ::: 136
+#pragma line 31 "/usr/include/libio.h" 3 4 ::: 137
+#pragma line 1 "/usr/include/_G_config.h" 1 3 4 ::: 138
+#pragma line 15 "/usr/include/_G_config.h" 3 4 ::: 139
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.4/lnx64/tools/gcc/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.6.3/include/stddef.h" 1 3 4 ::: 140
+#pragma line 16 "/usr/include/_G_config.h" 2 3 4 ::: 141
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.4/lnx64/tools/gcc/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.6.3/include-fixed/wchar.h" 1 3 4 ::: 146
+#pragma line 57 "/opt/Xilinx/Vivado_HLS/2016.4/lnx64/tools/gcc/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.6.3/include-fixed/wchar.h" 3 4 ::: 147
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.4/lnx64/tools/gcc/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.6.3/include/stddef.h" 1 3 4 ::: 148
+#pragma line 353 "/opt/Xilinx/Vivado_HLS/2016.4/lnx64/tools/gcc/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.6.3/include/stddef.h" 3 4 ::: 149
+#pragma line 58 "/opt/Xilinx/Vivado_HLS/2016.4/lnx64/tools/gcc/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.6.3/include-fixed/wchar.h" 2 3 4 ::: 151
+#pragma line 1 "/usr/include/bits/wchar.h" 1 3 4 ::: 153
+#pragma line 60 "/opt/Xilinx/Vivado_HLS/2016.4/lnx64/tools/gcc/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.6.3/include-fixed/wchar.h" 2 3 4 ::: 154
+#pragma line 85 "/opt/Xilinx/Vivado_HLS/2016.4/lnx64/tools/gcc/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.6.3/include-fixed/wchar.h" 3 4 ::: 155
+#pragma line 21 "/usr/include/_G_config.h" 2 3 4 ::: 165
+#pragma line 32 "/usr/include/libio.h" 2 3 4 ::: 176
+#pragma line 49 "/usr/include/libio.h" 3 4 ::: 177
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.4/lnx64/tools/gcc/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.6.3/include/stdarg.h" 1 3 4 ::: 178
+#pragma line 40 "/opt/Xilinx/Vivado_HLS/2016.4/lnx64/tools/gcc/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.6.3/include/stdarg.h" 3 4 ::: 179
+#pragma line 50 "/usr/include/libio.h" 2 3 4 ::: 181
+#pragma line 144 "/usr/include/libio.h" 3 4 ::: 182
+#pragma line 154 "/usr/include/libio.h" 3 4 ::: 184
+#pragma line 177 "/usr/include/libio.h" 3 4 ::: 198
+#pragma line 245 "/usr/include/libio.h" 3 4 ::: 209
+#pragma line 293 "/usr/include/libio.h" 3 4 ::: 250
+#pragma line 302 "/usr/include/libio.h" 3 4 ::: 252
+#pragma line 338 "/usr/include/libio.h" 3 4 ::: 274
+#pragma line 390 "/usr/include/libio.h" 3 4 ::: 296
+#pragma line 434 "/usr/include/libio.h" 3 4 ::: 300
+#pragma line 464 "/usr/include/libio.h" 3 4 ::: 315
+#pragma line 75 "/usr/include/stdio.h" 2 3 4 ::: 327
+#pragma line 90 "/usr/include/stdio.h" 3 4 ::: 333
+#pragma line 102 "/usr/include/stdio.h" 3 4 ::: 335
+#pragma line 164 "/usr/include/stdio.h" 3 4 ::: 349
+#pragma line 1 "/usr/include/bits/stdio_lim.h" 1 3 4 ::: 350
+#pragma line 165 "/usr/include/stdio.h" 2 3 4 ::: 351
+#pragma line 209 "/usr/include/stdio.h" 3 4 ::: 383
+#pragma line 227 "/usr/include/stdio.h" 3 4 ::: 391
+#pragma line 252 "/usr/include/stdio.h" 3 4 ::: 409
+#pragma line 266 "/usr/include/stdio.h" 3 4 ::: 411
+#pragma line 295 "/usr/include/stdio.h" 3 4 ::: 427
+#pragma line 306 "/usr/include/stdio.h" 3 4 ::: 429
+#pragma line 319 "/usr/include/stdio.h" 3 4 ::: 431
+#pragma line 412 "/usr/include/stdio.h" 3 4 ::: 507
+#pragma line 463 "/usr/include/stdio.h" 3 4 ::: 531
+#pragma line 526 "/usr/include/stdio.h" 3 4 ::: 533
+#pragma line 550 "/usr/include/stdio.h" 3 4 ::: 548
+#pragma line 561 "/usr/include/stdio.h" 3 4 ::: 551
+#pragma line 594 "/usr/include/stdio.h" 3 4 ::: 573
+#pragma line 638 "/usr/include/stdio.h" 3 4 ::: 604
+#pragma line 665 "/usr/include/stdio.h" 3 4 ::: 608
+#pragma line 737 "/usr/include/stdio.h" 3 4 ::: 662
+#pragma line 773 "/usr/include/stdio.h" 3 4 ::: 687
+#pragma line 792 "/usr/include/stdio.h" 3 4 ::: 694
+#pragma line 815 "/usr/include/stdio.h" 3 4 ::: 707
+#pragma line 824 "/usr/include/stdio.h" 3 4 ::: 709
+#pragma line 1 "/usr/include/bits/sys_errlist.h" 1 3 4 ::: 739
+#pragma line 26 "/usr/include/bits/sys_errlist.h" 3 4 ::: 740
+#pragma line 854 "/usr/include/stdio.h" 2 3 4 ::: 743
+#pragma line 873 "/usr/include/stdio.h" 3 4 ::: 754
+#pragma line 913 "/usr/include/stdio.h" 3 4 ::: 768
+#pragma line 943 "/usr/include/stdio.h" 3 4 ::: 777
+#pragma line 2 "/home/inf2013/nxiromeritis/embedded/ce435_5/hls_sobel_proj/sobel_opt.c" 2 ::: 779
+#pragma line 1 "/usr/include/string.h" 1 3 4 ::: 780
+#pragma line 27 "/usr/include/string.h" 3 4 ::: 781
+#pragma line 1 "/opt/Xilinx/Vivado_HLS/2016.4/lnx64/tools/gcc/bin/../lib/gcc/x86_64-unknown-linux-gnu/4.6.3/include/stddef.h" 1 3 4 ::: 787
+#pragma line 33 "/usr/include/string.h" 2 3 4 ::: 788
+#pragma line 92 "/usr/include/string.h" 3 4 ::: 823
+#pragma line 123 "/usr/include/string.h" 3 4 ::: 828
+#pragma line 1 "/usr/include/xlocale.h" 1 3 4 ::: 865
+#pragma line 27 "/usr/include/xlocale.h" 3 4 ::: 866
+#pragma line 160 "/usr/include/string.h" 2 3 4 ::: 883
+#pragma line 207 "/usr/include/string.h" 3 4 ::: 906
+#pragma line 232 "/usr/include/string.h" 3 4 ::: 908
+#pragma line 259 "/usr/include/string.h" 3 4 ::: 911
+#pragma line 278 "/usr/include/string.h" 3 4 ::: 916
+#pragma line 311 "/usr/include/string.h" 3 4 ::: 926
+#pragma line 338 "/usr/include/string.h" 3 4 ::: 929
+#pragma line 393 "/usr/include/string.h" 3 4 ::: 950
+#pragma line 423 "/usr/include/string.h" 3 4 ::: 969
+#pragma line 441 "/usr/include/string.h" 3 4 ::: 973
+#pragma line 485 "/usr/include/string.h" 3 4 ::: 993
+#pragma line 513 "/usr/include/string.h" 3 4 ::: 996
+#pragma line 530 "/usr/include/string.h" 3 4 ::: 1004
+#pragma line 553 "/usr/include/string.h" 3 4 ::: 1011
+#pragma line 640 "/usr/include/string.h" 3 4 ::: 1035
+#pragma line 3 "/home/inf2013/nxiromeritis/embedded/ce435_5/hls_sobel_proj/sobel_opt.c" 2 ::: 1037
+#pragma line 1 "/usr/include/math.h" 1 3 4 ::: 1038
+#pragma line 28 "/usr/include/math.h" 3 4 ::: 1039
+#pragma line 1 "/usr/include/bits/huge_val.h" 1 3 4 ::: 1044
+#pragma line 33 "/usr/include/math.h" 2 3 4 ::: 1045
+#pragma line 45 "/usr/include/math.h" 3 4 ::: 1046
+#pragma line 1 "/usr/include/bits/mathdef.h" 1 3 4 ::: 1047
+#pragma line 46 "/usr/include/math.h" 2 3 4 ::: 1048
+#pragma line 69 "/usr/include/math.h" 3 4 ::: 1049
+#pragma line 1 "/usr/include/bits/mathcalls.h" 1 3 4 ::: 1050
+#pragma line 52 "/usr/include/bits/mathcalls.h" 3 4 ::: 1051
+#pragma line 86 "/usr/include/bits/mathcalls.h" 3 4 ::: 1078
+#pragma line 126 "/usr/include/bits/mathcalls.h" 3 4 ::: 1110
+#pragma line 151 "/usr/include/bits/mathcalls.h" 3 4 ::: 1121
+#pragma line 230 "/usr/include/bits/mathcalls.h" 3 4 ::: 1190
+#pragma line 264 "/usr/include/bits/mathcalls.h" 3 4 ::: 1214
+#pragma line 360 "/usr/include/bits/mathcalls.h" 3 4 ::: 1248
+#pragma line 371 "/usr/include/bits/mathcalls.h" 3 4 ::: 1250
+#pragma line 70 "/usr/include/math.h" 2 3 4 ::: 1252
+#pragma line 88 "/usr/include/math.h" 3 4 ::: 1253
+#pragma line 1 "/usr/include/bits/mathcalls.h" 1 3 4 ::: 1254
+#pragma line 52 "/usr/include/bits/mathcalls.h" 3 4 ::: 1255
+#pragma line 86 "/usr/include/bits/mathcalls.h" 3 4 ::: 1282
+#pragma line 126 "/usr/include/bits/mathcalls.h" 3 4 ::: 1314
+#pragma line 151 "/usr/include/bits/mathcalls.h" 3 4 ::: 1325
+#pragma line 230 "/usr/include/bits/mathcalls.h" 3 4 ::: 1394
+#pragma line 264 "/usr/include/bits/mathcalls.h" 3 4 ::: 1418
+#pragma line 360 "/usr/include/bits/mathcalls.h" 3 4 ::: 1452
+#pragma line 371 "/usr/include/bits/mathcalls.h" 3 4 ::: 1454
+#pragma line 89 "/usr/include/math.h" 2 3 4 ::: 1456
+#pragma line 132 "/usr/include/math.h" 3 4 ::: 1457
+#pragma line 1 "/usr/include/bits/mathcalls.h" 1 3 4 ::: 1458
+#pragma line 52 "/usr/include/bits/mathcalls.h" 3 4 ::: 1459
+#pragma line 86 "/usr/include/bits/mathcalls.h" 3 4 ::: 1486
+#pragma line 126 "/usr/include/bits/mathcalls.h" 3 4 ::: 1518
+#pragma line 151 "/usr/include/bits/mathcalls.h" 3 4 ::: 1529
+#pragma line 230 "/usr/include/bits/mathcalls.h" 3 4 ::: 1598
+#pragma line 264 "/usr/include/bits/mathcalls.h" 3 4 ::: 1622
+#pragma line 360 "/usr/include/bits/mathcalls.h" 3 4 ::: 1656
+#pragma line 371 "/usr/include/bits/mathcalls.h" 3 4 ::: 1658
+#pragma line 133 "/usr/include/math.h" 2 3 4 ::: 1660
+#pragma line 148 "/usr/include/math.h" 3 4 ::: 1661
+#pragma line 301 "/usr/include/math.h" 3 4 ::: 1663
+#pragma line 326 "/usr/include/math.h" 3 4 ::: 1677
+#pragma line 488 "/usr/include/math.h" 3 4 ::: 1692
+#pragma line 4 "/home/inf2013/nxiromeritis/embedded/ce435_5/hls_sobel_proj/sobel_opt.c" 2 ::: 1694
+#pragma line 1 "/home/inf2013/nxiromeritis/embedded/ce435_5/hls_sobel_proj/sobel_opt.h" 1 ::: 1695
+#pragma line 5 "/home/inf2013/nxiromeritis/embedded/ce435_5/hls_sobel_proj/sobel_opt.c" 2 ::: 1703
+#pragma line 15 "/home/inf2013/nxiromeritis/embedded/ce435_5/hls_sobel_proj/sobel_opt.c" ::: 1704
+#pragma line 91 "/home/inf2013/nxiromeritis/embedded/ce435_5/hls_sobel_proj/sobel_opt.c" ::: 1773

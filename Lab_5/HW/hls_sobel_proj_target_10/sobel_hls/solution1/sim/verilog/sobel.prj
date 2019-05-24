@@ -1,0 +1,11 @@
+sv xil_defaultlib "convolution2D_vert.v"
+sv xil_defaultlib "sobel_XSOBEL_INPUT_BUS_m_axi.v"
+sv xil_defaultlib "sobel_AXILiteS_s_axi.v"
+sv xil_defaultlib "sobel.v"
+sv xil_defaultlib "AESL_axi_master_XSOBEL_OUTPUT_BUS.v"
+sv xil_defaultlib "AESL_axi_slave_AXILiteS.v"
+sv xil_defaultlib "convolution2D_horiz.v"
+sv xil_defaultlib "sobel_XSOBEL_OUTPUT_BUS_m_axi.v"
+sv xil_defaultlib "AESL_axi_master_XSOBEL_INPUT_BUS.v"
+sv xil_defaultlib "sobel.autotb.v"
+

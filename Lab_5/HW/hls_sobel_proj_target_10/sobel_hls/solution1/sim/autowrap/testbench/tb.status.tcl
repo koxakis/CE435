@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName sobel_opt.c_pre.c.tb.c

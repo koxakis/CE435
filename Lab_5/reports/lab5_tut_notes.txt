@@ -1,0 +1,195 @@
+p21: HLS Synthesis Symmary (***)
+
+p20+ Solution >
+        Run C Synthesis
+        Run C/RTL Cosimulation (verification)
+
+p24: Export RTL (creates ip)
+     Solution > Export IP and then,
+     in the explorer tab expand solution:
+
+        solution1 > impl > ip
+            xilinx_com_hls_<name>.zip   (the ip)
+        solution1 > impl > verilog
+            project.xpr                 (the project)
+
+p29:
+    CAUTION
+    When copying the RTL results from a Vivado HLS project, you must use the
+    RTL from the impl directory.
+    For designs using floating-pointer operators or AXI4 interface, the RTL files in the syn
+    directory are only the output from synthesis.Additional processing is performed by Vivado
+    HLS during export_design before you can use this RTL in other design tools.
+
+p30:
+    vivado_hls -f <filename>.tcl (run vivado_hls in terminal taking input from script)
+    vivado_hls -p <project_name> (run vivado_hls gui for <project_name> project)
+
+p31: (***)
+    Pointer arguments are associated with data valid signals in hardware.
+
+
+p32: Adding Directives!!
+
+p35: Analyse results.
+
+p40: Compare reports between different solutions (Project > Compare Reports)
+
+p47: C simulation executes in the solution sub-directory csim.
+
+
+TIP: ctrl + click on header file included to open the header file
+
+p53:
+    When working with arbitary precision types you can use the Vivado HLS debug
+    environment only with C++ or SystemC. When using arbitary precision types with
+    ANSI C, the debug environment cannot be used. With ANSI C, you must instead use
+    printf or fprintf statements for debugging.
+    (still true with Vivado 16?? I had no problems.)
+
+p65: I/O protocols (***)
+     eg: ap_ctrl_hs: ap_start, ap_done, ap_return, ap_ready etc
+
+p68: block-level interface protocols (***)
+     ap_ctrl_node, ap_ctrl_hs, ap_ctrl_chain, s_axilite
+
+p70: cannot cosimulate RTL is ap_ctrl_none is used (***)
+
+p73-75:
+     explains ap_vld, ap_ack, ap_hs
+
+p77: (***)
+    Array arguments are synthesized into RAM ports by default.
+    (user specified: dual-port RAM, FIFO inteface, partitioning into descrete port)
+
+p78: (***)
+    Vivado HLS automatically analyzes the design and selects the number of ports to
+    maximize the data rate.
+    The for-loop in the source code is by default left rolled..
+
+p84: (***)
+    Partitioning...
+    Eg: Paritioning a FIFO interface with factor=4 we are going to have four
+        separate FIFO interfaces.
+
+p91+:
+    AXI4 Stream Interface
+    Cyclic Partitioning (Directives -> Partitioning -> cyclic)
+
+    Loop rewinding:
+        Loop runs continuously (with no end of function and function re-start cycles).
+
+    (***)
+    EXPORT RTL toolbar button. Creates the IP and drivers if we have specified the
+    AXI interface...
+
+
+
+CHAPTER6: DESIGN ANALYSIS
+
+p117: (***)
+    HLS might automatically inline small functions to improve the quality of
+    results (QoR). You can prevent this by adding the Inline directive with the -off
+    option in the function
+
+    3956 = 144 (read) + 3668 (dct_2d) + 144 (write) + 3 cycles blocks (3 blocks)
+
+p119: (***)
+    Dive into analysis
+    Top row of analysis lists the control states in the design.
+
+    CONTROL STATES are the internal states HLS uses to schedule operations into cycles.
+        There is a close correlation between the control states and the final states
+        in the RTL FSM, but there is no one-to-one mapping.
+
+p121: (***)
+    Unless the funcion itslef is pipelined, there is no benefit in pipelining the loop.
+
+    Pipelining the function unrolls all the loops within it, and thus
+    greatly increases the area
+
+    (***)
+    It is generally best to pipeline the inner-most loop. Typically HLS can
+    generally flatten the loop nest automatically (allowing the outer loop to simply feed
+    the inner loop).
+
+p125: (***)
+    Without pipelining
+        Latency = Iteration Latency * (tripcount * interval(II))
+    with pipelining
+        Latency = Iteration Latency + (tripcount * interval(II))
+
+    Interval not present without pipelining
+
+    Compare dct performance profiles from page118 with page125
+
+    LOOP FLATTENING?
+    flattening outer loop completely unrolls inner loop?
+    note: cannot flatten loop. the outer loop is not a perfect loop because there
+    is nontrivial logic in loop latch
+
+
+
+CHAPTER7: Design Optimization
+
+p153: (***)
+    Explains II and loops pipelining conflict
+
+p156: (***)
+    HLS can only report one schedule error or warning at a time, because, as soon
+    as the first issue occurs, the actions to create an achievable schedule invalidates
+    any other infeasible schedules
+
+p157: (***)
+    Reshape arrays!!!!!!
+    Increase data_word_size
+
+p160: (***)
+    port with both write and read operations cannot be set to a FIFO (interface directive
+
+
+p165+ LAB2 (****) (***)
+    streaming. Cache data internally.. read only 1 time each element
+
+
+
+
+CHAPTER8: RTL Verification
+
+p175:
+    Modifying the test bnech to return a non-zero value ensures RTL verification
+    would always report a failure.
+
+    The C test bench must always check the ouput from the C function.
+    It must return zero (0) if the results are correct or any other value if
+    they are not correct.
+
+p178: (***) (****)
+    after synthesising c and running cosimulation with vivado simulator active (auto)
+    Open Vivado -> in the tcl console:
+        cd <proj_name>/solution<x>/sim/verilog
+        current_fileset
+        open_wave_database <name>.wdb
+        open_wave_config <name).wcfg
+
+p180: modelsim
+
+
+
+CHAPTER9: Using HLS IP in IPI
+
+p187: nice run tcl scrip (***) (****)
+      many HLS blocks, projects
+      two different IPs to be implemented & included into vivado
+
+      (***) (****) (*****)
+      proj > IPXACT Export > impl > ip
+        This is the folder to add the IP from HLS into Vivado
+
+      How to add IP:
+      ip_catalog > ip_settings > repository_manager(tab) > "+"
+        and select the ip folder stated above
+
+
+
+

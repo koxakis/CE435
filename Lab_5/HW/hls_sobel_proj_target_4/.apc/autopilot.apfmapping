@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="sobel_opt.h" path="/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_5/ce435_5/HW/sobel_opt.h"/>
+    <originFiles name="sobel_opt.c" path="/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_5/ce435_5/HW/sobel_opt.c"/>
+    <originFiles name="input.grey" path="/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_5/ce435_5/HW/input.grey"/>
+    <originFiles name="golden.grey" path="/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_5/ce435_5/HW/golden.grey"/>
+  </source>
+  <testbench>
+    <originFiles name="sobel_test.c" path="/run/media/nikolas/Linux_Data/CE435_vidado_labs/Lab_5/ce435_5/HW/sobel_test.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

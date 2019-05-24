@@ -1,0 +1,1343 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2.2 (lin64) Build 2348494 Mon Oct  1 18:25:39 MDT 2018
+| Date         : Tue May  7 11:51:21 2019
+| Host         : elsa running 64-bit Antergos Linux
+| Command      : report_timing_summary -max_paths 10 -file system_wrapper_timing_summary_routed.rpt -pb system_wrapper_timing_summary_routed.pb -rpx system_wrapper_timing_summary_routed.rpx -warn_on_violation
+| Design       : system_wrapper
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 6 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      0.286        0.000                      0                 6664        0.042        0.000                      0                 6664        4.020        0.000                       0                  2556  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock       Waveform(ns)       Period(ns)      Frequency(MHz)
+-----       ------------       ----------      --------------
+clk_fpga_0  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk_fpga_0          0.286        0.000                      0                 6664        0.042        0.000                      0                 6664        4.020        0.000                       0                  2556  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_fpga_0
+  To Clock:  clk_fpga_0
+
+Setup :            0  Failing Endpoints,  Worst Slack        0.286ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.042ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.020ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.286ns  (required time - arrival time)
+  Source:                 system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[82]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[17]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        9.436ns  (logic 1.780ns (18.865%)  route 7.656ns (81.135%))
+  Logic Levels:           7  (LUT4=2 LUT5=1 LUT6=4)
+  Clock Path Skew:        -0.057ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.657ns = ( 12.657 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.943ns
+    Clock Pessimism Removal (CPR):    0.229ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        1.649     2.943    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X41Y59         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[82]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X41Y59         FDRE (Prop_fdre_C_Q)         0.456     3.399 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[82]/Q
+                         net (fo=43, routed)          1.732     5.131    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[82]
+    SLICE_X58Y50         LUT4 (Prop_lut4_I0_O)        0.146     5.277 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_476/O
+                         net (fo=1, routed)           0.664     5.941    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_476_n_0
+    SLICE_X58Y50         LUT6 (Prop_lut6_I2_O)        0.328     6.269 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_223/O
+                         net (fo=1, routed)           0.878     7.147    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_223_n_0
+    SLICE_X58Y50         LUT6 (Prop_lut6_I5_O)        0.124     7.271 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_55/O
+                         net (fo=2, routed)           0.953     8.224    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_55_n_0
+    SLICE_X60Y58         LUT6 (Prop_lut6_I3_O)        0.124     8.348 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_11/O
+                         net (fo=1, routed)           0.844     9.193    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_11_n_0
+    SLICE_X53Y57         LUT6 (Prop_lut6_I5_O)        0.124     9.317 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_2/O
+                         net (fo=66, routed)          1.103    10.420    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_2_n_0
+    SLICE_X42Y60         LUT4 (Prop_lut4_I2_O)        0.150    10.570 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[84]_i_2/O
+                         net (fo=28, routed)          0.861    11.431    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[84]_i_2_n_0
+    SLICE_X44Y57         LUT5 (Prop_lut5_I2_O)        0.328    11.759 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[17]_i_1/O
+                         net (fo=1, routed)           0.620    12.379    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[17]_i_1_n_0
+    SLICE_X44Y54         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[17]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        1.478    12.657    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X44Y54         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[17]/C
+                         clock pessimism              0.229    12.886    
+                         clock uncertainty           -0.154    12.732    
+    SLICE_X44Y54         FDRE (Setup_fdre_C_D)       -0.067    12.665    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[17]
+  -------------------------------------------------------------------
+                         required time                         12.665    
+                         arrival time                         -12.379    
+  -------------------------------------------------------------------
+                         slack                                  0.286    
+
+Slack (MET) :             0.319ns  (required time - arrival time)
+  Source:                 system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[33]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[48]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        9.419ns  (logic 1.689ns (17.931%)  route 7.730ns (82.069%))
+  Logic Levels:           7  (LUT4=1 LUT5=1 LUT6=5)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.656ns = ( 12.656 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.944ns
+    Clock Pessimism Removal (CPR):    0.262ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        1.650     2.944    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X43Y57         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[33]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y57         FDRE (Prop_fdre_C_Q)         0.419     3.363 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[33]/Q
+                         net (fo=188, routed)         1.788     5.151    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[33]
+    SLICE_X58Y51         LUT6 (Prop_lut6_I2_O)        0.296     5.447 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_486/O
+                         net (fo=1, routed)           0.680     6.127    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_486_n_0
+    SLICE_X58Y51         LUT4 (Prop_lut4_I0_O)        0.124     6.251 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_234/O
+                         net (fo=1, routed)           0.555     6.806    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_234_n_0
+    SLICE_X57Y52         LUT6 (Prop_lut6_I0_O)        0.124     6.930 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_62/O
+                         net (fo=2, routed)           0.958     7.888    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_62_n_0
+    SLICE_X58Y52         LUT6 (Prop_lut6_I0_O)        0.124     8.012 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_13/O
+                         net (fo=1, routed)           0.973     8.985    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_13_n_0
+    SLICE_X54Y53         LUT6 (Prop_lut6_I1_O)        0.124     9.109 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_3/O
+                         net (fo=81, routed)          1.521    10.630    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_3_n_0
+    SLICE_X44Y57         LUT5 (Prop_lut5_I1_O)        0.152    10.782 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[76]_i_4/O
+                         net (fo=8, routed)           0.876    11.658    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[76]_i_4_n_0
+    SLICE_X43Y59         LUT6 (Prop_lut6_I0_O)        0.326    11.984 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[48]_i_1/O
+                         net (fo=1, routed)           0.379    12.363    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[48]_i_1_n_0
+    SLICE_X43Y59         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[48]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        1.477    12.656    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X43Y59         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[48]/C
+                         clock pessimism              0.262    12.918    
+                         clock uncertainty           -0.154    12.764    
+    SLICE_X43Y59         FDRE (Setup_fdre_C_D)       -0.081    12.683    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[48]
+  -------------------------------------------------------------------
+                         required time                         12.683    
+                         arrival time                         -12.363    
+  -------------------------------------------------------------------
+                         slack                                  0.319    
+
+Slack (MET) :             0.347ns  (required time - arrival time)
+  Source:                 system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[82]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[8]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        9.392ns  (logic 1.783ns (18.983%)  route 7.609ns (81.017%))
+  Logic Levels:           7  (LUT4=1 LUT5=1 LUT6=5)
+  Clock Path Skew:        -0.059ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.655ns = ( 12.655 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.943ns
+    Clock Pessimism Removal (CPR):    0.229ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        1.649     2.943    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X41Y59         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[82]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X41Y59         FDRE (Prop_fdre_C_Q)         0.456     3.399 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[82]/Q
+                         net (fo=43, routed)          1.732     5.131    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[82]
+    SLICE_X58Y50         LUT4 (Prop_lut4_I0_O)        0.146     5.277 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_476/O
+                         net (fo=1, routed)           0.664     5.941    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_476_n_0
+    SLICE_X58Y50         LUT6 (Prop_lut6_I2_O)        0.328     6.269 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_223/O
+                         net (fo=1, routed)           0.878     7.147    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_223_n_0
+    SLICE_X58Y50         LUT6 (Prop_lut6_I5_O)        0.124     7.271 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_55/O
+                         net (fo=2, routed)           0.953     8.224    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_55_n_0
+    SLICE_X60Y58         LUT6 (Prop_lut6_I3_O)        0.124     8.348 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_11/O
+                         net (fo=1, routed)           0.844     9.193    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_11_n_0
+    SLICE_X53Y57         LUT6 (Prop_lut6_I5_O)        0.124     9.317 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_2/O
+                         net (fo=66, routed)          1.255    10.571    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_2_n_0
+    SLICE_X45Y60         LUT5 (Prop_lut5_I2_O)        0.154    10.725 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[8]_i_2/O
+                         net (fo=2, routed)           0.690    11.415    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[8]_i_2_n_0
+    SLICE_X45Y60         LUT6 (Prop_lut6_I2_O)        0.327    11.742 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[8]_i_1/O
+                         net (fo=1, routed)           0.593    12.335    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[8]_i_1_n_0
+    SLICE_X45Y60         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[8]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        1.476    12.655    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X45Y60         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[8]/C
+                         clock pessimism              0.229    12.884    
+                         clock uncertainty           -0.154    12.730    
+    SLICE_X45Y60         FDRE (Setup_fdre_C_D)       -0.047    12.683    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[8]
+  -------------------------------------------------------------------
+                         required time                         12.683    
+                         arrival time                         -12.335    
+  -------------------------------------------------------------------
+                         slack                                  0.347    
+
+Slack (MET) :             0.392ns  (required time - arrival time)
+  Source:                 system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[33]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[43]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        9.398ns  (logic 1.689ns (17.972%)  route 7.709ns (82.028%))
+  Logic Levels:           7  (LUT4=1 LUT5=1 LUT6=5)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.656ns = ( 12.656 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.944ns
+    Clock Pessimism Removal (CPR):    0.262ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        1.650     2.944    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X43Y57         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[33]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y57         FDRE (Prop_fdre_C_Q)         0.419     3.363 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[33]/Q
+                         net (fo=188, routed)         1.788     5.151    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[33]
+    SLICE_X58Y51         LUT6 (Prop_lut6_I2_O)        0.296     5.447 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_486/O
+                         net (fo=1, routed)           0.680     6.127    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_486_n_0
+    SLICE_X58Y51         LUT4 (Prop_lut4_I0_O)        0.124     6.251 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_234/O
+                         net (fo=1, routed)           0.555     6.806    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_234_n_0
+    SLICE_X57Y52         LUT6 (Prop_lut6_I0_O)        0.124     6.930 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_62/O
+                         net (fo=2, routed)           0.958     7.888    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_62_n_0
+    SLICE_X58Y52         LUT6 (Prop_lut6_I0_O)        0.124     8.012 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_13/O
+                         net (fo=1, routed)           0.973     8.985    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_13_n_0
+    SLICE_X54Y53         LUT6 (Prop_lut6_I1_O)        0.124     9.109 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_3/O
+                         net (fo=81, routed)          1.521    10.630    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_3_n_0
+    SLICE_X44Y57         LUT5 (Prop_lut5_I1_O)        0.152    10.782 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[76]_i_4/O
+                         net (fo=8, routed)           0.902    11.684    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[76]_i_4_n_0
+    SLICE_X42Y59         LUT6 (Prop_lut6_I0_O)        0.326    12.010 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[43]_i_1/O
+                         net (fo=1, routed)           0.332    12.342    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[43]_i_1_n_0
+    SLICE_X42Y59         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[43]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        1.477    12.656    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X42Y59         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[43]/C
+                         clock pessimism              0.262    12.918    
+                         clock uncertainty           -0.154    12.764    
+    SLICE_X42Y59         FDRE (Setup_fdre_C_D)       -0.030    12.734    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[43]
+  -------------------------------------------------------------------
+                         required time                         12.734    
+                         arrival time                         -12.342    
+  -------------------------------------------------------------------
+                         slack                                  0.392    
+
+Slack (MET) :             0.432ns  (required time - arrival time)
+  Source:                 system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[33]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        9.344ns  (logic 1.459ns (15.614%)  route 7.885ns (84.386%))
+  Logic Levels:           7  (LUT4=1 LUT5=1 LUT6=5)
+  Clock Path Skew:        -0.024ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.658ns = ( 12.658 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.944ns
+    Clock Pessimism Removal (CPR):    0.262ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        1.650     2.944    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X43Y57         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[33]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y57         FDRE (Prop_fdre_C_Q)         0.419     3.363 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[33]/Q
+                         net (fo=188, routed)         1.788     5.151    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[33]
+    SLICE_X58Y51         LUT6 (Prop_lut6_I2_O)        0.296     5.447 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_486/O
+                         net (fo=1, routed)           0.680     6.127    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_486_n_0
+    SLICE_X58Y51         LUT4 (Prop_lut4_I0_O)        0.124     6.251 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_234/O
+                         net (fo=1, routed)           0.555     6.806    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_234_n_0
+    SLICE_X57Y52         LUT6 (Prop_lut6_I0_O)        0.124     6.930 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_62/O
+                         net (fo=2, routed)           0.958     7.888    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_62_n_0
+    SLICE_X58Y52         LUT6 (Prop_lut6_I0_O)        0.124     8.012 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_13/O
+                         net (fo=1, routed)           0.973     8.985    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_13_n_0
+    SLICE_X54Y53         LUT6 (Prop_lut6_I1_O)        0.124     9.109 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_3/O
+                         net (fo=81, routed)          1.462    10.571    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_3_n_0
+    SLICE_X44Y58         LUT5 (Prop_lut5_I3_O)        0.124    10.695 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[72]_i_2/O
+                         net (fo=13, routed)          0.854    11.550    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[72]_i_2_n_0
+    SLICE_X42Y55         LUT6 (Prop_lut6_I4_O)        0.124    11.674 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[3]_i_1/O
+                         net (fo=1, routed)           0.615    12.288    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[3]_i_1_n_0
+    SLICE_X42Y55         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        1.479    12.658    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X42Y55         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[3]/C
+                         clock pessimism              0.262    12.920    
+                         clock uncertainty           -0.154    12.766    
+    SLICE_X42Y55         FDRE (Setup_fdre_C_D)       -0.045    12.721    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[3]
+  -------------------------------------------------------------------
+                         required time                         12.721    
+                         arrival time                         -12.288    
+  -------------------------------------------------------------------
+                         slack                                  0.432    
+
+Slack (MET) :             0.482ns  (required time - arrival time)
+  Source:                 system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[33]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[12]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        9.324ns  (logic 1.459ns (15.648%)  route 7.865ns (84.352%))
+  Logic Levels:           7  (LUT4=1 LUT5=1 LUT6=5)
+  Clock Path Skew:        -0.024ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.658ns = ( 12.658 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.944ns
+    Clock Pessimism Removal (CPR):    0.262ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        1.650     2.944    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X43Y57         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[33]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y57         FDRE (Prop_fdre_C_Q)         0.419     3.363 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[33]/Q
+                         net (fo=188, routed)         1.788     5.151    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[33]
+    SLICE_X58Y51         LUT6 (Prop_lut6_I2_O)        0.296     5.447 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_486/O
+                         net (fo=1, routed)           0.680     6.127    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_486_n_0
+    SLICE_X58Y51         LUT4 (Prop_lut4_I0_O)        0.124     6.251 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_234/O
+                         net (fo=1, routed)           0.555     6.806    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_234_n_0
+    SLICE_X57Y52         LUT6 (Prop_lut6_I0_O)        0.124     6.930 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_62/O
+                         net (fo=2, routed)           0.958     7.888    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_62_n_0
+    SLICE_X58Y52         LUT6 (Prop_lut6_I0_O)        0.124     8.012 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_13/O
+                         net (fo=1, routed)           0.973     8.985    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_13_n_0
+    SLICE_X54Y53         LUT6 (Prop_lut6_I1_O)        0.124     9.109 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_3/O
+                         net (fo=81, routed)          1.462    10.571    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_3_n_0
+    SLICE_X44Y58         LUT5 (Prop_lut5_I3_O)        0.124    10.695 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[72]_i_2/O
+                         net (fo=13, routed)          0.919    11.615    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[72]_i_2_n_0
+    SLICE_X42Y56         LUT6 (Prop_lut6_I4_O)        0.124    11.739 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[12]_i_1/O
+                         net (fo=1, routed)           0.529    12.268    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[12]_i_1_n_0
+    SLICE_X42Y56         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        1.479    12.658    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X42Y56         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[12]/C
+                         clock pessimism              0.262    12.920    
+                         clock uncertainty           -0.154    12.766    
+    SLICE_X42Y56         FDRE (Setup_fdre_C_D)       -0.016    12.750    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[12]
+  -------------------------------------------------------------------
+                         required time                         12.750    
+                         arrival time                         -12.268    
+  -------------------------------------------------------------------
+                         slack                                  0.482    
+
+Slack (MET) :             0.515ns  (required time - arrival time)
+  Source:                 system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[33]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[1]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        9.276ns  (logic 1.459ns (15.730%)  route 7.817ns (84.270%))
+  Logic Levels:           7  (LUT4=1 LUT5=1 LUT6=5)
+  Clock Path Skew:        -0.024ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.658ns = ( 12.658 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.944ns
+    Clock Pessimism Removal (CPR):    0.262ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        1.650     2.944    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X43Y57         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[33]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y57         FDRE (Prop_fdre_C_Q)         0.419     3.363 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[33]/Q
+                         net (fo=188, routed)         1.788     5.151    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[33]
+    SLICE_X58Y51         LUT6 (Prop_lut6_I2_O)        0.296     5.447 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_486/O
+                         net (fo=1, routed)           0.680     6.127    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_486_n_0
+    SLICE_X58Y51         LUT4 (Prop_lut4_I0_O)        0.124     6.251 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_234/O
+                         net (fo=1, routed)           0.555     6.806    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_234_n_0
+    SLICE_X57Y52         LUT6 (Prop_lut6_I0_O)        0.124     6.930 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_62/O
+                         net (fo=2, routed)           0.958     7.888    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_62_n_0
+    SLICE_X58Y52         LUT6 (Prop_lut6_I0_O)        0.124     8.012 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_13/O
+                         net (fo=1, routed)           0.973     8.985    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_13_n_0
+    SLICE_X54Y53         LUT6 (Prop_lut6_I1_O)        0.124     9.109 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_3/O
+                         net (fo=81, routed)          1.462    10.571    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_3_n_0
+    SLICE_X44Y58         LUT5 (Prop_lut5_I3_O)        0.124    10.695 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[72]_i_2/O
+                         net (fo=13, routed)          0.832    11.527    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[72]_i_2_n_0
+    SLICE_X42Y55         LUT6 (Prop_lut6_I2_O)        0.124    11.651 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[1]_i_1/O
+                         net (fo=1, routed)           0.568    12.220    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[1]_i_1_n_0
+    SLICE_X42Y55         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        1.479    12.658    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X42Y55         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[1]/C
+                         clock pessimism              0.262    12.920    
+                         clock uncertainty           -0.154    12.766    
+    SLICE_X42Y55         FDRE (Setup_fdre_C_D)       -0.031    12.735    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[1]
+  -------------------------------------------------------------------
+                         required time                         12.735    
+                         arrival time                         -12.220    
+  -------------------------------------------------------------------
+                         slack                                  0.515    
+
+Slack (MET) :             0.522ns  (required time - arrival time)
+  Source:                 system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[33]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[10]/D
+                            (rising edge-triggered cell FDSE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        9.251ns  (logic 1.459ns (15.771%)  route 7.792ns (84.229%))
+  Logic Levels:           7  (LUT4=1 LUT5=2 LUT6=4)
+  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.656ns = ( 12.656 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.944ns
+    Clock Pessimism Removal (CPR):    0.262ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        1.650     2.944    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X43Y57         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[33]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y57         FDRE (Prop_fdre_C_Q)         0.419     3.363 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[33]/Q
+                         net (fo=188, routed)         1.788     5.151    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[33]
+    SLICE_X58Y51         LUT6 (Prop_lut6_I2_O)        0.296     5.447 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_486/O
+                         net (fo=1, routed)           0.680     6.127    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_486_n_0
+    SLICE_X58Y51         LUT4 (Prop_lut4_I0_O)        0.124     6.251 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_234/O
+                         net (fo=1, routed)           0.555     6.806    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_234_n_0
+    SLICE_X57Y52         LUT6 (Prop_lut6_I0_O)        0.124     6.930 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_62/O
+                         net (fo=2, routed)           0.958     7.888    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_62_n_0
+    SLICE_X58Y52         LUT6 (Prop_lut6_I0_O)        0.124     8.012 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_13/O
+                         net (fo=1, routed)           0.973     8.985    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_13_n_0
+    SLICE_X54Y53         LUT6 (Prop_lut6_I1_O)        0.124     9.109 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_3/O
+                         net (fo=81, routed)          1.462    10.571    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_3_n_0
+    SLICE_X44Y58         LUT5 (Prop_lut5_I3_O)        0.124    10.695 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[72]_i_2/O
+                         net (fo=13, routed)          0.905    11.600    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[72]_i_2_n_0
+    SLICE_X43Y59         LUT5 (Prop_lut5_I1_O)        0.124    11.724 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[10]_i_1/O
+                         net (fo=1, routed)           0.471    12.195    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[10]_i_1_n_0
+    SLICE_X43Y59         FDSE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[10]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        1.477    12.656    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X43Y59         FDSE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[10]/C
+                         clock pessimism              0.262    12.918    
+                         clock uncertainty           -0.154    12.764    
+    SLICE_X43Y59         FDSE (Setup_fdse_C_D)       -0.047    12.717    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[10]
+  -------------------------------------------------------------------
+                         required time                         12.717    
+                         arrival time                         -12.195    
+  -------------------------------------------------------------------
+                         slack                                  0.522    
+
+Slack (MET) :             0.535ns  (required time - arrival time)
+  Source:                 system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[82]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[58]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        9.255ns  (logic 1.780ns (19.233%)  route 7.475ns (80.767%))
+  Logic Levels:           7  (LUT4=2 LUT6=5)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.656ns = ( 12.656 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.943ns
+    Clock Pessimism Removal (CPR):    0.262ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        1.649     2.943    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X41Y59         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[82]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X41Y59         FDRE (Prop_fdre_C_Q)         0.456     3.399 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[82]/Q
+                         net (fo=43, routed)          1.732     5.131    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[82]
+    SLICE_X58Y50         LUT4 (Prop_lut4_I0_O)        0.146     5.277 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_476/O
+                         net (fo=1, routed)           0.664     5.941    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_476_n_0
+    SLICE_X58Y50         LUT6 (Prop_lut6_I2_O)        0.328     6.269 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_223/O
+                         net (fo=1, routed)           0.878     7.147    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_223_n_0
+    SLICE_X58Y50         LUT6 (Prop_lut6_I5_O)        0.124     7.271 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_55/O
+                         net (fo=2, routed)           0.953     8.224    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_55_n_0
+    SLICE_X60Y58         LUT6 (Prop_lut6_I3_O)        0.124     8.348 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_11/O
+                         net (fo=1, routed)           0.844     9.193    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_11_n_0
+    SLICE_X53Y57         LUT6 (Prop_lut6_I5_O)        0.124     9.317 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_2/O
+                         net (fo=66, routed)          1.103    10.420    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_2_n_0
+    SLICE_X42Y60         LUT4 (Prop_lut4_I2_O)        0.150    10.570 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[84]_i_2/O
+                         net (fo=28, routed)          0.968    11.538    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[84]_i_2_n_0
+    SLICE_X42Y60         LUT6 (Prop_lut6_I1_O)        0.328    11.866 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[58]_i_1/O
+                         net (fo=1, routed)           0.332    12.198    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[58]_i_1_n_0
+    SLICE_X42Y60         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[58]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        1.477    12.656    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X42Y60         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[58]/C
+                         clock pessimism              0.262    12.918    
+                         clock uncertainty           -0.154    12.764    
+    SLICE_X42Y60         FDRE (Setup_fdre_C_D)       -0.031    12.733    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[58]
+  -------------------------------------------------------------------
+                         required time                         12.733    
+                         arrival time                         -12.198    
+  -------------------------------------------------------------------
+                         slack                                  0.535    
+
+Slack (MET) :             0.535ns  (required time - arrival time)
+  Source:                 system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[82]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[49]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        9.185ns  (logic 1.780ns (19.380%)  route 7.405ns (80.620%))
+  Logic Levels:           7  (LUT4=3 LUT6=4)
+  Clock Path Skew:        -0.059ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.655ns = ( 12.655 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.943ns
+    Clock Pessimism Removal (CPR):    0.229ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        1.649     2.943    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X41Y59         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[82]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X41Y59         FDRE (Prop_fdre_C_Q)         0.456     3.399 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[82]/Q
+                         net (fo=43, routed)          1.732     5.131    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[82]
+    SLICE_X58Y50         LUT4 (Prop_lut4_I0_O)        0.146     5.277 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_476/O
+                         net (fo=1, routed)           0.664     5.941    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_476_n_0
+    SLICE_X58Y50         LUT6 (Prop_lut6_I2_O)        0.328     6.269 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_223/O
+                         net (fo=1, routed)           0.878     7.147    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_223_n_0
+    SLICE_X58Y50         LUT6 (Prop_lut6_I5_O)        0.124     7.271 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_55/O
+                         net (fo=2, routed)           0.953     8.224    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_55_n_0
+    SLICE_X60Y58         LUT6 (Prop_lut6_I3_O)        0.124     8.348 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_11/O
+                         net (fo=1, routed)           0.844     9.193    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_11_n_0
+    SLICE_X53Y57         LUT6 (Prop_lut6_I5_O)        0.124     9.317 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_2/O
+                         net (fo=66, routed)          1.103    10.420    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[97]_i_2_n_0
+    SLICE_X42Y60         LUT4 (Prop_lut4_I2_O)        0.150    10.570 f  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[84]_i_2/O
+                         net (fo=28, routed)          0.728    11.298    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[84]_i_2_n_0
+    SLICE_X45Y59         LUT4 (Prop_lut4_I1_O)        0.328    11.626 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[49]_i_1/O
+                         net (fo=1, routed)           0.502    12.128    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state[49]_i_1_n_0
+    SLICE_X45Y59         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[49]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        1.476    12.655    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X45Y59         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[49]/C
+                         clock pessimism              0.229    12.884    
+                         clock uncertainty           -0.154    12.730    
+    SLICE_X45Y59         FDRE (Setup_fdre_C_D)       -0.067    12.663    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_state_reg[49]
+  -------------------------------------------------------------------
+                         required time                         12.663    
+                         arrival time                         -12.128    
+  -------------------------------------------------------------------
+                         slack                                  0.535    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.042ns  (arrival time - required time)
+  Source:                 system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg4_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[1][0][5]/D
+                            (rising edge-triggered cell FDSE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.375ns  (logic 0.141ns (37.645%)  route 0.234ns (62.355%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.256ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.176ns
+    Source Clock Delay      (SCD):    0.885ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        0.549     0.885    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X41Y81         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg4_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X41Y81         FDRE (Prop_fdre_C_Q)         0.141     1.026 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg4_reg[5]/Q
+                         net (fo=2, routed)           0.234     1.259    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg4[5]
+    SLICE_X50Y80         FDSE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[1][0][5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        0.810     1.176    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X50Y80         FDSE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[1][0][5]/C
+                         clock pessimism             -0.035     1.141    
+    SLICE_X50Y80         FDSE (Hold_fdse_C_D)         0.076     1.217    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[1][0][5]
+  -------------------------------------------------------------------
+                         required time                         -1.217    
+                         arrival time                           1.259    
+  -------------------------------------------------------------------
+                         slack                                  0.042    
+
+Slack (MET) :             0.043ns  (arrival time - required time)
+  Source:                 system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg15_reg[10]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][13][2]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.362ns  (logic 0.141ns (38.926%)  route 0.221ns (61.074%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.255ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.173ns
+    Source Clock Delay      (SCD):    0.883ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        0.547     0.883    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X48Y80         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg15_reg[10]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X48Y80         FDRE (Prop_fdre_C_Q)         0.141     1.024 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg15_reg[10]/Q
+                         net (fo=2, routed)           0.221     1.245    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg15[10]
+    SLICE_X50Y77         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][13][2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        0.807     1.173    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X50Y77         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][13][2]/C
+                         clock pessimism             -0.035     1.138    
+    SLICE_X50Y77         FDRE (Hold_fdre_C_D)         0.064     1.202    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][13][2]
+  -------------------------------------------------------------------
+                         required time                         -1.202    
+                         arrival time                           1.245    
+  -------------------------------------------------------------------
+                         slack                                  0.043    
+
+Slack (MET) :             0.051ns  (arrival time - required time)
+  Source:                 system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg8_reg[19]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[2][2][3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.376ns  (logic 0.141ns (37.483%)  route 0.235ns (62.517%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.259ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.185ns
+    Source Clock Delay      (SCD):    0.891ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        0.555     0.891    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X47Y92         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg8_reg[19]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X47Y92         FDRE (Prop_fdre_C_Q)         0.141     1.032 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg8_reg[19]/Q
+                         net (fo=2, routed)           0.235     1.267    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg8[19]
+    SLICE_X52Y91         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[2][2][3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        0.819     1.185    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X52Y91         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[2][2][3]/C
+                         clock pessimism             -0.035     1.150    
+    SLICE_X52Y91         FDRE (Hold_fdre_C_D)         0.066     1.216    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[2][2][3]
+  -------------------------------------------------------------------
+                         required time                         -1.216    
+                         arrival time                           1.267    
+  -------------------------------------------------------------------
+                         slack                                  0.051    
+
+Slack (MET) :             0.051ns  (arrival time - required time)
+  Source:                 system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg15_reg[31]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][15][7]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.344ns  (logic 0.128ns (37.259%)  route 0.216ns (62.741%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.267ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.189ns
+    Source Clock Delay      (SCD):    0.887ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        0.551     0.887    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X53Y91         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg15_reg[31]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X53Y91         FDRE (Prop_fdre_C_Q)         0.128     1.015 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg15_reg[31]/Q
+                         net (fo=2, routed)           0.216     1.230    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg15[31]
+    SLICE_X48Y92         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][15][7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        0.823     1.189    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X48Y92         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][15][7]/C
+                         clock pessimism             -0.035     1.154    
+    SLICE_X48Y92         FDRE (Hold_fdre_C_D)         0.025     1.179    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][15][7]
+  -------------------------------------------------------------------
+                         required time                         -1.179    
+                         arrival time                           1.230    
+  -------------------------------------------------------------------
+                         slack                                  0.051    
+
+Slack (MET) :             0.057ns  (arrival time - required time)
+  Source:                 system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg10_reg[11]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[2][9][3]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.388ns  (logic 0.164ns (42.234%)  route 0.224ns (57.766%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.256ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.178ns
+    Source Clock Delay      (SCD):    0.887ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        0.551     0.887    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X46Y83         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg10_reg[11]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X46Y83         FDRE (Prop_fdre_C_Q)         0.164     1.051 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg10_reg[11]/Q
+                         net (fo=2, routed)           0.224     1.275    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg10[11]
+    SLICE_X53Y82         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[2][9][3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        0.812     1.178    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X53Y82         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[2][9][3]/C
+                         clock pessimism             -0.035     1.143    
+    SLICE_X53Y82         FDRE (Hold_fdre_C_D)         0.075     1.218    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[2][9][3]
+  -------------------------------------------------------------------
+                         required time                         -1.218    
+                         arrival time                           1.275    
+  -------------------------------------------------------------------
+                         slack                                  0.057    
+
+Slack (MET) :             0.059ns  (arrival time - required time)
+  Source:                 system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg11_reg[31]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[2][15][7]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.320ns  (logic 0.148ns (46.254%)  route 0.172ns (53.746%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.267ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.189ns
+    Source Clock Delay      (SCD):    0.887ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        0.551     0.887    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X50Y91         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg11_reg[31]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X50Y91         FDRE (Prop_fdre_C_Q)         0.148     1.035 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg11_reg[31]/Q
+                         net (fo=2, routed)           0.172     1.207    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg11[31]
+    SLICE_X48Y92         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[2][15][7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        0.823     1.189    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X48Y92         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[2][15][7]/C
+                         clock pessimism             -0.035     1.154    
+    SLICE_X48Y92         FDRE (Hold_fdre_C_D)        -0.006     1.148    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[2][15][7]
+  -------------------------------------------------------------------
+                         required time                         -1.148    
+                         arrival time                           1.207    
+  -------------------------------------------------------------------
+                         slack                                  0.059    
+
+Slack (MET) :             0.059ns  (arrival time - required time)
+  Source:                 system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/axi_rdata_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][6]_srl32/D
+                            (rising edge-triggered cell SRLC32E clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.257ns  (logic 0.141ns (54.812%)  route 0.116ns (45.188%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.015ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.185ns
+    Source Clock Delay      (SCD):    0.888ns
+    Clock Pessimism Removal (CPR):    0.282ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        0.552     0.888    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X39Y84         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/axi_rdata_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X39Y84         FDRE (Prop_fdre_C_Q)         0.141     1.029 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/axi_rdata_reg[6]/Q
+                         net (fo=1, routed)           0.116     1.145    system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/in[6]
+    SLICE_X38Y86         SRLC32E                                      r  system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][6]_srl32/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        0.819     1.185    system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/aclk
+    SLICE_X38Y86         SRLC32E                                      r  system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][6]_srl32/CLK
+                         clock pessimism             -0.282     0.903    
+    SLICE_X38Y86         SRLC32E (Hold_srlc32e_CLK_D)
+                                                      0.183     1.086    system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][6]_srl32
+  -------------------------------------------------------------------
+                         required time                         -1.086    
+                         arrival time                           1.145    
+  -------------------------------------------------------------------
+                         slack                                  0.059    
+
+Slack (MET) :             0.061ns  (arrival time - required time)
+  Source:                 system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg14_reg[30]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][11][6]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.352ns  (logic 0.148ns (42.005%)  route 0.204ns (57.995%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.266ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.189ns
+    Source Clock Delay      (SCD):    0.888ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        0.552     0.888    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X50Y93         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg14_reg[30]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X50Y93         FDRE (Prop_fdre_C_Q)         0.148     1.036 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg14_reg[30]/Q
+                         net (fo=2, routed)           0.204     1.240    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg14[30]
+    SLICE_X45Y90         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][11][6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        0.823     1.189    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X45Y90         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][11][6]/C
+                         clock pessimism             -0.035     1.154    
+    SLICE_X45Y90         FDRE (Hold_fdre_C_D)         0.025     1.179    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[3][11][6]
+  -------------------------------------------------------------------
+                         required time                         -1.179    
+                         arrival time                           1.240    
+  -------------------------------------------------------------------
+                         slack                                  0.061    
+
+Slack (MET) :             0.061ns  (arrival time - required time)
+  Source:                 system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/axi_rdata_reg[14]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][14]_srl32/D
+                            (rising edge-triggered cell SRLC32E clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.257ns  (logic 0.141ns (54.828%)  route 0.116ns (45.172%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.186ns
+    Source Clock Delay      (SCD):    0.890ns
+    Clock Pessimism Removal (CPR):    0.283ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        0.554     0.890    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X35Y85         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/axi_rdata_reg[14]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y85         FDRE (Prop_fdre_C_Q)         0.141     1.031 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/axi_rdata_reg[14]/Q
+                         net (fo=1, routed)           0.116     1.147    system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/in[14]
+    SLICE_X34Y85         SRLC32E                                      r  system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][14]_srl32/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        0.820     1.186    system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/aclk
+    SLICE_X34Y85         SRLC32E                                      r  system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][14]_srl32/CLK
+                         clock pessimism             -0.283     0.903    
+    SLICE_X34Y85         SRLC32E (Hold_srlc32e_CLK_D)
+                                                      0.183     1.086    system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][14]_srl32
+  -------------------------------------------------------------------
+                         required time                         -1.086    
+                         arrival time                           1.147    
+  -------------------------------------------------------------------
+                         slack                                  0.061    
+
+Slack (MET) :             0.063ns  (arrival time - required time)
+  Source:                 system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg10_reg[29]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[2][11][5]/D
+                            (rising edge-triggered cell FDSE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.391ns  (logic 0.164ns (41.991%)  route 0.227ns (58.009%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.267ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.190ns
+    Source Clock Delay      (SCD):    0.888ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        0.552     0.888    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X50Y95         FDRE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg10_reg[29]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X50Y95         FDRE (Prop_fdre_C_Q)         0.164     1.052 r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg10_reg[29]/Q
+                         net (fo=2, routed)           0.227     1.278    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/slv_reg10[29]
+    SLICE_X46Y95         FDSE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[2][11][5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=2556, routed)        0.824     1.190    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X46Y95         FDSE                                         r  system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[2][11][5]/C
+                         clock pessimism             -0.035     1.155    
+    SLICE_X46Y95         FDSE (Hold_fdse_C_D)         0.060     1.215    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[2][11][5]
+  -------------------------------------------------------------------
+                         required time                         -1.215    
+                         arrival time                           1.278    
+  -------------------------------------------------------------------
+                         slack                                  0.063    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_fpga_0
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { system_i/processing_system7_0/inst/PS7_i/FCLKCLK[0] }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB18_X2Y22    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/CHAR_LIB_COMP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB18_X2Y22    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/CHAR_LIB_COMP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/CLKBWRCLK
+Min Period        n/a     BUFG/I              n/a            2.155         10.000      7.845      BUFGCTRL_X0Y16  system_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/I
+Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X49Y74    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[1][4][7]/C
+Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X46Y85    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[1][5][0]/C
+Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X52Y84    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[1][5][1]/C
+Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X50Y78    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[1][5][2]/C
+Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X55Y81    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[1][5][3]/C
+Min Period        n/a     FDRE/C              n/a            1.000         10.000      9.000      SLICE_X43Y76    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[1][5][4]/C
+Min Period        n/a     FDSE/C              n/a            1.000         10.000      9.000      SLICE_X45Y81    system_i/ZedboardOLED_0/inst/ZedboardOLED_v1_0_S00_AXI_inst/current_screen_reg[1][5][5]/C
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X38Y103   system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][10]_srl4/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X38Y103   system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][11]_srl4/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X38Y105   system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][12]_srl4/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X38Y105   system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][13]_srl4/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X38Y105   system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][14]_srl4/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X38Y105   system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][15]_srl4/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X38Y105   system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][16]_srl4/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X38Y105   system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][17]_srl4/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X38Y105   system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][18]_srl4/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X38Y105   system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][19]_srl4/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X38Y99    system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][0]_srl4/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X38Y99    system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][1]_srl4/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X38Y99    system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][2]_srl4/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X38Y99    system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bid_fifo_0/memory_reg[3][3]_srl4/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X38Y100   system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bresp_fifo_0/memory_reg[3][0]_srl4/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X38Y100   system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/WR.b_channel_0/bresp_fifo_0/memory_reg[3][1]_srl4/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X42Y101   system_i/rst_ps7_0_100M/U0/EXT_LPF/POR_SRL_I/CLK
+High Pulse Width  Slow    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X38Y76    system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][0]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X38Y76    system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][11]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X38Y76    system_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][1]_srl32/CLK
+
+
+

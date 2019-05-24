@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('input_buffer_41_loa', sobel_opt.c:60->sobel_opt.c:109) on array 'input_buffer[41]', sobel_opt.c:90 due to limited memory ports." projectName="sobel_hls" solutionName="solution1" date="2017-08-01T11:25:15.377+0300" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'sobel/output' to 'sobel/output_r' to avoid the conflict with HDL keywords or other object names." projectName="sobel_hls" solutionName="solution1" date="2017-08-01T11:25:09.328+0300" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'sobel/input' to 'sobel/input_r' to avoid the conflict with HDL keywords or other object names." projectName="sobel_hls" solutionName="solution1" date="2017-08-01T11:25:09.312+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-542] more than one sub loop." projectName="sobel_hls" solutionName="solution1" date="2017-08-01T11:24:55.524+0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Row' (sobel_opt.c:96:35) in function 'sobel' : " projectName="sobel_hls" solutionName="solution1" date="2017-08-01T11:24:31.201+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Skipped source file 'input.grey'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx." projectName="sobel_hls" solutionName="solution1" date="2017-08-01T11:24:19.418+0300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Skipped source file 'golden.grey'. Source files must have extensions .c, .C, .cc, .cpp, .c++, .cp, or .cxx." projectName="sobel_hls" solutionName="solution1" date="2017-08-01T11:24:19.412+0300" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
