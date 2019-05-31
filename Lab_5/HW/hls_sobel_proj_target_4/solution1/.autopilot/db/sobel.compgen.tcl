@@ -1,16 +1,22 @@
 # This script segment is generated automatically by AutoPilot
 
 set id 1
-set name sobel_urem_12ns_8Hfu
+set name sobel_urem_12ns_6cfu
 set corename simcore_urem
 set op urem
 set stage_num 16
 set max_latency -1
 set registered_input 1
+set clk_width 1
+set clk_signed 0
+set reset_width 1
+set reset_signed 0
 set in0_width 12
 set in0_signed 0
-set in1_width 8
+set in1_width 6
 set in1_signed 0
+set ce_width 1
+set ce_signed 0
 set out_width 12
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_urem] == "ap_gen_simcore_urem"} {
@@ -24,10 +30,16 @@ eval "ap_gen_simcore_urem { \
     stage_num ${stage_num} \
     max_latency ${max_latency} \
     registered_input ${registered_input} \
+    clk_width ${clk_width} \
+    clk_signed ${clk_signed} \
+    reset_width ${reset_width} \
+    reset_signed ${reset_signed} \
     in0_width ${in0_width} \
     in0_signed ${in0_signed} \
     in1_width ${in1_width} \
     in1_signed ${in1_signed} \
+    ce_width ${ce_width} \
+    ce_signed ${ce_signed} \
     out_width ${out_width} \
 }"
 } else {
@@ -55,10 +67,16 @@ eval "::AESL_LIB_VIRTEX::xil_gen_div { \
     stage_num ${stage_num} \
     max_latency ${max_latency} \
     registered_input ${registered_input} \
+    clk_width ${clk_width} \
+    clk_signed ${clk_signed} \
+    reset_width ${reset_width} \
+    reset_signed ${reset_signed} \
     in0_width ${in0_width} \
     in0_signed ${in0_signed} \
     in1_width ${in1_width} \
     in1_signed ${in1_signed} \
+    ce_width ${ce_width} \
+    ce_signed ${ce_signed} \
     out_width ${out_width} \
 }"
 } else {
@@ -68,16 +86,22 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_div, check your pla
 
 
 set id 3
-set name sobel_urem_10ns_8IfE
+set name sobel_urem_10ns_6cgu
 set corename simcore_urem
 set op urem
 set stage_num 14
 set max_latency -1
 set registered_input 1
+set clk_width 1
+set clk_signed 0
+set reset_width 1
+set reset_signed 0
 set in0_width 10
 set in0_signed 0
-set in1_width 8
+set in1_width 6
 set in1_signed 0
+set ce_width 1
+set ce_signed 0
 set out_width 10
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_urem] == "ap_gen_simcore_urem"} {
@@ -91,10 +115,16 @@ eval "ap_gen_simcore_urem { \
     stage_num ${stage_num} \
     max_latency ${max_latency} \
     registered_input ${registered_input} \
+    clk_width ${clk_width} \
+    clk_signed ${clk_signed} \
+    reset_width ${reset_width} \
+    reset_signed ${reset_signed} \
     in0_width ${in0_width} \
     in0_signed ${in0_signed} \
     in1_width ${in1_width} \
     in1_signed ${in1_signed} \
+    ce_width ${ce_width} \
+    ce_signed ${ce_signed} \
     out_width ${out_width} \
 }"
 } else {
@@ -122,10 +152,16 @@ eval "::AESL_LIB_VIRTEX::xil_gen_div { \
     stage_num ${stage_num} \
     max_latency ${max_latency} \
     registered_input ${registered_input} \
+    clk_width ${clk_width} \
+    clk_signed ${clk_signed} \
+    reset_width ${reset_width} \
+    reset_signed ${reset_signed} \
     in0_width ${in0_width} \
     in0_signed ${in0_signed} \
     in1_width ${in1_width} \
     in1_signed ${in1_signed} \
+    ce_width ${ce_width} \
+    ce_signed ${ce_signed} \
     out_width ${out_width} \
 }"
 } else {
@@ -135,16 +171,22 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_div, check your pla
 
 
 set id 9
-set name sobel_urem_11ns_8JfO
+set name sobel_urem_11ns_6chv
 set corename simcore_urem
 set op urem
 set stage_num 15
 set max_latency -1
 set registered_input 1
+set clk_width 1
+set clk_signed 0
+set reset_width 1
+set reset_signed 0
 set in0_width 11
 set in0_signed 0
-set in1_width 8
+set in1_width 6
 set in1_signed 0
+set ce_width 1
+set ce_signed 0
 set out_width 11
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_urem] == "ap_gen_simcore_urem"} {
@@ -158,10 +200,16 @@ eval "ap_gen_simcore_urem { \
     stage_num ${stage_num} \
     max_latency ${max_latency} \
     registered_input ${registered_input} \
+    clk_width ${clk_width} \
+    clk_signed ${clk_signed} \
+    reset_width ${reset_width} \
+    reset_signed ${reset_signed} \
     in0_width ${in0_width} \
     in0_signed ${in0_signed} \
     in1_width ${in1_width} \
     in1_signed ${in1_signed} \
+    ce_width ${ce_width} \
+    ce_signed ${ce_signed} \
     out_width ${out_width} \
 }"
 } else {
@@ -189,10 +237,16 @@ eval "::AESL_LIB_VIRTEX::xil_gen_div { \
     stage_num ${stage_num} \
     max_latency ${max_latency} \
     registered_input ${registered_input} \
+    clk_width ${clk_width} \
+    clk_signed ${clk_signed} \
+    reset_width ${reset_width} \
+    reset_signed ${reset_signed} \
     in0_width ${in0_width} \
     in0_signed ${in0_signed} \
     in1_width ${in1_width} \
     in1_signed ${in1_signed} \
+    ce_width ${ce_width} \
+    ce_signed ${ce_signed} \
     out_width ${out_width} \
 }"
 } else {
@@ -202,19 +256,26 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_div, check your pla
 
 
 set id 11
-set name sobel_mul_mul_12nKfY
+set name sobel_mul_mul_12nciv
 set corename simcore_mul
 set op mul
 set stage_num 3
 set max_latency -1
 set registered_input 1
+set clk_width 1
+set clk_signed 0
+set reset_width 1
+set reset_signed 0
 set in0_width 12
 set in0_signed 0
 set in1_width 14
 set in1_signed 0
+set ce_width 1
+set ce_signed 0
 set out_width 26
 set exp i0*i1
-set arg_lists {i0 {12 0 +} i1 {14 0 +} p {26 0 +} }
+set arg_lists {i0 {12 0 +} i1 {14 0 +} p {26 0 +} acc {0} }
+set TrueReset 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
 eval "ap_gen_simcore_mul { \
@@ -224,13 +285,20 @@ eval "ap_gen_simcore_mul { \
     op ${op} \
     reset_level 1 \
     sync_rst true \
+    true_reset ${TrueReset} \
     stage_num ${stage_num} \
     max_latency ${max_latency} \
     registered_input ${registered_input} \
+    clk_width ${clk_width} \
+    clk_signed ${clk_signed} \
+    reset_width ${reset_width} \
+    reset_signed ${reset_signed} \
     in0_width ${in0_width} \
     in0_signed ${in0_signed} \
     in1_width ${in1_width} \
     in1_signed ${in1_signed} \
+    ce_width ${ce_width} \
+    ce_signed ${ce_signed} \
     out_width ${out_width} \
     exp ${exp} \
     arg_lists {${arg_lists}} \
@@ -257,13 +325,20 @@ eval "::AESL_LIB_VIRTEX::xil_gen_dsp48 { \
     op ${op} \
     reset_level 1 \
     sync_rst true \
+    true_reset ${TrueReset} \
     stage_num ${stage_num} \
     max_latency ${max_latency} \
     registered_input ${registered_input} \
+    clk_width ${clk_width} \
+    clk_signed ${clk_signed} \
+    reset_width ${reset_width} \
+    reset_signed ${reset_signed} \
     in0_width ${in0_width} \
     in0_signed ${in0_signed} \
     in1_width ${in1_width} \
     in1_signed ${in1_signed} \
+    ce_width ${ce_width} \
+    ce_signed ${ce_signed} \
     out_width ${out_width} \
     exp ${exp} \
     arg_lists {${arg_lists}} \
@@ -275,19 +350,26 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your p
 
 
 set id 13
-set name sobel_mul_mul_10nLf8
+set name sobel_mul_mul_10ncjv
 set corename simcore_mul
 set op mul
 set stage_num 3
 set max_latency -1
 set registered_input 1
+set clk_width 1
+set clk_signed 0
+set reset_width 1
+set reset_signed 0
 set in0_width 10
 set in0_signed 0
 set in1_width 12
 set in1_signed 0
+set ce_width 1
+set ce_signed 0
 set out_width 22
 set exp i0*i1
-set arg_lists {i0 {10 0 +} i1 {12 0 +} p {22 0 +} }
+set arg_lists {i0 {10 0 +} i1 {12 0 +} p {22 0 +} acc {0} }
+set TrueReset 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
 eval "ap_gen_simcore_mul { \
@@ -297,13 +379,20 @@ eval "ap_gen_simcore_mul { \
     op ${op} \
     reset_level 1 \
     sync_rst true \
+    true_reset ${TrueReset} \
     stage_num ${stage_num} \
     max_latency ${max_latency} \
     registered_input ${registered_input} \
+    clk_width ${clk_width} \
+    clk_signed ${clk_signed} \
+    reset_width ${reset_width} \
+    reset_signed ${reset_signed} \
     in0_width ${in0_width} \
     in0_signed ${in0_signed} \
     in1_width ${in1_width} \
     in1_signed ${in1_signed} \
+    ce_width ${ce_width} \
+    ce_signed ${ce_signed} \
     out_width ${out_width} \
     exp ${exp} \
     arg_lists {${arg_lists}} \
@@ -330,13 +419,20 @@ eval "::AESL_LIB_VIRTEX::xil_gen_dsp48 { \
     op ${op} \
     reset_level 1 \
     sync_rst true \
+    true_reset ${TrueReset} \
     stage_num ${stage_num} \
     max_latency ${max_latency} \
     registered_input ${registered_input} \
+    clk_width ${clk_width} \
+    clk_signed ${clk_signed} \
+    reset_width ${reset_width} \
+    reset_signed ${reset_signed} \
     in0_width ${in0_width} \
     in0_signed ${in0_signed} \
     in1_width ${in1_width} \
     in1_signed ${in1_signed} \
+    ce_width ${ce_width} \
+    ce_signed ${ce_signed} \
     out_width ${out_width} \
     exp ${exp} \
     arg_lists {${arg_lists}} \
@@ -348,19 +444,26 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your p
 
 
 set id 16
-set name sobel_mul_mul_11nMgi
+set name sobel_mul_mul_11nckv
 set corename simcore_mul
 set op mul
 set stage_num 3
 set max_latency -1
 set registered_input 1
+set clk_width 1
+set clk_signed 0
+set reset_width 1
+set reset_signed 0
 set in0_width 11
 set in0_signed 0
 set in1_width 13
 set in1_signed 0
+set ce_width 1
+set ce_signed 0
 set out_width 24
 set exp i0*i1
-set arg_lists {i0 {11 0 +} i1 {13 0 +} p {24 0 +} }
+set arg_lists {i0 {11 0 +} i1 {13 0 +} p {24 0 +} acc {0} }
+set TrueReset 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
 eval "ap_gen_simcore_mul { \
@@ -370,13 +473,20 @@ eval "ap_gen_simcore_mul { \
     op ${op} \
     reset_level 1 \
     sync_rst true \
+    true_reset ${TrueReset} \
     stage_num ${stage_num} \
     max_latency ${max_latency} \
     registered_input ${registered_input} \
+    clk_width ${clk_width} \
+    clk_signed ${clk_signed} \
+    reset_width ${reset_width} \
+    reset_signed ${reset_signed} \
     in0_width ${in0_width} \
     in0_signed ${in0_signed} \
     in1_width ${in1_width} \
     in1_signed ${in1_signed} \
+    ce_width ${ce_width} \
+    ce_signed ${ce_signed} \
     out_width ${out_width} \
     exp ${exp} \
     arg_lists {${arg_lists}} \
@@ -403,13 +513,20 @@ eval "::AESL_LIB_VIRTEX::xil_gen_dsp48 { \
     op ${op} \
     reset_level 1 \
     sync_rst true \
+    true_reset ${TrueReset} \
     stage_num ${stage_num} \
     max_latency ${max_latency} \
     registered_input ${registered_input} \
+    clk_width ${clk_width} \
+    clk_signed ${clk_signed} \
+    reset_width ${reset_width} \
+    reset_signed ${reset_signed} \
     in0_width ${in0_width} \
     in0_signed ${in0_signed} \
     in1_width ${in1_width} \
     in1_signed ${in1_signed} \
+    ce_width ${ce_width} \
+    ce_signed ${ce_signed} \
     out_width ${out_width} \
     exp ${exp} \
     arg_lists {${arg_lists}} \
@@ -421,13 +538,14 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your p
 
 
 # Memory (RAM/ROM)  definition:
-set ID 21
+set ID 27
+set hasByteEnable 0
 set MemName sobel_input_buffebkb
 set CoreName ap_simcore_mem
 set PortList { 2 2 }
 set DataWd 8
-set AddrRange 96
-set AddrWd 7
+set AddrRange 24
+set AddrWd 5
 set impl_style block
 set TrueReset 0
 set HasInitializer 0
@@ -435,7 +553,7 @@ set IsROM 0
 set ROMData {}
 set NumOfStage 2
 set MaxLatency -1
-set DelayBudget 2.39
+set DelayBudget 2.322
 set ClkPeriod 4
 set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
@@ -445,6 +563,7 @@ if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
     name ${MemName} \
     corename ${CoreName}  \
     op mem \
+    hasByteEnable ${hasByteEnable} \
     reset_level 1 \
     sync_rst true \
     stage_num ${NumOfStage}  \
@@ -480,6 +599,7 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RA
     name ${MemName} \
     corename ${CoreName}  \
     op mem \
+    hasByteEnable ${hasByteEnable} \
     reset_level 1 \
     sync_rst true \
     stage_num ${NumOfStage}  \
@@ -537,11 +657,12 @@ output_r {
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 22 \
+			id 28 \
 			corename sobel_AXILiteS_axilite \
 			name sobel_AXILiteS_s_axi \
 			ports {$port_AXILiteS} \
 			op interface \
+			is_flushable 0 \ 
 		} "
 	} else {
 		puts "@W \[IMPL-110\] Cannot find AXI Lite interface model in the library. Ignored generation of AXI Lite  interface for 'AXILiteS'"
@@ -556,11 +677,12 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::m_axi_gen] == "::AESL_LIB_XILADAPTER::m_axi_gen"} {
 eval "::AESL_LIB_XILADAPTER::m_axi_gen { \
-    id 23 \
+    id 29 \
     corename {m_axi} \
     op interface \
     max_latency -1 \ 
     delay_budget 3.5 \ 
+    is_flushable 0 \ 
     name {sobel_XSOBEL_INPUT_BUS_m_axi} \
 } "
 } else {
@@ -576,11 +698,12 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::m_axi_gen] == "::AESL_LIB_XILADAPTER::m_axi_gen"} {
 eval "::AESL_LIB_XILADAPTER::m_axi_gen { \
-    id 24 \
+    id 30 \
     corename {m_axi} \
     op interface \
     max_latency -1 \ 
     delay_budget 3.5 \ 
+    is_flushable 0 \ 
     name {sobel_XSOBEL_OUTPUT_BUS_m_axi} \
 } "
 } else {

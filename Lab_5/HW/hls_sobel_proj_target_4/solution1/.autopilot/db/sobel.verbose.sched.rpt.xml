@@ -1,10 +1,10 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'sobel'" level="0">
-<item name = "Date">Fri Jul 28 18:20:26 2017
+<item name = "Date">Fri May 31 13:34:41 2019
 </item>
-<item name = "Version">2016.4 (Build 1756540 on Mon Jan 23 19:31:01 MST 2017)</item>
-<item name = "Project">sobel_hls_proj</item>
+<item name = "Version">2018.2.2 (Build 2345119 on Mon Oct 01 18:48:11 MDT 2018)</item>
+<item name = "Project">hls_sobel_proj_target_4</item>
 <item name = "Solution">solution1</item>
 <item name = "Product family">zynq</item>
 <item name = "Target device">xc7z020clg484-1</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">4.00, 3.89, 0.50</column>
+<column name="ap_clk">4.00, 3.890, 0.50</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">4328207, 4328207, 4328208, 4328208, none</column>
+<column name="">4254623, 4254623, 4254623, 4254623, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -36,7 +36,7 @@
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- memcpy..input">2064, 2064, 18, 1, 1, 2048, yes</column>
-<column name="- Row">4326126, 4326126, 4233, -, -, 1022, no</column>
+<column name="- Row">4252542, 4252542, 4161, -, -, 1022, no</column>
 <column name=" + memcpy..input">1039, 1039, 17, 1, 1, 1024, yes</column>
 <column name=" + Col">3089, 3089, 27, 3, 1, 1022, yes</column>
 </table>
