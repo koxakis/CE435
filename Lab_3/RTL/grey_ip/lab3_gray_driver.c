@@ -73,25 +73,25 @@ while (1)
 {
 
 
-	reg1 = GRAY_IP_mReadReg(XPAR_GRAY_IP_0_S_AXI_BASEADDR, 0);
+	reg1 = GRAY_IP_mReadReg(XPAR_GRAY_IP_S_AXI_BASEADDR, 0);
 
 	xil_printf("===Dip switch status: %x\r\n", dip_check);
 	xil_printf("===Dip switch status: %d\r\n", reg1);
 
-	reg2 = GRAY_IP_mReadReg(XPAR_GRAY_IP_0_S_AXI_BASEADDR, 8);
+	reg2 = GRAY_IP_mReadReg(XPAR_GRAY_IP_S_AXI_BASEADDR, 8);
 
 	dip_check = XGpio_DiscreteRead(&dip, 1);
 
 	if (reg1 ==1){
 
-		GRAY_IP_mWriteReg(XPAR_GRAY_IP_0_S_AXI_BASEADDR, 4, 0);
+		GRAY_IP_mWriteReg(XPAR_GRAY_IP_S_AXI_BASEADDR, 4, 0);
 
 		xil_printf("Grey Count %d\r\n", reg2);
 	}
 	xil_printf("Grey Count %x\r\n", reg2);
 	xil_printf("dip address %x\r\n\n", dip);
 
-	GRAY_IP_mWriteReg(XPAR_GRAY_IP_0_S_AXI_BASEADDR, 0, dip_check);
+	GRAY_IP_mWriteReg(XPAR_GRAY_IP_S_AXI_BASEADDR, 0, dip_check);
 
 	for (i=0; i<9999999; i++);
 }

@@ -26,7 +26,7 @@ int main (void)
 	  xil_printf("DIP Switch Status %x\r\n", dip_check);
 	  
 	  // output dip switches value on LED_ip device
-	  LED_IP_mWriteReg(XPAR_LED_IP_0_S_AXI_BASEADDR, 0, dip_check);
+	  LED_IP_mWriteReg(XPAR_LED_IP_S_AXI_BASEADDR, 0, dip_check);
 
 	  for (i=0; i<9999999; i++);
    }

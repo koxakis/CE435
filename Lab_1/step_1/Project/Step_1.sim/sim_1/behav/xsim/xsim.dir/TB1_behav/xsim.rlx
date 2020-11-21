@@ -1,11 +1,11 @@
 
 { 
-    crc :  7124783650931453447  , 
+    crc :  1429923220584716362  , 
     ccp_crc :  0  , 
     cmdline : " -wto e1a7ca66b24e4bb291d8c9c8aacbfb59 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TB1_behav xil_defaultlib.TB1 xil_defaultlib.glbl" , 
-    buildDate : "Oct  1 2018" , 
-    buildTime : "18:29:25" , 
-    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/TB1_behav/xsimk\"   \"xsim.dir/TB1_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/TB1_behav/obj/xsim_1.lnx64.o\" \"/run/media/nikolas/Linux_Data/Programs/xilinx/Vivado/Vivado/2018.2/lib/lnx64.o/librdi_simulator_kernel.so\"  \"/run/media/nikolas/Linux_Data/Programs/xilinx/Vivado/Vivado/2018.2/lib/lnx64.o/librdi_simbridge_kernel.so\"" , 
+    buildDate : "May 27 2020" , 
+    buildTime : "19:59:15" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--no-as-needed  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/TB1_behav/xsimk\"   \"xsim.dir/TB1_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/TB1_behav/obj/xsim_1.lnx64.o\" -L\"/run/media/nikolas/Linux_Data/Programs/Xilinx/Vivado/2020.1/lib/lnx64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
     aggregate_nets : 
     [ 
     ] 

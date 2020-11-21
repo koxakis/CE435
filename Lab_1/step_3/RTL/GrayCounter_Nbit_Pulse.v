@@ -16,7 +16,7 @@ module GrayCounter_Pulse(input clk, input rst, output reg pulse);
 			 counter <= distance;  // initialized to max val in order to have a pulse in the beggining
 			 pulse <= 0;
 		  end
-          else
+      else
 		  begin
 		      // and for regular functionality goes here
 		      
